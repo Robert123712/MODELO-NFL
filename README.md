@@ -8,8 +8,30 @@ pandas y scikit-learn; los datos gratuitos provienen de nflverse.
 
 Versión **0.1.0 experimental**, ejecutada con datos reales el 9 de septiembre UTC
 (8 de septiembre en Chihuahua) de 2026. Generó 16 proyecciones próximas.
-No está desplegada ni conectada todavía al Edgebook de producción. El repositorio
-contiene el motor, un exportador JSON, historial de emisiones y evaluación.
+Tiene una pantalla básica independiente, con las proyecciones de la última
+emisión publicada. No está conectada todavía al Edgebook de producción. El
+repositorio contiene el motor, la pantalla, un exportador JSON, historial de
+emisiones y evaluación.
+
+## Pantalla visual
+
+[Abrir pantalla NFL (privada)](https://edgebook-nfl-robert.rsapicks.chatgpt.site)
+
+Presenta partidos por fecha, marcador esperado, ganador con probabilidad, spread
+propio, total y contexto desplegable. Los horarios están en hora de Chihuahua.
+Es una vista de la emisión publicada, no un marcador en vivo. Para renovar los
+datos de la pantalla hay que generar otra emisión, reconstruirla y publicarla.
+
+Para verla localmente:
+
+```sh
+python scripts/build_web.py
+python -m http.server 8765 --bind 127.0.0.1 --directory dist
+```
+
+Después abre `http://127.0.0.1:8765/`. La pantalla usa HTML, CSS y JavaScript,
+sin dependencias adicionales. El paquete web contiene solo la pantalla y el JSON
+de predicciones, no código Python, archivos de entrenamiento ni credenciales.
 
 ## Ejecutar
 

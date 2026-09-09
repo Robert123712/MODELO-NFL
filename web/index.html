@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyecciones de ganador, spread y total de puntos del modelo NFL de Edgebook.">
+  <meta name="theme-color" content="#112820">
+  <title>Modelo NFL · Edgebook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead"><div class="wrap brand"><a href="./" aria-label="Edgebook NFL, inicio">edgebook<span class="brand-dot">.</span></a><span class="badge">NFL MODEL</span></div></header>
+  <main class="wrap">
+    <div class="page-heading"><div><p class="eyebrow">PROYECCIONES / NFL</p><h1>La próxima jornada.</h1></div><div class="edition"><span>MODELO INDEPENDIENTE</span><strong>Sin momios como entrada</strong></div></div>
+    <div class="meta"><span id="count">Cargando partidos…</span><span id="updated"></span></div>
+    <p class="notice">Versión inicial · Sin ajuste de lesiones, quarterback ni clima. Las probabilidades suponen que no hay empate.</p>
+    <div id="games" aria-live="polite"><p class="state">Cargando las proyecciones del modelo…</p></div>
+    <section class="guide" aria-label="Cómo leer las proyecciones"><h2>Cómo leerlo</h2><div><p><strong>Ganador</strong>Equipo con mayor probabilidad de victoria.</p><p><strong>Spread propio</strong>Un −3.5 significa favorito por 3.5 puntos. No es una línea de casa de apuestas.</p><p><strong>Total de puntos</strong>Suma esperada de ambos equipos; no es un pick de over o under.</p></div></section>
+    <footer><span>EDGEBOOK · MODELO NFL <span id="version"></span></span><span>Datos: nflverse · Vista de la última emisión publicada.</span></footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
