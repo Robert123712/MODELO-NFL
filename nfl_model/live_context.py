@@ -13,6 +13,7 @@ from .weather import forecast
 
 API = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl'
 UNAVAILABLE = {'out', 'injured reserve', 'suspension', 'suspended', 'pup', 'reserve'}
+QB_MISMATCH_NOTE = '{code}: QB probable distinto al usado por el modelo'
 
 
 def normalized(value):
@@ -225,7 +226,7 @@ def attach_context(snapshot, context):
         for side,item in info.get('teams',{}).items():
             qb = item['quarterback']
             if qb.get('differs_from_model_reference'):
-                issues.append(f'{game[side]["code"]}: QB probable distinto al usado por el modelo')
+                issues.append(QB_MISMATCH_NOTE.format(code=game[side]['code']))
             if item['injuries']['status'] == 'unavailable':
                 issues.append(f'{game[side]["code"]}: reporte de lesiones no disponible')
             if qb['status'] == 'unavailable':

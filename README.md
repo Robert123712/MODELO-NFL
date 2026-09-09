@@ -14,10 +14,27 @@ repositorio contiene el motor, la pantalla, un exportador JSON, historial de
 emisiones y evaluación.
 
 La v0.3 añade ajuste de EPA por rival al total y captura actual de lesiones,
-QB probable, plantillas, cambios de entrenador y clima. **El contexto actual
-todavía no tiene pesos numéricos validados**; se archiva para evaluar esos efectos
-a futuro. El ajuste por rival baja el error histórico del total de 10.5411 a
-10.5233 puntos, una mejora pequeña. Ver `reports/opponent-adjustment.json`.
+QB probable, plantillas, cambios de entrenador y clima. El ajuste por rival baja
+el error histórico del total de 10.5411 a 10.5233 puntos, una mejora pequeña. Ver
+`reports/opponent-adjustment.json`.
+
+Desde esta versión, el **QB probable de hoy sí entra al total**: su historial
+sustituye al del QB de referencia cuando difieren. No es un peso nuevo, es
+corregir una entrada equivocada; la regresión conserva sus coeficientes y el
+ganador, la probabilidad y el margen esperado no cambian. Lesiones, plantilla y
+clima siguen archivándose **sin pesos numéricos validados**.
+
+Medir ese cambio con noticias pasadas no es posible, así que se midió su techo:
+sustituir la referencia por el titular real de cada partido de 2020–2025 movió el
+error del total 0.0014 puntos, con intervalo del 95% [-0.0288, 0.0305]. **No se
+distingue del azar**: la sustitución se hace porque la entrada anterior era falsa,
+no porque mejore la precisión demostrada. Detalle en `reports/qb-news.json`.
+
+Sobre la emisión publicada del 9 de septiembre el ajuste habría movido 12 QB en 9
+de 16 partidos, con cambio medio de 0.6 puntos de total y máximo de 3.8 en
+Denver–Kansas City, donde el modelo cargaba a Chris Oladokun y Jarrett Stidham en
+lugar de Patrick Mahomes y Bo Nix. Ese repaso está en `reports/qb-news-preview.json`
+y **no reemplaza la emisión**: se aplica al generar la siguiente.
 
 El contrato de producción se documenta en [docs/CONTRACT.md](docs/CONTRACT.md).
 El formato sigue siendo **1.1**. La versión del motor incluye una huella para no
@@ -75,8 +92,12 @@ La v0.2 añade para el total EPA ofensivo/defensivo por jugada, frecuencia de
 pérdidas de balón, volumen de jugadas, EPA por dropback y CPOE del quarterback
 histórico de referencia. El QB de referencia es el que tuvo más intentos en el
 último juego observado del equipo; **no confirma el titular del siguiente juego**.
-No se usan QB retrospectivos del partido que se intenta predecir. No se incorpora
-ninguna estadística nueva hasta terminar de emitir las features de esa semana.
+Al servir, si el contexto reporta otro QB probable, el total usa el historial de
+ese quarterback: es la misma fórmula con la entrada corregida. La sustitución se
+declara por partido en `qb_adjustment` y requiere identificar al jugador en
+nflverse; si no se resuelve, la emisión sale sin tocar y con aviso. No se usan QB
+retrospectivos del partido que se intenta predecir ni estadísticas de esa semana
+antes de terminar de emitir sus features.
 
 Las contribuciones por variable explican el margen y el total respecto al promedio
 de entrenamiento; no son explicaciones causales.
@@ -140,11 +161,18 @@ La v0.2 combina marcadores con estadísticas semanales de equipo y QB calculadas
 por nflverse a partir de jugadas. EPA se aproxima por jugada oficial (intentos +
 sacks + carreras), sin filtrar kneel-downs ni garbage time. Desde v0.3 se ajusta
 EPA por el rendimiento previo del rival; el rating Elo sigue aportando fuerza relativa.
-No incorpora todavía lesiones, alineaciones, cambios de titular confirmados,
-traspasos de offseason ni pronóstico meteorológico. El historial individual del
-QB se conserva por ID, pero su referencia de equipo requiere cautela cuando cambia
-la plantilla. Las ausencias se declaran en cada proyección.
+El único dato del día que altera un número es el QB probable, y solo el total; no
+incorpora lesiones, alineaciones completas, titulares confirmados por el equipo,
+traspasos de offseason ni pronóstico meteorológico. El QB probable se cruza con
+nflverse por identidad ESPN y, si esa vía falla, por nombre único entre
+quarterbacks de las últimas tres temporadas. Un QB sin historial no se sustituye.
+El historial individual del QB se conserva por ID, pero su referencia de equipo
+requiere cautela cuando cambia la plantilla. Las ausencias se declaran en cada
+proyección.
 
+`scripts/evaluate_qb_news.py` mide el techo del ajuste por QB y escribe
+`reports/qb-news.json`; `scripts/preview_qb_news.py` muestra qué haría ese ajuste
+sobre la emisión ya publicada, sin emitir ni archivar historial.
 `scripts/compare_models.py` reproduce selección, comparación e incertidumbre
 pareada por semana. La selección se guarda en `config/model.json` y es la que
 consume `modelo-nfl run`. `--baseline` permite ejecutar las variables v0.1. La

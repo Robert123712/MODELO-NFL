@@ -28,8 +28,10 @@ function renderContext(games) {
   document.getElementById('context-warnings').textContent = warnings.join('. ') + (warnings.length ? '.' : '');
   document.getElementById('context-rows').innerHTML = games.map(game => {
     const qb = game.quarterback_reference;
+    const teams = game.qb_adjustment?.teams ?? {};
     const interval = game.intervals_80?.total;
-    return `<tr><th scope="row">${escape(game.away.code)} @ ${escape(game.home.code)}</th><td>${escape(qb?.away ?? 'Sin datos')}</td><td>${escape(qb?.home ?? 'Sin datos')}</td><td>${interval ? `${format.format(interval[0])}–${format.format(interval[1])}` : 'Sin datos'}</td></tr>`;
+    const quarterback = side => escape(qb?.[side] ?? 'Sin datos') + (teams[side]?.substituted ? ' <em>· ajustado</em>' : '');
+    return `<tr><th scope="row">${escape(game.away.code)} @ ${escape(game.home.code)}</th><td>${quarterback('away')}</td><td>${quarterback('home')}</td><td>${interval ? `${format.format(interval[0])}–${format.format(interval[1])}` : 'Sin datos'}</td></tr>`;
   }).join('');
   document.getElementById('model-context').hidden = games.length === 0;
 }

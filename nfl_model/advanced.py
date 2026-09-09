@@ -79,14 +79,48 @@ def download_advanced(root: Path, season: int):
     return teams, players, [m for _, _, m in results]
 
 
-def add_advanced(data, teams, players):
-    """Únicamente se incorporan stats de juegos con resultado conocido en `data`."""
+class QBHistory:
+    """Historial por quarterback: misma ponderación al entrenar y al sustituir por noticias."""
+
+    def __init__(self):
+        self.games = defaultdict(lambda: deque(maxlen=12))
+        self.names = {}
+
+    def add(self, row):
+        if np.isfinite(row['passing_epa']) and row['attempts'] + row['sacks_suffered'] > 0:
+            self.games[row['player_id']].append({'season': row['season'], 'epa': row['passing_epa'],
+                'dropbacks': row['attempts'] + row['sacks_suffered'],
+                'attempts': row['attempts'], 'cpoe': row['passing_cpoe']})
+            self.names[row['player_id']] = row['player_display_name']
+
+    def metrics(self, player_id, season):
+        hist = list(self.games[player_id]) if player_id in self.games else []
+        weights = np.array([1.0 if g['season'] == season else .5 for g in hist])
+        # EPA por dropback con prior de 100 dropbacks; CPOE ponderado por intentos.
+        denom = sum(g['dropbacks'] * w for g, w in zip(hist, weights)) + 100
+        epa = sum(g['epa'] * w for g, w in zip(hist, weights)) / denom
+        valid = [(g, w) for g, w in zip(hist, weights) if np.isfinite(g['cpoe'])]
+        cpoe = sum(g['cpoe'] * g['attempts'] * w for g, w in valid) / (100 + sum(g['attempts'] * w for g, w in valid))
+        return epa, cpoe, len(hist)
+
+    def last_season(self, player_id):
+        hist = list(self.games[player_id]) if player_id in self.games else []
+        return max((g['season'] for g in hist), default=None)
+
+
+def add_advanced(data, teams, players, starters=None, capture=None):
+    """Únicamente se incorporan stats de juegos con resultado conocido en `data`.
+
+    `starters` permite fijar el QB de cada partido, `(game_id, team) -> (player_id, nombre)`,
+    para medir en experimentos qué aporta conocer al titular; el motor no lo usa al servir.
+    `capture` recibe el estado final del historial para el ajuste posterior por noticias.
+    """
     tlookup = {(r['game_id'], r['team']): r for r in teams.to_dict('records')}
     plookup = defaultdict(list)
     for r in players.to_dict('records'):
         plookup[(r['game_id'], r['team'])].append(r)
     team_history = defaultdict(lambda: deque(maxlen=12))
-    qb_history = defaultdict(lambda: deque(maxlen=12))
+    qb_history = QBHistory()
     reference = {}
     rows = []
 
@@ -98,25 +132,20 @@ def add_advanced(data, teams, players):
             return (sum(g[key] * w for g, w in zip(games, weights)) + 4*prior)/(n+4)
         return avg('off'), avg('def'), avg('turnovers', .025), avg('plays', 64), avg('adjusted_off'), avg('adjusted_def')
 
-    def qb(team, season):
-        ref = reference.get(team)
+    def qb(team, season, key=None):
+        ref = (starters or {}).get(key) or reference.get(team)
         if ref is None:
             return 0., 0., None, None, 0
         pid, name = ref
-        hist = list(qb_history[pid])
-        weights = np.array([1.0 if g['season'] == season else .5 for g in hist])
-        # EPA por dropback con prior de 100 dropbacks; CPOE ponderado por intentos.
-        denom = sum(g['dropbacks']*w for g, w in zip(hist, weights)) + 100
-        epa = sum(g['epa']*w for g, w in zip(hist, weights))/denom
-        valid = [(g,w) for g,w in zip(hist,weights) if np.isfinite(g['cpoe'])]
-        cpoe = sum(g['cpoe']*g['attempts']*w for g,w in valid)/(100+sum(g['attempts']*w for g,w in valid))
-        return epa, cpoe, pid, name, len(hist)
+        epa, cpoe, count = qb_history.metrics(pid, season)
+        return epa, cpoe, pid, name, count
 
     for (season, week), group in data.groupby(['season', 'week'], sort=True):
         preweek = {team:summarize(team,season) for team in set(group.home_team)|set(group.away_team)}
         for row in group.to_dict('records'):
             h, a = summarize(row['home_team'], season), summarize(row['away_team'], season)
-            qh, qa = qb(row['home_team'], season), qb(row['away_team'], season)
+            qh = qb(row['home_team'], season, (row['game_id'], row['home_team']))
+            qa = qb(row['away_team'], season, (row['game_id'], row['away_team']))
             row.update(dict(zip(EPA_FEATURES + QB_FEATURES, [h[0]-a[0], a[1]-h[1],
                 (h[0]+a[0]+h[1]+a[1])/2, a[2]-h[2], (h[3]+a[3])/2,
                 qh[0]-qa[0], qh[0]+qa[0], qh[1]-qa[1], qh[1]+qa[1]])))
@@ -151,7 +180,7 @@ def add_advanced(data, teams, players):
                     leader = max(qbs, key=lambda q:q['attempts'])
                     reference[team] = leader['player_id'], leader['player_display_name']
                     for q in qbs:
-                        if np.isfinite(q['passing_epa']) and q['attempts']+q['sacks_suffered']>0:
-                            qb_history[q['player_id']].append({'season':season,'epa':q['passing_epa'],
-                                'dropbacks':q['attempts']+q['sacks_suffered'],'attempts':q['attempts'],'cpoe':q['passing_cpoe']})
+                        qb_history.add(q)
+    if capture is not None:
+        capture.update({'qb_history': qb_history, 'reference': dict(reference)})
     return pd.DataFrame(rows)

@@ -32,7 +32,7 @@ class Model:
         root = Path(__file__).parent
         state = {'margin_features':self.margin_features,'total_features':self.total_features,
                  'source':{name:hashlib.sha256((root/name).read_bytes()).hexdigest()
-                           for name in ('model.py','features.py','advanced.py')},
+                           for name in ('model.py','features.py','advanced.py','qb_news.py')},
                  'calibration_year':self.calibration_year,'train_through':self.train_through}
         for target in ('margin','total'):
             pipe = getattr(self,target)

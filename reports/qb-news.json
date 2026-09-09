@@ -1,0 +1,125 @@
+{
+  "question": "Sustituir el QB de referencia por el titular real, ¿baja el error del total?",
+  "oracle": "El titular real del partido predicho no está disponible al emitir; acota el efecto máximo.",
+  "variants": {
+    "reference": "QB con más intentos en el último juego observado del equipo (motor actual)",
+    "news_at_serving": "Regresión entrenada con la referencia; al predecir se usa el historial del titular real",
+    "news_at_training": "Regresión entrenada y evaluada con el historial del titular real"
+  },
+  "seasons": {
+    "2020": {
+      "reference": 10.7515,
+      "news_at_serving": 10.7435,
+      "news_at_training": 10.7501
+    },
+    "2021": {
+      "reference": 11.0429,
+      "news_at_serving": 10.9871,
+      "news_at_training": 10.9734
+    },
+    "2022": {
+      "reference": 10.7168,
+      "news_at_serving": 10.7369,
+      "news_at_training": 10.7346
+    },
+    "2023": {
+      "reference": 10.3584,
+      "news_at_serving": 10.3624,
+      "news_at_training": 10.3602
+    },
+    "2024": {
+      "reference": 9.844,
+      "news_at_serving": 9.7937,
+      "news_at_training": 9.8023
+    },
+    "2025": {
+      "reference": 10.4397,
+      "news_at_serving": 10.5209,
+      "news_at_training": 10.5343
+    }
+  },
+  "total_mae_points": {
+    "games": 1693,
+    "reference": 10.5233,
+    "news_at_serving": 10.5219,
+    "news_at_training": 10.5236
+  },
+  "starter_differs_from_reference": {
+    "rate": 0.2499,
+    "rate_weeks_1_2": 0.375,
+    "rate_week_3_onward": 0.2338,
+    "games_with_change": {
+      "games": 423,
+      "reference": 10.1213,
+      "news_at_serving": 10.1157,
+      "news_at_training": 10.1121
+    },
+    "games_without_change": {
+      "games": 1270,
+      "reference": 10.6572,
+      "news_at_serving": 10.6572,
+      "news_at_training": 10.6606
+    }
+  },
+  "season_start": {
+    "weeks_1_2": {
+      "games": 192,
+      "reference": 10.5496,
+      "news_at_serving": 10.5568,
+      "news_at_training": 10.5442
+    },
+    "weeks_1_2_with_change": {
+      "games": 72,
+      "reference": 8.8036,
+      "news_at_serving": 8.8227,
+      "news_at_training": 8.7904
+    },
+    "week_3_onward": {
+      "games": 1501,
+      "reference": 10.5199,
+      "news_at_serving": 10.5174,
+      "news_at_training": 10.5209
+    }
+  },
+  "uncertainty": {
+    "news_at_serving": {
+      "total_mae_improvement_points": 0.0014,
+      "interval_95": [
+        -0.0288,
+        0.0305
+      ],
+      "note": "Positivo favorece al titular real; un intervalo que cruza cero no distingue del azar."
+    },
+    "news_at_training": {
+      "total_mae_improvement_points": -0.0003,
+      "interval_95": [
+        -0.0316,
+        0.0311
+      ],
+      "note": "Positivo favorece al titular real; un intervalo que cruza cero no distingue del azar."
+    }
+  },
+  "uncertainty_weeks_1_2": {
+    "news_at_serving": {
+      "total_mae_improvement_points": -0.0071,
+      "interval_95": [
+        -0.1017,
+        0.0759
+      ],
+      "note": "Positivo favorece al titular real; un intervalo que cruza cero no distingue del azar."
+    },
+    "news_at_training": {
+      "total_mae_improvement_points": 0.0054,
+      "interval_95": [
+        -0.095,
+        0.0975
+      ],
+      "note": "Positivo favorece al titular real; un intervalo que cruza cero no distingue del azar."
+    }
+  },
+  "limits": [
+    "Oráculo retrospectivo: una noticia acierta menos que el resultado observado.",
+    "Solo evalúa el total; margen y probabilidad no usan variables de QB.",
+    "Mismos hiperparámetros fijos; no se optimiza nada con este experimento."
+  ]
+}

@@ -1,0 +1,596 @@
+{
+  "kind": "simulacion_sobre_emision_archivada",
+  "not_an_emission": "No sustituye la emisión publicada ni genera historial.",
+  "published_emission": {
+    "generated_at": "2026-09-09T05:05:24.992007+00:00",
+    "model_version": "0.3.0-191ba60a9ae3",
+    "context_observed_at": "2026-09-09T05:05:24.949717+00:00"
+  },
+  "engine_now": {
+    "model_version": "e3ffc3ff5889",
+    "reproduces_published_projection": true
+  },
+  "summary": {
+    "status": "collected",
+    "basis": "QB probable de hoy (depth chart y bajas), no titular confirmado",
+    "measured_effect": "Sustituir la referencia por el titular real habría movido el error medio del total 0.0014 puntos en 2020-2025, con intervalo 95% [-0.0288, 0.0305]: no se distingue del azar. Ver reports/qb-news.json.",
+    "games_adjusted": 9,
+    "games_without_change": 7,
+    "sides_substituted": 12,
+    "games_without_context": 0,
+    "games_not_reproducible": 0,
+    "source": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv",
+      "sha256": "a33998d3981bda4f49f40390c5c0fa30036112ee1ea5de19ed4609e2ad3be3e2",
+      "fetched_at": "2026-09-09T15:39:36.296384+00:00",
+      "quarterbacks": 1007
+    }
+  },
+  "games": [
+    {
+      "game": "NE @ SEA",
+      "status": "sin_cambio",
+      "total_points": {
+        "before": 44.3,
+        "after": 44.3
+      },
+      "change_points": 0.0,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior",
+        "after": "Inicio de temporada: peso importante del año anterior"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Sam Darnold",
+          "news_projected": "Sam Darnold",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.04271,
+            "after": 0.04271
+          }
+        },
+        "away": {
+          "model_reference": "Drake Maye",
+          "news_projected": "Drake Maye",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.078851,
+            "after": 0.078851
+          }
+        }
+      }
+    },
+    {
+      "game": "SF @ LA",
+      "status": "sin_cambio",
+      "total_points": {
+        "before": 50.4,
+        "after": 50.4
+      },
+      "change_points": 0.0,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior",
+        "after": "Inicio de temporada: peso importante del año anterior"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Matthew Stafford",
+          "news_projected": "Matthew Stafford",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.165307,
+            "after": 0.165307
+          }
+        },
+        "away": {
+          "model_reference": "Brock Purdy",
+          "news_projected": "Brock Purdy",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.117497,
+            "after": 0.117497
+          }
+        }
+      }
+    },
+    {
+      "game": "ARI @ LAC",
+      "status": "sin_cambio",
+      "total_points": {
+        "before": 44.4,
+        "after": 44.4
+      },
+      "change_points": 0.0,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior",
+        "after": "Inicio de temporada: peso importante del año anterior"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Justin Herbert",
+          "news_projected": "Justin Herbert",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.007784,
+            "after": 0.007784
+          }
+        },
+        "away": {
+          "model_reference": "Jacoby Brissett",
+          "news_projected": "Jacoby Brissett",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": -0.003351,
+            "after": -0.003351
+          }
+        }
+      }
+    },
+    {
+      "game": "ATL @ PIT",
+      "status": "aplicado",
+      "total_points": {
+        "before": 42.9,
+        "after": 43.2
+      },
+      "change_points": 0.3,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior; ATL: QB probable distinto al usado por el modelo",
+        "after": "Inicio de temporada: peso importante del año anterior; ATL: total ajustado al QB probable (Tua Tagovailoa)"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Aaron Rodgers",
+          "news_projected": "Aaron Rodgers",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": -0.025748,
+            "after": -0.025748
+          }
+        },
+        "away": {
+          "model_reference": "Kirk Cousins",
+          "news_projected": "Tua Tagovailoa",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": -0.014309,
+            "after": 0.034184
+          }
+        }
+      }
+    },
+    {
+      "game": "BAL @ IND",
+      "status": "aplicado",
+      "total_points": {
+        "before": 46.7,
+        "after": 48.3
+      },
+      "change_points": 1.6,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior; IND: QB probable distinto al usado por el modelo",
+        "after": "Inicio de temporada: peso importante del año anterior; IND: total ajustado al QB probable (Daniel Jones)"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Riley Leonard",
+          "news_projected": "Daniel Jones",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": -0.03058,
+            "after": 0.090725
+          }
+        },
+        "away": {
+          "model_reference": "Lamar Jackson",
+          "news_projected": "Lamar Jackson",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.018102,
+            "after": 0.018102
+          }
+        }
+      }
+    },
+    {
+      "game": "BUF @ HOU",
+      "status": "sin_cambio",
+      "total_points": {
+        "before": 46.7,
+        "after": 46.7
+      },
+      "change_points": 0.0,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior",
+        "after": "Inicio de temporada: peso importante del año anterior"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "C.J. Stroud",
+          "news_projected": "C.J. Stroud",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.048202,
+            "after": 0.048202
+          }
+        },
+        "away": {
+          "model_reference": "Josh Allen",
+          "news_projected": "Josh Allen",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.093616,
+            "after": 0.093616
+          }
+        }
+      }
+    },
+    {
+      "game": "CHI @ CAR",
+      "status": "sin_cambio",
+      "total_points": {
+        "before": 45.7,
+        "after": 45.7
+      },
+      "change_points": 0.0,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior",
+        "after": "Inicio de temporada: peso importante del año anterior"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Bryce Young",
+          "news_projected": "Bryce Young",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": -0.009096,
+            "after": -0.009096
+          }
+        },
+        "away": {
+          "model_reference": "Caleb Williams",
+          "news_projected": "Caleb Williams",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.062564,
+            "after": 0.062564
+          }
+        }
+      }
+    },
+    {
+      "game": "CLE @ JAX",
+      "status": "aplicado",
+      "total_points": {
+        "before": 42.2,
+        "after": 42.4
+      },
+      "change_points": 0.2,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior; CLE: QB probable distinto al usado por el modelo",
+        "after": "Inicio de temporada: peso importante del año anterior; CLE: historial del QB probable hasta 2024; CLE: total ajustado al QB probable (Deshaun Watson)"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Trevor Lawrence",
+          "news_projected": "Trevor Lawrence",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.062463,
+            "after": 0.062463
+          }
+        },
+        "away": {
+          "model_reference": "Shedeur Sanders",
+          "news_projected": "Deshaun Watson",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": -0.136322,
+            "after": -0.115075
+          }
+        }
+      }
+    },
+    {
+      "game": "DAL @ NYG",
+      "status": "aplicado",
+      "total_points": {
+        "before": 50.3,
+        "after": 51.0
+      },
+      "change_points": 0.7,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior; DAL: QB probable distinto al usado por el modelo",
+        "after": "Inicio de temporada: peso importante del año anterior; DAL: total ajustado al QB probable (Dak Prescott)"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Jaxson Dart",
+          "news_projected": "Jaxson Dart",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.005957,
+            "after": 0.005957
+          }
+        },
+        "away": {
+          "model_reference": "Joe Milton III",
+          "news_projected": "Dak Prescott",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": 0.049122,
+            "after": 0.111627
+          }
+        }
+      }
+    },
+    {
+      "game": "GB @ MIN",
+      "status": "aplicado",
+      "total_points": {
+        "before": 41.8,
+        "after": 43.7
+      },
+      "change_points": 1.9,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior; MIN: QB probable distinto al usado por el modelo",
+        "after": "Inicio de temporada: peso importante del año anterior; MIN: total ajustado al QB probable (Kyler Murray)"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "J.J. McCarthy",
+          "news_projected": "Kyler Murray",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": -0.115119,
+            "after": 0.030432
+          }
+        },
+        "away": {
+          "model_reference": "Jordan Love",
+          "news_projected": "Jordan Love",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.158072,
+            "after": 0.158072
+          }
+        }
+      }
+    },
+    {
+      "game": "MIA @ LV",
+      "status": "aplicado",
+      "total_points": {
+        "before": 42.3,
+        "after": 42.6
+      },
+      "change_points": 0.3,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior; LV: QB probable distinto al usado por el modelo; MIA: QB probable distinto al usado por el modelo",
+        "after": "Inicio de temporada: peso importante del año anterior; LV: total ajustado al QB probable (Kirk Cousins); MIA: total ajustado al QB probable (Malik Willis)"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Aidan O'Connell",
+          "news_projected": "Kirk Cousins",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": 0.029505,
+            "after": -0.014309
+          }
+        },
+        "away": {
+          "model_reference": "Quinn Ewers",
+          "news_projected": "Malik Willis",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": -0.007737,
+            "after": 0.077653
+          }
+        }
+      }
+    },
+    {
+      "game": "NO @ DET",
+      "status": "sin_cambio",
+      "total_points": {
+        "before": 46.2,
+        "after": 46.2
+      },
+      "change_points": 0.0,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior",
+        "after": "Inicio de temporada: peso importante del año anterior"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Jared Goff",
+          "news_projected": "Jared Goff",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.084638,
+            "after": 0.084638
+          }
+        },
+        "away": {
+          "model_reference": "Tyler Shough",
+          "news_projected": "Tyler Shough",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.003692,
+            "after": 0.003692
+          }
+        }
+      }
+    },
+    {
+      "game": "NYJ @ TEN",
+      "status": "aplicado",
+      "total_points": {
+        "before": 42.1,
+        "after": 42.8
+      },
+      "change_points": 0.7,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior; TEN: QB probable distinto al usado por el modelo; NYJ: QB probable distinto al usado por el modelo",
+        "after": "Inicio de temporada: peso importante del año anterior; TEN: total ajustado al QB probable (Cam Ward); NYJ: total ajustado al QB probable (Geno Smith)"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Brandon Allen",
+          "news_projected": "Cam Ward",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": -0.096998,
+            "after": -0.100392
+          }
+        },
+        "away": {
+          "model_reference": "Brady Cook",
+          "news_projected": "Geno Smith",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": -0.18372,
+            "after": -0.131691
+          }
+        }
+      }
+    },
+    {
+      "game": "TB @ CIN",
+      "status": "sin_cambio",
+      "total_points": {
+        "before": 48.5,
+        "after": 48.5
+      },
+      "change_points": 0.0,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior",
+        "after": "Inicio de temporada: peso importante del año anterior"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Joe Burrow",
+          "news_projected": "Joe Burrow",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.09775,
+            "after": 0.09775
+          }
+        },
+        "away": {
+          "model_reference": "Baker Mayfield",
+          "news_projected": "Baker Mayfield",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": -0.055612,
+            "after": -0.055612
+          }
+        }
+      }
+    },
+    {
+      "game": "WAS @ PHI",
+      "status": "aplicado",
+      "total_points": {
+        "before": 43.4,
+        "after": 43.5
+      },
+      "change_points": 0.1,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior; WAS: QB probable distinto al usado por el modelo",
+        "after": "Inicio de temporada: peso importante del año anterior; WAS: total ajustado al QB probable (Jayden Daniels)"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Jalen Hurts",
+          "news_projected": "Jalen Hurts",
+          "substituted": false,
+          "reason": "El QB probable ya era la referencia del modelo",
+          "qb_epa_per_dropback": {
+            "before": 0.062214,
+            "after": 0.062214
+          }
+        },
+        "away": {
+          "model_reference": "Josh Johnson",
+          "news_projected": "Jayden Daniels",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": 0.015061,
+            "after": 0.032771
+          }
+        }
+      }
+    },
+    {
+      "game": "DEN @ KC",
+      "status": "aplicado",
+      "total_points": {
+        "before": 38.9,
+        "after": 42.7
+      },
+      "change_points": 3.8,
+      "data_warning": {
+        "before": "Inicio de temporada: peso importante del año anterior; KC: QB probable distinto al usado por el modelo; DEN: QB probable distinto al usado por el modelo",
+        "after": "Inicio de temporada: peso importante del año anterior; KC: total ajustado al QB probable (Patrick Mahomes); DEN: total ajustado al QB probable (Bo Nix)"
+      },
+      "quarterbacks": {
+        "home": {
+          "model_reference": "Chris Oladokun",
+          "news_projected": "Patrick Mahomes",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": -0.114537,
+            "after": 0.108361
+          }
+        },
+        "away": {
+          "model_reference": "Jarrett Stidham",
+          "news_projected": "Bo Nix",
+          "substituted": true,
+          "reason": null,
+          "qb_epa_per_dropback": {
+            "before": -0.079826,
+            "after": 0.067354
+          }
+        }
+      }
+    }
+  ],
+  "total_points_change": {
+    "games": 16,
+    "max": 3.8,
+    "mean_absolute": 0.6
+  }
+}

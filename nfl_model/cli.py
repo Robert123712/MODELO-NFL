@@ -12,6 +12,7 @@ from .features import build
 from .model import fit
 from .advanced import download_advanced, add_advanced
 from .live_context import collect_context, attach_context
+from .qb_news import apply as apply_qb_news
 
 
 def write_json(path, value):
@@ -42,9 +43,10 @@ def main():
     season = local.year - (1 if local.month < 3 else 0)
     config_path = args.root / 'config/model.json'
     selected = json.loads(config_path.read_text()) if config_path.exists() and not args.baseline else {}
+    capture = {}
     if selected:
         teams, players, sources = download_advanced(args.root, season)
-        data = add_advanced(data, teams, players)
+        data = add_advanced(data, teams, players, capture=capture)
         write_json(args.root / 'data/advanced-sources.json', sources)
         source['advanced'] = {'team_rows':len(teams), 'qb_rows':len(players),
                               'manifest':'data/advanced-sources.json'}
@@ -64,6 +66,8 @@ def main():
             stamp_context = pd.Timestamp(context['observed_at']).strftime('%Y%m%dT%H%M%S%fZ')
             write_json(args.root / f'data/context/{stamp_context}.json', context)
             output = attach_context(output, context)
+            # El ajuste por noticias corre después del contexto: sustituye entradas, no pesos.
+            output['qb_news_adjustment'] = apply_qb_news(output, model, capture, args.root, season)
         # Sello de emisión real, después de preparar todos los datos. No simular publicación pasada.
         issued_at = pd.Timestamp.now(tz='UTC')
         output['generated_at'] = issued_at.isoformat()
