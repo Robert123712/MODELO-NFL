@@ -7,7 +7,8 @@ pandas y scikit-learn; los datos gratuitos provienen de nflverse.
 ## Estado
 
 Versión **0.3.0 experimental**, ejecutada con datos reales el 9 de septiembre UTC
-(8 de septiembre en Chihuahua) de 2026. Generó 16 proyecciones próximas.
+(8 de septiembre en Chihuahua) de 2026. Generó 16 proyecciones próximas. La
+emisión vigente es la de las 16:10 UTC, la primera con el ajuste por QB probable.
 Tiene una pantalla básica independiente, con las proyecciones de la última
 emisión publicada. Claude conectó el snapshot NFL con Edgebook de producción. El
 repositorio contiene el motor, la pantalla, un exportador JSON, historial de
@@ -30,11 +31,11 @@ error del total 0.0014 puntos, con intervalo del 95% [-0.0288, 0.0305]. **No se
 distingue del azar**: la sustitución se hace porque la entrada anterior era falsa,
 no porque mejore la precisión demostrada. Detalle en `reports/qb-news.json`.
 
-Sobre la emisión publicada del 9 de septiembre el ajuste habría movido 12 QB en 9
-de 16 partidos, con cambio medio de 0.6 puntos de total y máximo de 3.8 en
-Denver–Kansas City, donde el modelo cargaba a Chris Oladokun y Jarrett Stidham en
-lugar de Patrick Mahomes y Bo Nix. Ese repaso está en `reports/qb-news-preview.json`
-y **no reemplaza la emisión**: se aplica al generar la siguiente.
+La emisión de las 16:10 UTC sustituyó 12 quarterbacks en 9 de 16 partidos, con
+cambio medio de 0.6 puntos de total y máximo de 3.8 en Denver–Kansas City, donde
+el modelo cargaba a Chris Oladokun y Jarrett Stidham en lugar de Patrick Mahomes
+y Bo Nix. `reports/qb-news-preview.json` conserva el repaso hecho antes de esa
+emisión, sobre la de las 05:05 UTC que todavía no llevaba el ajuste.
 
 El contrato de producción se documenta en [docs/CONTRACT.md](docs/CONTRACT.md).
 El formato sigue siendo **1.1**. La versión del motor incluye una huella para no
@@ -77,10 +78,12 @@ modelo-nfl run --as-of 2026-09-09T00:00:00Z --days 8
 ```
 
 `run` descarga datos, reconstruye las estadísticas previas a cada semana, entrena,
-calibra y exporta `data/edgebook-latest.json`. También conserva cada emisión en
+calibra, ajusta el QB probable y exporta `data/edgebook-latest.json`. También conserva cada emisión en
 `data/history/` y el modelo en `artifacts/model.joblib`. No cargar archivos joblib
 de orígenes no confiables. GitHub Actions permite ejecutar manualmente y descargar
-el resultado como artefacto; no hay actualización periódica configurada.
+el resultado como artefacto; no hay actualización periódica configurada. Esa
+ejecución manual acepta la opción `publish`, que además comitea la emisión a la
+rama que corre; sin ella solo deja el artefacto.
 
 ## Qué aprende
 

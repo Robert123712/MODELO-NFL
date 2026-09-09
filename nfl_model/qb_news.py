@@ -121,6 +121,9 @@ def note_warnings(game, notes, drop=()):
 
 
 def adjust_game(game, model, history, reference, index, season):
+    # Reprocesar una emisión ya ajustada no vuelve a sustituir: sus entradas ya son las nuevas.
+    if (game.get('qb_adjustment') or {}).get('status') == 'aplicado':
+        return {'status': 'ya_ajustada', 'reason': 'La emisión ya trae el ajuste por QB probable'}
     context = game.get('pregame_context') or {}
     if context.get('status') != 'available':
         return {'status': 'sin_contexto', 'reason': context.get('reason') or context.get('status')}

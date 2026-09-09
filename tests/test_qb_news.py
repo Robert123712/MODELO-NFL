@@ -93,6 +93,17 @@ def test_projected_quarterback_moves_only_the_total():
     assert report['teams']['home']['substituted'] and not report['teams']['away']['substituted']
 
 
+def test_an_already_adjusted_emission_is_not_adjusted_twice():
+    state, model = history(), trained_model()
+    game = emission(model, state, None)
+    reference = {'KC': ('REF', 'Suplente Referencia'), 'DEN': ('RIVAL', 'Rival Quarterback')}
+    index = player_index(state)
+    game['qb_adjustment'] = adjust_game(game, model, state, reference, index, SEASON)
+    adjusted = dict(game['projection'])
+    assert adjust_game(game, model, state, reference, index, SEASON)['status'] == 'ya_ajustada'
+    assert game['projection'] == adjusted
+
+
 def test_unknown_projected_quarterback_leaves_the_emission_intact():
     before, _ = run(projected={})
     after, report = run(projected={'espn_player_id': '404', 'name': 'Nadie Registrado'})
