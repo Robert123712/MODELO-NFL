@@ -6,7 +6,7 @@ pandas y scikit-learn; los datos gratuitos provienen de nflverse.
 
 ## Estado
 
-Versión **0.1.0 experimental**, ejecutada con datos reales el 9 de septiembre UTC
+Versión **0.2.0 experimental**, ejecutada con datos reales el 9 de septiembre UTC
 (8 de septiembre en Chihuahua) de 2026. Generó 16 proyecciones próximas.
 Tiene una pantalla básica independiente, con las proyecciones de la última
 emisión publicada. No está conectada todavía al Edgebook de producción. El
@@ -60,6 +60,13 @@ Dos regresiones Ridge con estandarización estiman margen local y total. Las
 entradas son puntos anotados/permitidos previos, forma reciente, rating Elo que
 considera rivales, localía, descanso y avance de temporada. Los promedios usan
 hasta 16 juegos, suavizado hacia un prior y menos peso para la temporada anterior.
+La v0.2 añade para el total EPA ofensivo/defensivo por jugada, frecuencia de
+pérdidas de balón, volumen de jugadas, EPA por dropback y CPOE del quarterback
+histórico de referencia. El QB de referencia es el que tuvo más intentos en el
+último juego observado del equipo; **no confirma el titular del siguiente juego**.
+No se usan QB retrospectivos del partido que se intenta predecir. No se incorpora
+ninguna estadística nueva hasta terminar de emitir las features de esa semana.
+
 Las contribuciones por variable explican el margen y el total respecto al promedio
 de entrenamiento; no son explicaciones causales.
 
@@ -74,6 +81,13 @@ se estiman probabilidad de victoria y margen medio, magnitudes distintas.
 
 ## Evaluación temporal 2020–2025
 
+Se compararon tres conjuntos de variables (base, EPA, EPA+QB) solamente en
+2017–2019 para elegir cada regresión. Ganó **base para margen** y **EPA+QB para
+total**. Ganador y spread conservan sus variables originales. Después se evaluó
+la combinación elegida en 2020–2025 sin modificar candidatos. Este historial de
+la versión base ya se había examinado: es confirmación retrospectiva, no una
+prueba prospectiva ciega. Detalle completo: `reports/refinement.json`.
+
 1,693 partidos, incluidos playoffs. Cinco empates excluidos solamente de las
 métricas binarias. Cada temporada se evalúa con entrenamiento y calibración
 anteriores; nunca se mezclan aleatoriamente partidos futuros con pasados.
@@ -84,12 +98,13 @@ Los hiperparámetros están fijados y este backtest no los optimiza.
 | Acierto del ganador (1,688 juegos sin empate) | 65.70% | Elo 62.03%; siempre local 53.91% |
 | Brier (menor es mejor) | 0.2215 | Elo 0.2282 |
 | Error absoluto medio del margen | 10.10 puntos | — |
-| Error absoluto medio del total | 10.66 puntos | Media histórica 10.92 |
+| Error absoluto medio del total | 10.54 puntos | v0.1: 10.66; media histórica 10.92 |
 | Cobertura intervalo de margen al 80% | 79.56% | Objetivo nominal 80% |
-| Cobertura intervalo de total al 80% | 80.33% | Objetivo nominal 80% |
+| Cobertura intervalo de total al 80% | 80.92% | Objetivo nominal 80% |
 
-Los resultados por temporada, grupos de calibración y cada predicción están en
-`reports/`. La mejora del total frente a su referencia es pequeña. Las
+Los resultados originales v0.1 se conservan en `reports/backtest.json`; los nuevos
+en `reports/refinement.json` y `reports/refined-predictions.csv`. La mejora del
+total es pequeña (0.12 puntos de error medio, alrededor de 1.2%). Las
 probabilidades extremas tienen muestras pequeñas y algunas bandas muestran mala
 calibración: no se presenta el porcentaje como certeza ni como rentabilidad.
 
@@ -110,11 +125,21 @@ Se guardan URL, hora de descarga y SHA-256 junto a las predicciones; el CSV crud
 se conserva localmente en `data/raw/`, fuera de Git. Los IDs ESPN y nflverse
 facilitan el futuro cruce con Edgebook.
 
-Esta versión usa estadísticas de **marcadores de equipo**, no eficiencia EPA por
-jugada. No incorpora todavía rendimiento individual del quarterback, lesiones,
-alineaciones, turnovers por jugada ni pronóstico meteorológico. Lo declara en
-cada proyección. Es una base medida para añadir esas variables y comprobar su
-aporte, no una réplica completa de todas las variables sugeridas en Instagram.
+La v0.2 combina marcadores con estadísticas semanales de equipo y QB calculadas
+por nflverse a partir de jugadas. EPA se aproxima por jugada oficial (intentos +
+sacks + carreras), sin filtrar kneel-downs ni garbage time. No hay ajuste explícito
+de EPA por rival: el rating Elo previo sigue aportando una señal de fuerza relativa.
+No incorpora todavía lesiones, alineaciones, cambios de titular confirmados,
+traspasos de offseason ni pronóstico meteorológico. El historial individual del
+QB se conserva por ID, pero su referencia de equipo requiere cautela cuando cambia
+la plantilla. Las ausencias se declaran en cada proyección.
+
+`scripts/compare_models.py` reproduce selección, comparación e incertidumbre
+pareada por semana. La selección se guarda en `config/model.json` y es la que
+consume `modelo-nfl run`. `--baseline` permite ejecutar las variables v0.1. La
+primera descarga avanzada incluye 2004–2026; temporadas anteriores se cachean con
+SHA-256 verificado y la temporada actual se refresca. Las estadísticas históricas
+pueden estar corregidas retrospectivamente; se guardan las fuentes utilizadas.
 
 Los resultados del mismo día se excluyen para evitar marcadores parciales. Todos
 los partidos de una semana se calculan antes de incorporar resultados de esa
@@ -128,6 +153,8 @@ Fuentes:
 - [nflverse](https://nflverse.nflverse.com/)
 - [Calendario y resultados](https://github.com/nflverse/nfldata/blob/master/data/games.csv)
 - [Diccionario del calendario](https://nflreadr.nflverse.com/articles/dictionary_schedules.html)
+- [Diccionario de estadísticas de equipo](https://nflreadr.nflverse.com/articles/dictionary_team_stats.html)
+- [Estadísticas individuales](https://nflreadr.nflverse.com/reference/load_player_stats)
 - [Disponibilidad de datos: la fuente de lesiones dejó de funcionar tras 2024](https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html)
 - [Calibración en scikit-learn](https://scikit-learn.org/stable/modules/calibration.html)
 

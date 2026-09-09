@@ -33,7 +33,12 @@ def snapshot(data, model, as_of, source, days=8):
         for (_, row), margin, total, probability in zip(pending.iterrows(), margins, totals, probabilities):
             side = "home" if probability >= .5 else "away"
             home_score, away_score = round(float((total + margin) / 2), 1), round(float((total - margin) / 2), 1)
-            warnings = ["Sin ajuste de lesiones, QB ni clima"]
+            advanced = any(f.startswith('qb_') for f in model.total_features + model.margin_features)
+            warnings = ["Sin ajuste de lesiones ni clima; titular QB no confirmado" if advanced else "Sin ajuste de lesiones, QB ni clima"]
+            if advanced:
+                warnings.append("QB de referencia: último con más intentos observados; no confirma fichajes ni titularidad")
+                if row.get('advanced_history_min', 0) < 4:
+                    warnings.append("Historial avanzado limitado")
             if row.week <= 3:
                 warnings.append("Inicio de temporada: peso importante del año anterior")
             if row.history_games_min < 8:
@@ -52,12 +57,14 @@ def snapshot(data, model, as_of, source, days=8):
                     "intervals_80": {"home_margin": [round(float(margin-model.radius_margin), 1), round(float(margin+model.radius_margin), 1)],
                                      "total": [round(max(0, float(total-model.radius_total)), 1), round(float(total+model.radius_total), 1)]},
                     "explanations": {target: model.explain(row, target) for target in ("margin", "total")},
-                    "data_warning": warnings[0], "warnings": warnings}
+                    "data_warning": warnings[0], "warnings": warnings,
+                    "quarterback_reference": {side: row.get(side+'_reference_qb') for side in ('home','away')} if advanced else None}
             games.append(game)
     return {"schema_version": "1.1", "sport": "NFL", "model_version": __version__,
             "generated_at": datetime.now(timezone.utc).isoformat(), "as_of": as_of.isoformat(),
             "date_local": str(as_of.tz_convert("America/Chihuahua").date()), "games": games,
             "skipped_without_id": 0, "odds_used": False, "source": source,
             "training": {"regression_through_season": model.train_through, "calibration_season": model.calibration_year,
-                         "regression_games": model.train_games},
+                         "regression_games": model.train_games, "margin_features":model.margin_features,
+                         "total_features":model.total_features},
             "status": "predictions_available" if games else "no_upcoming_games_in_source_window"}

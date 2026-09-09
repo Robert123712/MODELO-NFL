@@ -30,13 +30,13 @@ def metrics(frame):
             "calibration_bins": calibration}
 
 
-def backtest(data, start=2020, end=2025):
+def backtest(data, start=2020, end=2025, margin_features=None, total_features=None):
     folds, results = [], {}
     for year in range(start, end + 1):
         part = data[(data.season == year) & data.margin.notna()].copy()
         if part.empty:
             continue
-        model = fit(data, year)
+        model = fit(data, year, margin_features, total_features)
         part["pred_margin"], part["pred_total"], part["pred_probability"] = model.predict(part)
         part["radius_margin"], part["radius_total"] = model.radius_margin, model.radius_total
         part["baseline_total"] = model.baseline_total
@@ -50,6 +50,6 @@ def backtest(data, start=2020, end=2025):
               "odds_used": False, "per_season": results, "aggregate": metrics(combined),
               "limits": ["Backtest retrospectivo con resultados corregidos; no replay de snapshots originales.",
                          "Probabilidad condicionada a que no haya empate.",
-                         "No incluye lesiones, cambios de QB ni clima.",
+                         "No incluye lesiones ni clima; QB histórico de referencia, no titular confirmado.",
                          "Intervalos empíricos de calibración: cobertura futura no garantizada."]}
     return report, combined

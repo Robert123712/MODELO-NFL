@@ -16,13 +16,15 @@ function renderGame(game) {
   const state = start > new Date() ? 'Proyección previa' : 'Emisión previa · partido iniciado';
   const team = side => `<div class="team"><span class="code">${escape(game[side].code)}</span><span class="team-name">${escape(game[side].name)}</span><span class="score">${format.format(game.projection[`${side}_score`])}</span></div>`;
   const factors = (game.explanations?.margin?.top_factors ?? []).map(f => escape(f.label)).join(' · ');
+  const totalFactors = (game.explanations?.total?.top_factors ?? []).map(f => escape(f.label)).join(' · ');
+  const qb = game.quarterback_reference;
   const interval = game.intervals_80?.total;
   return `<article class="game" aria-label="${escape(game.away.name)} contra ${escape(game.home.name)}">
     <div class="game-top"><span class="status">${state}</span><time datetime="${escape(game.starts_at)}">${clock(start)}</time></div>
     <div class="teams">${team('away')}${team('home')}<p class="score-label">MARCADOR PROYECTADO · VISITANTE / LOCAL</p></div>
     <div class="prediction"><div><span class="winner-label">GANADOR ESTIMADO</span><span class="winner-name">${escape(winner.name)}</span></div><div class="prob">${prob}%<small>probabilidad</small></div></div>
     <div class="markets"><div class="market"><span class="market-label">Spread propio</span><span class="market-value">${spread}</span></div><div class="market"><span class="market-label">Total de puntos</span><span class="market-value">${format.format(game.total_points)}</span></div></div>
-    <details><summary>Ver contexto del modelo</summary><p class="details-copy">${escape((game.warnings ?? []).join('. '))}.</p>${factors ? `<p class="details-copy">Factores principales del margen: ${factors}.</p>` : ''}${interval ? `<p class="details-copy">Intervalo estimado del total al 80%: ${format.format(interval[0])}–${format.format(interval[1])} puntos. La cobertura futura no está garantizada.</p>` : ''}</details>
+    <details><summary>Ver contexto del modelo</summary><p class="details-copy">${escape((game.warnings ?? []).join('. '))}.</p>${qb ? `<p class="details-copy">QB históricos de referencia: ${escape(qb.away ?? 'Sin datos')} / ${escape(qb.home ?? 'Sin datos')}. No son titulares confirmados.</p>` : ''}${factors ? `<p class="details-copy">Factores principales del margen: ${factors}.</p>` : ''}${totalFactors ? `<p class="details-copy">Factores principales del total: ${totalFactors}.</p>` : ''}${interval ? `<p class="details-copy">Intervalo estimado del total al 80%: ${format.format(interval[0])}–${format.format(interval[1])} puntos. La cobertura futura no está garantizada.</p>` : ''}</details>
   </article>`;
 }
 

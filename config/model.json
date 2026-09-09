@@ -1,0 +1,42 @@
+{
+  "selection_period": [
+    2017,
+    2019
+  ],
+  "criterion": "MAE por cabeza; candidatos fijados antes de evaluar 2020–2025",
+  "margin_candidate": "baseline",
+  "total_candidate": "epa_qb",
+  "margin_features": [
+    "elo_diff",
+    "offense_diff",
+    "defense_diff",
+    "form_diff",
+    "scoring_level",
+    "recent_total",
+    "home_field",
+    "rest_diff",
+    "short_rest_diff",
+    "season_progress"
+  ],
+  "total_features": [
+    "elo_diff",
+    "offense_diff",
+    "defense_diff",
+    "form_diff",
+    "scoring_level",
+    "recent_total",
+    "home_field",
+    "rest_diff",
+    "short_rest_diff",
+    "season_progress",
+    "epa_off_diff",
+    "epa_def_diff",
+    "epa_level",
+    "turnover_diff",
+    "pace_level",
+    "qb_epa_diff",
+    "qb_epa_sum",
+    "qb_cpoe_diff",
+    "qb_cpoe_sum"
+  ]
+}
