@@ -1,0 +1,1720 @@
+{
+  "schema_version": "1.1",
+  "sport": "NFL",
+  "model_version": "0.1.0",
+  "generated_at": "2026-09-09T03:15:02.730709+00:00",
+  "as_of": "2026-09-09T03:15:01.628852+00:00",
+  "date_local": "2026-09-08",
+  "games": [
+    {
+      "league_game_id": "2026_01_NE_SEA",
+      "espn_game_id": "401872656",
+      "starts_at": "2026-09-10T00:20:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Seattle Seahawks",
+        "code": "SEA"
+      },
+      "away": {
+        "name": "New England Patriots",
+        "code": "NE"
+      },
+      "projection": {
+        "home_score": 24.2,
+        "away_score": 20.1
+      },
+      "win_probability": {
+        "home": 0.609008,
+        "away": 0.390992
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "SEA ML"
+      },
+      "spread": {
+        "home": -4.1,
+        "away": 4.1,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 44.3,
+      "intervals_80": {
+        "home_margin": [
+          -12.5,
+          20.7
+        ],
+        "total": [
+          26.8,
+          61.9
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 1.048
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": 1.008
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.751
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": -0.67
+            }
+          ],
+          "other_factors_points": -0.2572081994496047,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": -1.073
+            },
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 0.287
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.196
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            }
+          ],
+          "other_factors_points": -0.009142574367689504,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_SF_LA",
+      "espn_game_id": "401872657",
+      "starts_at": "2026-09-11T00:35:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Los Angeles Rams",
+        "code": "LA"
+      },
+      "away": {
+        "name": "San Francisco 49ers",
+        "code": "SF"
+      },
+      "projection": {
+        "home_score": 26.7,
+        "away_score": 23.1
+      },
+      "win_probability": {
+        "home": 0.593781,
+        "away": 0.406219
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "LA ML"
+      },
+      "spread": {
+        "home": -3.6,
+        "away": 3.6,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 49.8,
+      "intervals_80": {
+        "home_margin": [
+          -13.0,
+          20.2
+        ],
+        "total": [
+          32.2,
+          67.3
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 2.354
+            },
+            {
+              "feature": "home_field",
+              "label": "Localía",
+              "contribution_points": -1.956
+            },
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": -0.933
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 0.689
+            }
+          ],
+          "other_factors_points": 1.2605154586912084,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 3.928
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 1.102
+            },
+            {
+              "feature": "home_field",
+              "label": "Localía",
+              "contribution_points": -0.485
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 0.153
+            }
+          ],
+          "other_factors_points": 0.22086195201805126,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_ARI_LAC",
+      "espn_game_id": "401872926",
+      "starts_at": "2026-09-13T20:25:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Los Angeles Chargers",
+        "code": "LAC"
+      },
+      "away": {
+        "name": "Arizona Cardinals",
+        "code": "ARI"
+      },
+      "projection": {
+        "home_score": 26.4,
+        "away_score": 18.8
+      },
+      "win_probability": {
+        "home": 0.715598,
+        "away": 0.284402
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "LAC ML"
+      },
+      "spread": {
+        "home": -7.6,
+        "away": 7.6,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 45.2,
+      "intervals_80": {
+        "home_margin": [
+          -9.0,
+          24.2
+        ],
+        "total": [
+          27.7,
+          62.8
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": 2.491
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": 2.255
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 1.439
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": -0.291
+            }
+          ],
+          "other_factors_points": -0.5069875184758228,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 0.487
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.376
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": -0.219
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": -0.191
+            }
+          ],
+          "other_factors_points": -0.043721053416353683,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_ATL_PIT",
+      "espn_game_id": "401872658",
+      "starts_at": "2026-09-13T17:00:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Pittsburgh Steelers",
+        "code": "PIT"
+      },
+      "away": {
+        "name": "Atlanta Falcons",
+        "code": "ATL"
+      },
+      "projection": {
+        "home_score": 24.1,
+        "away_score": 20.3
+      },
+      "win_probability": {
+        "home": 0.59701,
+        "away": 0.40299
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "PIT ML"
+      },
+      "spread": {
+        "home": -3.8,
+        "away": 3.8,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 44.4,
+      "intervals_80": {
+        "home_margin": [
+          -12.9,
+          20.3
+        ],
+        "total": [
+          26.9,
+          61.9
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": 0.786
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 0.484
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": 0.419
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": -0.291
+            }
+          ],
+          "other_factors_points": 0.11298736744294091,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": -0.373
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": -0.164
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": -0.062
+            }
+          ],
+          "other_factors_points": 0.03203855458993776,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_BAL_IND",
+      "espn_game_id": "401872659",
+      "starts_at": "2026-09-13T17:00:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Indianapolis Colts",
+        "code": "IND"
+      },
+      "away": {
+        "name": "Baltimore Ravens",
+        "code": "BAL"
+      },
+      "projection": {
+        "home_score": 24.2,
+        "away_score": 24.3
+      },
+      "win_probability": {
+        "home": 0.467684,
+        "away": 0.532316
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "away",
+        "label": "BAL ML"
+      },
+      "spread": {
+        "home": 0.1,
+        "away": -0.1,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 48.5,
+      "intervals_80": {
+        "home_margin": [
+          -16.7,
+          16.5
+        ],
+        "total": [
+          31.0,
+          66.1
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": -1.417
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 1.253
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": -1.002
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": -0.757
+            }
+          ],
+          "other_factors_points": -0.38618629608769295,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 2.847
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 0.881
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": -0.371
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            }
+          ],
+          "other_factors_points": 0.22551665409322386,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_BUF_HOU",
+      "espn_game_id": "401872660",
+      "starts_at": "2026-09-13T17:00:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Houston Texans",
+        "code": "HOU"
+      },
+      "away": {
+        "name": "Buffalo Bills",
+        "code": "BUF"
+      },
+      "projection": {
+        "home_score": 23.8,
+        "away_score": 21.9
+      },
+      "win_probability": {
+        "home": 0.537023,
+        "away": 0.462977
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "HOU ML"
+      },
+      "spread": {
+        "home": -1.9,
+        "away": 1.9,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 45.7,
+      "intervals_80": {
+        "home_margin": [
+          -14.7,
+          18.5
+        ],
+        "total": [
+          28.2,
+          63.3
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": 1.232
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": -0.617
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": -0.455
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": -0.291
+            }
+          ],
+          "other_factors_points": -0.14648209577853327,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 0.827
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": -0.094
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 0.07
+            }
+          ],
+          "other_factors_points": -0.0031292339701607386,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_CHI_CAR",
+      "espn_game_id": "401872661",
+      "starts_at": "2026-09-13T17:00:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Carolina Panthers",
+        "code": "CAR"
+      },
+      "away": {
+        "name": "Chicago Bears",
+        "code": "CHI"
+      },
+      "projection": {
+        "home_score": 21.6,
+        "away_score": 23.7
+      },
+      "win_probability": {
+        "home": 0.402052,
+        "away": 0.597948
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "away",
+        "label": "CHI ML"
+      },
+      "spread": {
+        "home": 2.1,
+        "away": -2.1,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 45.3,
+      "intervals_80": {
+        "home_margin": [
+          -18.7,
+          14.5
+        ],
+        "total": [
+          27.8,
+          62.8
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": -2.641
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": -1.191
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": -0.35
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": -0.291
+            }
+          ],
+          "other_factors_points": 0.2056479302635177,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 0.347
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": -0.172
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 0.166
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            }
+          ],
+          "other_factors_points": -0.0026586076981383044,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_CLE_JAX",
+      "espn_game_id": "401872922",
+      "starts_at": "2026-09-13T17:00:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Jacksonville Jaguars",
+        "code": "JAX"
+      },
+      "away": {
+        "name": "Cleveland Browns",
+        "code": "CLE"
+      },
+      "projection": {
+        "home_score": 27.9,
+        "away_score": 16.9
+      },
+      "win_probability": {
+        "home": 0.800367,
+        "away": 0.199633
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "JAX ML"
+      },
+      "spread": {
+        "home": -11.0,
+        "away": 11.0,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 44.8,
+      "intervals_80": {
+        "home_margin": [
+          -5.6,
+          27.6
+        ],
+        "total": [
+          27.3,
+          62.3
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 4.659
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 1.8
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": 1.643
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": 0.685
+            }
+          ],
+          "other_factors_points": 0.007872515763775567,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": -0.874
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.471
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 0.303
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            }
+          ],
+          "other_factors_points": -0.07704764926566132,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_DAL_NYG",
+      "espn_game_id": "401872930",
+      "starts_at": "2026-09-14T00:20:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "New York Giants",
+        "code": "NYG"
+      },
+      "away": {
+        "name": "Dallas Cowboys",
+        "code": "DAL"
+      },
+      "projection": {
+        "home_score": 25.9,
+        "away_score": 26.0
+      },
+      "win_probability": {
+        "home": 0.468663,
+        "away": 0.531337
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "away",
+        "label": "DAL ML"
+      },
+      "spread": {
+        "home": 0.1,
+        "away": -0.1,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 51.9,
+      "intervals_80": {
+        "home_margin": [
+          -16.7,
+          16.5
+        ],
+        "total": [
+          34.4,
+          69.5
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": -1.949
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": -1.453
+            },
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": -1.404
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": 1.165
+            }
+          ],
+          "other_factors_points": 1.359346491736222,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 5.908
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 0.868
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.282
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            }
+          ],
+          "other_factors_points": -0.09453334191878415,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_GB_MIN",
+      "espn_game_id": "401872927",
+      "starts_at": "2026-09-13T20:25:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Minnesota Vikings",
+        "code": "MIN"
+      },
+      "away": {
+        "name": "Green Bay Packers",
+        "code": "GB"
+      },
+      "projection": {
+        "home_score": 23.6,
+        "away_score": 19.5
+      },
+      "win_probability": {
+        "home": 0.607477,
+        "away": 0.392523
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "MIN ML"
+      },
+      "spread": {
+        "home": -4.1,
+        "away": 4.1,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 43.1,
+      "intervals_80": {
+        "home_margin": [
+          -12.6,
+          20.6
+        ],
+        "total": [
+          25.6,
+          60.7
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 2.024
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": -1.206
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": 0.867
+            },
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 0.407
+            }
+          ],
+          "other_factors_points": -0.25974033211092706,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": -1.714
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.53
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": -0.495
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            }
+          ],
+          "other_factors_points": -0.16175342762042977,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_MIA_LV",
+      "espn_game_id": "401872928",
+      "starts_at": "2026-09-13T20:25:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Las Vegas Raiders",
+        "code": "LV"
+      },
+      "away": {
+        "name": "Miami Dolphins",
+        "code": "MIA"
+      },
+      "projection": {
+        "home_score": 19.9,
+        "away_score": 23.3
+      },
+      "win_probability": {
+        "home": 0.360145,
+        "away": 0.639855
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "away",
+        "label": "MIA ML"
+      },
+      "spread": {
+        "home": 3.4,
+        "away": -3.4,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 43.2,
+      "intervals_80": {
+        "home_margin": [
+          -20.0,
+          13.2
+        ],
+        "total": [
+          25.7,
+          60.7
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": -3.025
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": -1.561
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": -0.443
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": -0.385
+            }
+          ],
+          "other_factors_points": -0.15416797508326407,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": -1.314
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": -0.33
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": -0.196
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            }
+          ],
+          "other_factors_points": 0.06317598687231607,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_NO_DET",
+      "espn_game_id": "401872923",
+      "starts_at": "2026-09-13T17:00:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Detroit Lions",
+        "code": "DET"
+      },
+      "away": {
+        "name": "New Orleans Saints",
+        "code": "NO"
+      },
+      "projection": {
+        "home_score": 27.1,
+        "away_score": 19.8
+      },
+      "win_probability": {
+        "home": 0.705791,
+        "away": 0.294209
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "DET ML"
+      },
+      "spread": {
+        "home": -7.3,
+        "away": 7.3,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 46.9,
+      "intervals_80": {
+        "home_margin": [
+          -9.4,
+          23.8
+        ],
+        "total": [
+          29.4,
+          64.4
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 4.48
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": 1.968
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": -0.729
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": -0.36
+            }
+          ],
+          "other_factors_points": -0.32092030248007575,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 1.487
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 0.469
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 0.291
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": -0.191
+            }
+          ],
+          "other_factors_points": 0.02484767445267222,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_NYJ_TEN",
+      "espn_game_id": "401872924",
+      "starts_at": "2026-09-13T17:00:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Tennessee Titans",
+        "code": "TEN"
+      },
+      "away": {
+        "name": "New York Jets",
+        "code": "NYJ"
+      },
+      "projection": {
+        "home_score": 25.4,
+        "away_score": 21.4
+      },
+      "win_probability": {
+        "home": 0.607411,
+        "away": 0.392589
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "TEN ML"
+      },
+      "spread": {
+        "home": -4.0,
+        "away": 4.0,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 46.8,
+      "intervals_80": {
+        "home_margin": [
+          -12.6,
+          20.6
+        ],
+        "total": [
+          29.3,
+          64.4
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 1.714
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 0.499
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": -0.291
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": -0.278
+            }
+          ],
+          "other_factors_points": 0.18506882744286424,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 0.799
+            },
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 0.627
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.449
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            }
+          ],
+          "other_factors_points": 0.020098001836888812,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_TB_CIN",
+      "espn_game_id": "401872925",
+      "starts_at": "2026-09-13T17:00:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Cincinnati Bengals",
+        "code": "CIN"
+      },
+      "away": {
+        "name": "Tampa Bay Buccaneers",
+        "code": "TB"
+      },
+      "projection": {
+        "home_score": 25.1,
+        "away_score": 24.1
+      },
+      "win_probability": {
+        "home": 0.507252,
+        "away": 0.492748
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "CIN ML"
+      },
+      "spread": {
+        "home": -1.0,
+        "away": 1.0,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 49.2,
+      "intervals_80": {
+        "home_margin": [
+          -15.5,
+          17.7
+        ],
+        "total": [
+          31.7,
+          66.7
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": -1.387
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 1.022
+            },
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": -0.881
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.458
+            }
+          ],
+          "other_factors_points": -0.3624778003311384,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 3.708
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": 0.207
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.12
+            }
+          ],
+          "other_factors_points": 0.19837601108552594,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_WAS_PHI",
+      "espn_game_id": "401872929",
+      "starts_at": "2026-09-13T20:25:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Philadelphia Eagles",
+        "code": "PHI"
+      },
+      "away": {
+        "name": "Washington Commanders",
+        "code": "WAS"
+      },
+      "projection": {
+        "home_score": 26.0,
+        "away_score": 18.7
+      },
+      "win_probability": {
+        "home": 0.708157,
+        "away": 0.291843
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "home",
+        "label": "PHI ML"
+      },
+      "spread": {
+        "home": -7.3,
+        "away": 7.3,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 44.7,
+      "intervals_80": {
+        "home_margin": [
+          -9.3,
+          23.9
+        ],
+        "total": [
+          27.1,
+          62.2
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": 2.243
+            },
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": 1.88
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 1.163
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": 0.484
+            }
+          ],
+          "other_factors_points": -0.6483725492096557,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": -0.55
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": 0.304
+            },
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": 0.187
+            },
+            {
+              "feature": "defense_diff",
+              "label": "Diferencia de puntos permitidos",
+              "contribution_points": -0.172
+            }
+          ],
+          "other_factors_points": 0.03561728540488887,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    },
+    {
+      "league_game_id": "2026_01_DEN_KC",
+      "espn_game_id": "401872931",
+      "starts_at": "2026-09-15T00:15:00+00:00",
+      "season": 2026,
+      "week": 1,
+      "home": {
+        "name": "Kansas City Chiefs",
+        "code": "KC"
+      },
+      "away": {
+        "name": "Denver Broncos",
+        "code": "DEN"
+      },
+      "projection": {
+        "home_score": 19.7,
+        "away_score": 21.0
+      },
+      "win_probability": {
+        "home": 0.429037,
+        "away": 0.570963
+      },
+      "probability_basis": "conditional_on_no_tie",
+      "pick": {
+        "market": "moneyline",
+        "side": "away",
+        "label": "DEN ML"
+      },
+      "spread": {
+        "home": 1.3,
+        "away": -1.3,
+        "meaning": "Línea propia: local -3 significa local favorito por 3 puntos"
+      },
+      "total_points": 40.7,
+      "intervals_80": {
+        "home_margin": [
+          -17.8,
+          15.4
+        ],
+        "total": [
+          23.1,
+          58.2
+        ]
+      },
+      "explanations": {
+        "margin": {
+          "baseline_points": 2.205616109366341,
+          "top_factors": [
+            {
+              "feature": "elo_diff",
+              "label": "Fuerza relativa ajustada por rivales",
+              "contribution_points": -1.087
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": -0.911
+            },
+            {
+              "feature": "offense_diff",
+              "label": "Diferencia de puntos anotados",
+              "contribution_points": -0.822
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": -0.798
+            }
+          ],
+          "other_factors_points": 0.1646545841298086,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        },
+        "total": {
+          "baseline_points": 44.8241271014225,
+          "top_factors": [
+            {
+              "feature": "scoring_level",
+              "label": "Nivel combinado de anotación",
+              "contribution_points": -2.674
+            },
+            {
+              "feature": "recent_total",
+              "label": "Totales recientes de ambos equipos",
+              "contribution_points": -1.458
+            },
+            {
+              "feature": "form_diff",
+              "label": "Diferencia de margen reciente",
+              "contribution_points": -0.209
+            },
+            {
+              "feature": "season_progress",
+              "label": "Avance de la temporada",
+              "contribution_points": 0.144
+            }
+          ],
+          "other_factors_points": 0.05549401278015331,
+          "meaning": "Contribuciones respecto al promedio de entrenamiento; no causas."
+        }
+      },
+      "data_warning": "Sin ajuste de lesiones, QB ni clima",
+      "warnings": [
+        "Sin ajuste de lesiones, QB ni clima",
+        "Inicio de temporada: peso importante del año anterior"
+      ]
+    }
+  ],
+  "skipped_without_id": 0,
+  "odds_used": false,
+  "source": {
+    "url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+    "sha256": "fae611767966697058e28b9a226bebccd66e78eae182c8d51eb34ab1f9833f9b",
+    "fetched_at": "2026-09-09T03:15:02.170975+00:00",
+    "rows": 7548
+  },
+  "training": {
+    "regression_through_season": 2024,
+    "calibration_season": 2025,
+    "regression_games": 5413
+  },
+  "status": "predictions_available"
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edgebook-modelo-nfl"
+version = "0.1.0"
+description = "Predicciones NFL independientes de momios"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "scikit-learn>=1.5,<2", "requests>=2.32,<3", "joblib>=1.4,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+modelo-nfl = "nfl_model.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["nfl_model*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
