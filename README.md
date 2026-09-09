@@ -6,12 +6,23 @@ pandas y scikit-learn; los datos gratuitos provienen de nflverse.
 
 ## Estado
 
-Versión **0.2.0 experimental**, ejecutada con datos reales el 9 de septiembre UTC
+Versión **0.3.0 experimental**, ejecutada con datos reales el 9 de septiembre UTC
 (8 de septiembre en Chihuahua) de 2026. Generó 16 proyecciones próximas.
 Tiene una pantalla básica independiente, con las proyecciones de la última
-emisión publicada. No está conectada todavía al Edgebook de producción. El
+emisión publicada. Claude conectó el snapshot NFL con Edgebook de producción. El
 repositorio contiene el motor, la pantalla, un exportador JSON, historial de
 emisiones y evaluación.
+
+La v0.3 añade ajuste de EPA por rival al total y captura actual de lesiones,
+QB probable, plantillas, cambios de entrenador y clima. **El contexto actual
+todavía no tiene pesos numéricos validados**; se archiva para evaluar esos efectos
+a futuro. El ajuste por rival baja el error histórico del total de 10.5411 a
+10.5233 puntos, una mejora pequeña. Ver `reports/opponent-adjustment.json`.
+
+El contrato de producción se documenta en [docs/CONTRACT.md](docs/CONTRACT.md).
+El formato sigue siendo **1.1**. La versión del motor incluye una huella para no
+mezclar matemática distinta bajo un mismo sello. Las emisiones v0.1/v0.2 se
+conservan sin modificaciones.
 
 ## Pantalla visual
 
@@ -127,8 +138,8 @@ facilitan el futuro cruce con Edgebook.
 
 La v0.2 combina marcadores con estadísticas semanales de equipo y QB calculadas
 por nflverse a partir de jugadas. EPA se aproxima por jugada oficial (intentos +
-sacks + carreras), sin filtrar kneel-downs ni garbage time. No hay ajuste explícito
-de EPA por rival: el rating Elo previo sigue aportando una señal de fuerza relativa.
+sacks + carreras), sin filtrar kneel-downs ni garbage time. Desde v0.3 se ajusta
+EPA por el rendimiento previo del rival; el rating Elo sigue aportando fuerza relativa.
 No incorpora todavía lesiones, alineaciones, cambios de titular confirmados,
 traspasos de offseason ni pronóstico meteorológico. El historial individual del
 QB se conserva por ID, pero su referencia de equipo requiere cautela cuando cambia
@@ -165,6 +176,5 @@ condiciones; este repositorio no los relicencia.
 
 El JSON usa `schema_version: 1.1` y `sport: NFL`, conserva los campos básicos del
 exportador MLB y agrega `spread`, `total_points`, intervalos y explicaciones.
-**El contrato actual de Edgebook solo acepta MLB/1.0**, de modo que este archivo
-todavía no se puede enchufar directamente a producción. Ver `docs/EDGEBOOK.md`
-para el contrato y los cambios concretos del consumidor.
+Edgebook acepta MLB/1.0 y NFL/1.1. Los cambios futuros deben respetar
+`docs/CONTRACT.md`; no subir la versión del formato sin coordinar al consumidor.

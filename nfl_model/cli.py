@@ -11,6 +11,7 @@ from .export import snapshot
 from .features import build
 from .model import fit
 from .advanced import download_advanced, add_advanced
+from .live_context import collect_context, attach_context
 
 
 def write_json(path, value):
@@ -28,6 +29,7 @@ def main():
     parser.add_argument("--days", type=int, default=8)
     parser.add_argument("--test-start", type=int, default=2020)
     parser.add_argument("--baseline", action="store_true", help="Reproducir las variables originales v0.1")
+    parser.add_argument("--no-live-context", action="store_true", help="Solo motor estadístico, sin consultas de contexto actual")
     args = parser.parse_args()
     as_of = pd.Timestamp(args.as_of) if args.as_of else pd.Timestamp.now(tz="UTC")
     if as_of.tzinfo is None:
@@ -57,7 +59,21 @@ def main():
     else:
         model = fit(data, season, **options)
         output = snapshot(data, model, as_of, source, args.days)
-        stamp = as_of.strftime("%Y%m%dT%H%M%S%fZ")
+        if not args.no_live_context:
+            context = collect_context(output, args.root)
+            stamp_context = pd.Timestamp(context['observed_at']).strftime('%Y%m%dT%H%M%S%fZ')
+            write_json(args.root / f'data/context/{stamp_context}.json', context)
+            output = attach_context(output, context)
+        # Sello de emisión real, después de preparar todos los datos. No simular publicación pasada.
+        issued_at = pd.Timestamp.now(tz='UTC')
+        output['generated_at'] = issued_at.isoformat()
+        output['emission_kind'] = 'prospective' if abs((issued_at-as_of).total_seconds()) < 3600 else 'retrospective'
+        if output['emission_kind']=='prospective':
+            valid_games = [g for g in output['games'] if pd.Timestamp(g['starts_at']) > issued_at]
+            output['skipped_started_during_collection'] = len(output['games'])-len(valid_games)
+            output['games'] = valid_games
+        output['status'] = 'predictions_available' if output['games'] else 'no_upcoming_games_in_source_window'
+        stamp = issued_at.strftime("%Y%m%dT%H%M%S%fZ")
         write_json(args.root / f"data/history/{stamp}.json", output)
         write_json(args.root / "data/edgebook-latest.json", output)
         (args.root / "artifacts").mkdir(exist_ok=True)

@@ -1,4 +1,8 @@
-# Contrato NFL 1.1 y conexión pendiente
+# Contrato NFL 1.1 y antecedentes de integración
+
+**Actualización:** Claude ya conectó NFL con Edgebook de producción. Las
+restricciones vigentes están en [CONTRACT.md](CONTRACT.md). El handoff siguiente
+se conserva como antecedente, no como lista de trabajo pendiente.
 
 ## Handoff para Claude
 

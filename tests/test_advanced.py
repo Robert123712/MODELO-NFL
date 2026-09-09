@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from nfl_model.advanced import add_advanced, EPA_FEATURES, QB_FEATURES, TEAM_FIELDS, PLAYER_FIELDS
+from nfl_model.advanced import add_advanced, EPA_FEATURES, QB_FEATURES, ADJUSTED_FEATURES, TEAM_FIELDS, PLAYER_FIELDS
 from nfl_model.data import COLUMNS, prepare
 from nfl_model.features import build
 
@@ -35,7 +35,7 @@ def test_advanced_stats_and_qb_identity_are_shifted():
     qbs.loc[qbs.week>=2,'passing_epa'] = 999
     qbs.loc[qbs.week>=2,'player_id'] = 'NEW_QB'
     changed = add_advanced(data,teams,qbs)
-    fields = EPA_FEATURES+QB_FEATURES+['home_reference_qb_id','away_reference_qb_id']
+    fields = EPA_FEATURES+QB_FEATURES+ADJUSTED_FEATURES+['home_reference_qb_id','away_reference_qb_id']
     pd.testing.assert_frame_equal(original.loc[original.week<=2,fields],changed.loc[changed.week<=2,fields])
     assert changed.iloc[2].home_reference_qb_id == 'NEW_QB'
     assert original.iloc[0].home_reference_qb_id is None

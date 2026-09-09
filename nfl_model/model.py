@@ -1,5 +1,8 @@
 """Regresiones interpretables y calibración temporal de la probabilidad."""
 from dataclasses import dataclass, field
+import hashlib
+import json
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -24,6 +27,20 @@ class Model:
     baseline_total: float
     margin_features: list = field(default_factory=lambda: list(FEATURES))
     total_features: list = field(default_factory=lambda: list(FEATURES))
+
+    def math_fingerprint(self):
+        root = Path(__file__).parent
+        state = {'margin_features':self.margin_features,'total_features':self.total_features,
+                 'source':{name:hashlib.sha256((root/name).read_bytes()).hexdigest()
+                           for name in ('model.py','features.py','advanced.py')},
+                 'calibration_year':self.calibration_year,'train_through':self.train_through}
+        for target in ('margin','total'):
+            pipe = getattr(self,target)
+            state[target] = {'coef':pipe[1].coef_.tolist(),'intercept':float(pipe[1].intercept_),
+                             'scale':pipe[0].scale_.tolist(),'mean':pipe[0].mean_.tolist()}
+        state['probability'] = {'coef':self.probability.coef_.tolist(),'intercept':self.probability.intercept_.tolist()}
+        state['intervals'] = [self.radius_margin,self.radius_total]
+        return hashlib.sha256(json.dumps(state,sort_keys=True,allow_nan=False).encode()).hexdigest()
 
     def predict(self, data):
         margin = self.margin.predict(data[self.margin_features])

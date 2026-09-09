@@ -101,3 +101,12 @@ def test_explanation_reconstructs_regression():
         reconstructed = e["baseline_points"] + sum(x["contribution_points"] for x in e["top_factors"]) + e["other_factors_points"]
         predicted = getattr(model, target).predict(data.iloc[-1:][FEATURES])[0]
         assert reconstructed == pytest.approx(predicted, abs=.003)
+
+
+def test_math_fingerprint_changes_with_coefficients():
+    data = build(prepare(schedule(), AS_OF))
+    model = fit(data,2013)
+    before = model.math_fingerprint()
+    assert before == model.math_fingerprint()
+    model.total[1].coef_[0] += .01
+    assert before != model.math_fingerprint()

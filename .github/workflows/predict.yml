@@ -20,4 +20,6 @@ jobs:
           path: |
             data/edgebook-latest.json
             data/history/
+            data/context/
+            data/advanced-sources.json
             data/raw/source.json

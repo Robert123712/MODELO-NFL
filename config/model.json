@@ -3,9 +3,9 @@
     2017,
     2019
   ],
-  "criterion": "MAE por cabeza; candidatos fijados antes de evaluar 2020–2025",
-  "margin_candidate": "baseline",
-  "total_candidate": "epa_qb",
+  "criterion": "MAE; dos conjuntos fijos, evaluación posterior sin reajuste",
+  "margin_candidate": "v02",
+  "total_candidate": "opponent_adjusted",
   "margin_features": [
     "elo_diff",
     "offense_diff",
@@ -37,6 +37,9 @@
     "qb_epa_diff",
     "qb_epa_sum",
     "qb_cpoe_diff",
-    "qb_cpoe_sum"
+    "qb_cpoe_sum",
+    "adjusted_off_diff",
+    "adjusted_def_diff",
+    "adjusted_epa_level"
   ]
 }

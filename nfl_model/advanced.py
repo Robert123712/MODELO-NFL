@@ -20,6 +20,7 @@ PLAYER_FIELDS = ['season', 'week', 'team', 'game_id', 'player_id', 'player_displ
                  'position', 'attempts', 'sacks_suffered', 'passing_epa', 'passing_cpoe']
 EPA_FEATURES = ['epa_off_diff', 'epa_def_diff', 'epa_level', 'turnover_diff', 'pace_level']
 QB_FEATURES = ['qb_epa_diff', 'qb_epa_sum', 'qb_cpoe_diff', 'qb_cpoe_sum']
+ADJUSTED_FEATURES = ['adjusted_off_diff', 'adjusted_def_diff', 'adjusted_epa_level']
 ADVANCED_LABELS = {'epa_off_diff': 'Eficiencia ofensiva por jugada',
                    'epa_def_diff': 'Eficiencia defensiva por jugada',
                    'epa_level': 'Eficiencia combinada por jugada',
@@ -28,7 +29,10 @@ ADVANCED_LABELS = {'epa_off_diff': 'Eficiencia ofensiva por jugada',
                    'qb_epa_diff': 'Diferencia de eficiencia del QB de referencia',
                    'qb_epa_sum': 'Eficiencia conjunta de quarterbacks de referencia',
                    'qb_cpoe_diff': 'Diferencia de precisión de pase sobre lo esperado',
-                   'qb_cpoe_sum': 'Precisión conjunta de pase sobre lo esperado'}
+                   'qb_cpoe_sum': 'Precisión conjunta de pase sobre lo esperado',
+                   'adjusted_off_diff':'Eficiencia ofensiva ajustada por rivales previos',
+                   'adjusted_def_diff':'Eficiencia defensiva ajustada por rivales previos',
+                   'adjusted_epa_level':'Eficiencia combinada ajustada por rivales previos'}
 
 
 def download_advanced(root: Path, season: int):
@@ -92,7 +96,7 @@ def add_advanced(data, teams, players):
         n = weights.sum()
         def avg(key, prior=0):
             return (sum(g[key] * w for g, w in zip(games, weights)) + 4*prior)/(n+4)
-        return avg('off'), avg('def'), avg('turnovers', .025), avg('plays', 64)
+        return avg('off'), avg('def'), avg('turnovers', .025), avg('plays', 64), avg('adjusted_off'), avg('adjusted_def')
 
     def qb(team, season):
         ref = reference.get(team)
@@ -109,12 +113,14 @@ def add_advanced(data, teams, players):
         return epa, cpoe, pid, name, len(hist)
 
     for (season, week), group in data.groupby(['season', 'week'], sort=True):
+        preweek = {team:summarize(team,season) for team in set(group.home_team)|set(group.away_team)}
         for row in group.to_dict('records'):
             h, a = summarize(row['home_team'], season), summarize(row['away_team'], season)
             qh, qa = qb(row['home_team'], season), qb(row['away_team'], season)
             row.update(dict(zip(EPA_FEATURES + QB_FEATURES, [h[0]-a[0], a[1]-h[1],
                 (h[0]+a[0]+h[1]+a[1])/2, a[2]-h[2], (h[3]+a[3])/2,
                 qh[0]-qa[0], qh[0]+qa[0], qh[1]-qa[1], qh[1]+qa[1]])))
+            row.update(dict(zip(ADJUSTED_FEATURES, [h[4]-a[4],a[5]-h[5],(h[4]+a[4]+h[5]+a[5])/2])))
             row['advanced_history_min'] = min(len(team_history[row['home_team']]), len(team_history[row['away_team']]))
             for side, value in [('home', qh), ('away', qa)]:
                 row[f'{side}_reference_qb_id'] = value[2]
@@ -136,6 +142,8 @@ def add_advanced(data, teams, players):
                         team_history[team].append({'season': season,
                             'off': (own['passing_epa']+own['rushing_epa'])/volume(own),
                             'def': (opp['passing_epa']+opp['rushing_epa'])/volume(opp),
+                            'adjusted_off': (own['passing_epa']+own['rushing_epa'])/volume(own)-preweek[opponent][1],
+                            'adjusted_def': (opp['passing_epa']+opp['rushing_epa'])/volume(opp)-preweek[opponent][0],
                             'turnovers': sum(own[k] for k in ['passing_interceptions','sack_fumbles_lost','rushing_fumbles_lost','receiving_fumbles_lost'])/volume(own),
                             'plays': volume(own)})
                 qbs = plookup.get((row['game_id'],team), [])
