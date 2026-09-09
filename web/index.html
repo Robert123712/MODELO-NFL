@@ -16,6 +16,15 @@
     <p class="notice">Modelo experimental · Sin ajuste de lesiones ni clima; titular QB no confirmado. Las probabilidades suponen que no hay empate.</p>
     <div id="games" aria-live="polite"><p class="state">Cargando las proyecciones del modelo…</p></div>
     <section class="guide" aria-label="Cómo leer las proyecciones"><h2>Cómo leerlo</h2><div><p><strong>Ganador</strong>Equipo con mayor probabilidad de victoria.</p><p><strong>Spread propio</strong>Un −3.5 significa favorito por 3.5 puntos. No es una línea de casa de apuestas.</p><p><strong>Total de puntos</strong>Suma esperada de ambos equipos; no es un pick de over o under.</p></div></section>
+    <section id="model-context" class="model-context" hidden>
+      <details>
+        <summary>Contexto del modelo</summary>
+        <p>Ganador y spread usan fuerza relativa, marcadores recientes, localía y descanso. El total incorpora además eficiencia por jugada, pérdidas de balón y rendimiento histórico de quarterbacks.</p>
+        <p id="context-warnings"></p>
+        <p>Los quarterbacks indicados son referencias históricas, no titulares confirmados. Los intervalos del total tienen una cobertura objetivo del 80%; no garantizan el resultado.</p>
+        <div class="context-table" role="region" aria-label="Referencias por partido" tabindex="0"><table><caption>Referencias por partido</caption><thead><tr><th scope="col">Partido</th><th scope="col">QB visitante</th><th scope="col">QB local</th><th scope="col">Intervalo del total</th></tr></thead><tbody id="context-rows"></tbody></table></div>
+      </details>
+    </section>
     <footer><span>EDGEBOOK · MODELO NFL <span id="version"></span></span><span>Datos: nflverse · Vista de la última emisión publicada.</span></footer>
   </main>
   <script src="app.js" defer></script>
