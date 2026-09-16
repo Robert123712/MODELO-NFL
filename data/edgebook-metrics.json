@@ -1,0 +1,708 @@
+{
+  "schema_version": "1.0",
+  "sport": "NFL",
+  "generated_at": "2026-09-16T01:48:50.301523+00:00",
+  "minimum_meaningful": 100,
+  "versions": [
+    {
+      "model_version": "0.3.0-eeb91d80a452",
+      "unlabeled": false,
+      "from": "2026-09-09",
+      "to": "2026-09-14",
+      "graded": 16,
+      "pending": 0,
+      "significant": false,
+      "markets": {
+        "moneyline": {
+          "n": 16,
+          "base_rate": 0.625,
+          "brier": 0.2402,
+          "log_loss": 0.6712,
+          "hit_rate": 0.5625,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 3,
+              "predicted": 0.3971,
+              "observed": 0.6667
+            },
+            {
+              "from": 0.45,
+              "to": 0.5,
+              "n": 2,
+              "predicted": 0.4682,
+              "observed": 0.5
+            },
+            {
+              "from": 0.5,
+              "to": 0.55,
+              "n": 2,
+              "predicted": 0.5221,
+              "observed": 0.5
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 5,
+              "predicted": 0.6029,
+              "observed": 0.6
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 4,
+              "predicted": 0.7325,
+              "observed": 0.75
+            }
+          ]
+        },
+        "closing_moneyline": {
+          "n": 16,
+          "base_rate": 0.625,
+          "brier": 0.2136,
+          "log_loss": 0.6209,
+          "hit_rate": 0.75,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 3,
+              "predicted": 0.4025,
+              "observed": 0.3333
+            },
+            {
+              "from": 0.45,
+              "to": 0.5,
+              "n": 1,
+              "predicted": 0.4957,
+              "observed": 0.0
+            },
+            {
+              "from": 0.5,
+              "to": 0.55,
+              "n": 3,
+              "predicted": 0.5309,
+              "observed": 0.6667
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 3,
+              "predicted": 0.616,
+              "observed": 1.0
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 6,
+              "predicted": 0.7279,
+              "observed": 0.6667
+            }
+          ]
+        }
+      },
+      "projected_total": {
+        "n": 16,
+        "mae": 12.713,
+        "bias": -4.037,
+        "std_error": 4.2149,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 12.713,
+            "bias": -4.037,
+            "std_error": 4.2149
+          }
+        ]
+      },
+      "projected_margin": {
+        "n": 16,
+        "mae": 12.45,
+        "bias": 2.237,
+        "std_error": 3.5441,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 12.45,
+            "bias": 2.237,
+            "std_error": 3.5441
+          }
+        ]
+      },
+      "closing_line": {
+        "total": {
+          "n": 16,
+          "mae": 11.688,
+          "bias": -4.375,
+          "std_error": 3.9754,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 11.688,
+              "bias": -4.375,
+              "std_error": 3.9754
+            }
+          ]
+        },
+        "margin": {
+          "n": 16,
+          "mae": 11.281,
+          "bias": 1.969,
+          "std_error": 3.332,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 11.281,
+              "bias": 1.969,
+              "std_error": 3.332
+            }
+          ]
+        }
+      },
+      "interval_coverage": {
+        "margin": {
+          "n": 16,
+          "covered": 0.5625,
+          "nominal": 0.8
+        },
+        "total": {
+          "n": 16,
+          "covered": 0.75,
+          "nominal": 0.8
+        }
+      }
+    },
+    {
+      "model_version": "0.3.0-191ba60a9ae3",
+      "unlabeled": false,
+      "from": "2026-09-09",
+      "to": "2026-09-14",
+      "graded": 16,
+      "pending": 0,
+      "significant": false,
+      "markets": {
+        "moneyline": {
+          "n": 16,
+          "base_rate": 0.625,
+          "brier": 0.2402,
+          "log_loss": 0.6712,
+          "hit_rate": 0.5625,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 3,
+              "predicted": 0.3971,
+              "observed": 0.6667
+            },
+            {
+              "from": 0.45,
+              "to": 0.5,
+              "n": 2,
+              "predicted": 0.4682,
+              "observed": 0.5
+            },
+            {
+              "from": 0.5,
+              "to": 0.55,
+              "n": 2,
+              "predicted": 0.5221,
+              "observed": 0.5
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 5,
+              "predicted": 0.6029,
+              "observed": 0.6
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 4,
+              "predicted": 0.7325,
+              "observed": 0.75
+            }
+          ]
+        },
+        "closing_moneyline": {
+          "n": 16,
+          "base_rate": 0.625,
+          "brier": 0.2136,
+          "log_loss": 0.6209,
+          "hit_rate": 0.75,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 3,
+              "predicted": 0.4025,
+              "observed": 0.3333
+            },
+            {
+              "from": 0.45,
+              "to": 0.5,
+              "n": 1,
+              "predicted": 0.4957,
+              "observed": 0.0
+            },
+            {
+              "from": 0.5,
+              "to": 0.55,
+              "n": 3,
+              "predicted": 0.5309,
+              "observed": 0.6667
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 3,
+              "predicted": 0.616,
+              "observed": 1.0
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 6,
+              "predicted": 0.7279,
+              "observed": 0.6667
+            }
+          ]
+        }
+      },
+      "projected_total": {
+        "n": 16,
+        "mae": 12.85,
+        "bias": -4.637,
+        "std_error": 4.2229,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 12.85,
+            "bias": -4.637,
+            "std_error": 4.2229
+          }
+        ]
+      },
+      "projected_margin": {
+        "n": 16,
+        "mae": 12.475,
+        "bias": 2.237,
+        "std_error": 3.5473,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 12.475,
+            "bias": 2.237,
+            "std_error": 3.5473
+          }
+        ]
+      },
+      "closing_line": {
+        "total": {
+          "n": 16,
+          "mae": 11.688,
+          "bias": -4.375,
+          "std_error": 3.9754,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 11.688,
+              "bias": -4.375,
+              "std_error": 3.9754
+            }
+          ]
+        },
+        "margin": {
+          "n": 16,
+          "mae": 11.281,
+          "bias": 1.969,
+          "std_error": 3.332,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 11.281,
+              "bias": 1.969,
+              "std_error": 3.332
+            }
+          ]
+        }
+      },
+      "interval_coverage": {
+        "margin": {
+          "n": 16,
+          "covered": 0.5625,
+          "nominal": 0.8
+        },
+        "total": {
+          "n": 16,
+          "covered": 0.6875,
+          "nominal": 0.8
+        }
+      }
+    },
+    {
+      "model_version": "0.2.0",
+      "unlabeled": false,
+      "from": "2026-09-09",
+      "to": "2026-09-14",
+      "graded": 16,
+      "pending": 0,
+      "significant": false,
+      "markets": {
+        "moneyline": {
+          "n": 16,
+          "base_rate": 0.625,
+          "brier": 0.2402,
+          "log_loss": 0.6712,
+          "hit_rate": 0.5625,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 3,
+              "predicted": 0.3971,
+              "observed": 0.6667
+            },
+            {
+              "from": 0.45,
+              "to": 0.5,
+              "n": 2,
+              "predicted": 0.4682,
+              "observed": 0.5
+            },
+            {
+              "from": 0.5,
+              "to": 0.55,
+              "n": 2,
+              "predicted": 0.5221,
+              "observed": 0.5
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 5,
+              "predicted": 0.6029,
+              "observed": 0.6
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 4,
+              "predicted": 0.7325,
+              "observed": 0.75
+            }
+          ]
+        },
+        "closing_moneyline": {
+          "n": 16,
+          "base_rate": 0.625,
+          "brier": 0.2136,
+          "log_loss": 0.6209,
+          "hit_rate": 0.75,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 3,
+              "predicted": 0.4025,
+              "observed": 0.3333
+            },
+            {
+              "from": 0.45,
+              "to": 0.5,
+              "n": 1,
+              "predicted": 0.4957,
+              "observed": 0.0
+            },
+            {
+              "from": 0.5,
+              "to": 0.55,
+              "n": 3,
+              "predicted": 0.5309,
+              "observed": 0.6667
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 3,
+              "predicted": 0.616,
+              "observed": 1.0
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 6,
+              "predicted": 0.7279,
+              "observed": 0.6667
+            }
+          ]
+        }
+      },
+      "projected_total": {
+        "n": 16,
+        "mae": 12.7,
+        "bias": -4.325,
+        "std_error": 4.2109,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 12.7,
+            "bias": -4.325,
+            "std_error": 4.2109
+          }
+        ]
+      },
+      "projected_margin": {
+        "n": 16,
+        "mae": 12.462,
+        "bias": 2.238,
+        "std_error": 3.5458,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 12.462,
+            "bias": 2.238,
+            "std_error": 3.5458
+          }
+        ]
+      },
+      "closing_line": {
+        "total": {
+          "n": 16,
+          "mae": 11.688,
+          "bias": -4.375,
+          "std_error": 3.9754,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 11.688,
+              "bias": -4.375,
+              "std_error": 3.9754
+            }
+          ]
+        },
+        "margin": {
+          "n": 16,
+          "mae": 11.281,
+          "bias": 1.969,
+          "std_error": 3.332,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 11.281,
+              "bias": 1.969,
+              "std_error": 3.332
+            }
+          ]
+        }
+      },
+      "interval_coverage": {
+        "margin": {
+          "n": 16,
+          "covered": 0.5625,
+          "nominal": 0.8
+        },
+        "total": {
+          "n": 16,
+          "covered": 0.6875,
+          "nominal": 0.8
+        }
+      }
+    },
+    {
+      "model_version": "0.1.0",
+      "unlabeled": false,
+      "from": "2026-09-09",
+      "to": "2026-09-14",
+      "graded": 16,
+      "pending": 0,
+      "significant": false,
+      "markets": {
+        "moneyline": {
+          "n": 16,
+          "base_rate": 0.625,
+          "brier": 0.2402,
+          "log_loss": 0.6712,
+          "hit_rate": 0.5625,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 3,
+              "predicted": 0.3971,
+              "observed": 0.6667
+            },
+            {
+              "from": 0.45,
+              "to": 0.5,
+              "n": 2,
+              "predicted": 0.4682,
+              "observed": 0.5
+            },
+            {
+              "from": 0.5,
+              "to": 0.55,
+              "n": 2,
+              "predicted": 0.5221,
+              "observed": 0.5
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 5,
+              "predicted": 0.6029,
+              "observed": 0.6
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 4,
+              "predicted": 0.7325,
+              "observed": 0.75
+            }
+          ]
+        },
+        "closing_moneyline": {
+          "n": 16,
+          "base_rate": 0.625,
+          "brier": 0.2136,
+          "log_loss": 0.6209,
+          "hit_rate": 0.75,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 3,
+              "predicted": 0.4025,
+              "observed": 0.3333
+            },
+            {
+              "from": 0.45,
+              "to": 0.5,
+              "n": 1,
+              "predicted": 0.4957,
+              "observed": 0.0
+            },
+            {
+              "from": 0.5,
+              "to": 0.55,
+              "n": 3,
+              "predicted": 0.5309,
+              "observed": 0.6667
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 3,
+              "predicted": 0.616,
+              "observed": 1.0
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 6,
+              "predicted": 0.7279,
+              "observed": 0.6667
+            }
+          ]
+        }
+      },
+      "projected_total": {
+        "n": 16,
+        "mae": 12.956,
+        "bias": -3.531,
+        "std_error": 4.3208,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 12.956,
+            "bias": -3.531,
+            "std_error": 4.3208
+          }
+        ]
+      },
+      "projected_margin": {
+        "n": 16,
+        "mae": 12.469,
+        "bias": 2.231,
+        "std_error": 3.5465,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 12.469,
+            "bias": 2.231,
+            "std_error": 3.5465
+          }
+        ]
+      },
+      "closing_line": {
+        "total": {
+          "n": 16,
+          "mae": 11.688,
+          "bias": -4.375,
+          "std_error": 3.9754,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 11.688,
+              "bias": -4.375,
+              "std_error": 3.9754
+            }
+          ]
+        },
+        "margin": {
+          "n": 16,
+          "mae": 11.281,
+          "bias": 1.969,
+          "std_error": 3.332,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 11.281,
+              "bias": 1.969,
+              "std_error": 3.332
+            }
+          ]
+        }
+      },
+      "interval_coverage": {
+        "margin": {
+          "n": 16,
+          "covered": 0.5625,
+          "nominal": 0.8
+        },
+        "total": {
+          "n": 16,
+          "covered": 0.75,
+          "nominal": 0.8
+        }
+      }
+    }
+  ]
+}

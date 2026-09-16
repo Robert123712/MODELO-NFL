@@ -13,6 +13,7 @@ from .model import fit
 from .advanced import download_advanced, add_advanced
 from .live_context import collect_context, attach_context
 from .qb_news import apply as apply_qb_news
+from .record import build as build_record, cargar as cargar_resultados
 
 
 def write_json(path, value):
@@ -24,7 +25,7 @@ def write_json(path, value):
 
 def main():
     parser = argparse.ArgumentParser(description="Modelo NFL sin momios")
-    parser.add_argument("command", choices=["run", "backtest"])
+    parser.add_argument("command", choices=["run", "backtest", "record"])
     parser.add_argument("--as-of", help="Corte ISO con zona horaria; por defecto ahora UTC")
     parser.add_argument("--root", type=Path, default=Path.cwd())
     parser.add_argument("--days", type=int, default=8)
@@ -37,6 +38,15 @@ def main():
         parser.error("--as-of requiere zona horaria, por ejemplo 2026-09-09T00:00:00Z")
     as_of = as_of.tz_convert('UTC')
     raw, source = download(args.root)
+    # Califica lo que ya se emitio: no entrena, no predice y no mira variables.
+    # Va antes de armar el motor a proposito, para que un fallo bajando las
+    # estadisticas avanzadas no impida calificar emisiones que ya estan selladas.
+    if args.command == "record":
+        record = build_record(args.root, cargar_resultados(args.root, source["sha256"]))
+        write_json(args.root / "data/edgebook-metrics.json", record)
+        print(json.dumps({"versions": [{k: v[k] for k in ("model_version", "graded", "pending")}
+                                       for v in record["versions"]]}, indent=2))
+        return
     data = build(prepare(raw, as_of))
     # Año NFL: enero/febrero pertenecen a la temporada anterior.
     local = as_of.tz_convert("America/New_York")
@@ -82,6 +92,10 @@ def main():
         write_json(args.root / "data/edgebook-latest.json", output)
         (args.root / "artifacts").mkdir(exist_ok=True)
         joblib.dump(model, args.root / "artifacts/model.joblib")
+        # El record se recalcula con cada emision: los partidos de la semana
+        # pasada ya tienen resultado cuando se emite la siguiente.
+        write_json(args.root / "data/edgebook-metrics.json",
+                   build_record(args.root, cargar_resultados(args.root, source["sha256"])))
         print(json.dumps({"status": output["status"], "games": len(output["games"]), "training": output["training"]}, indent=2))
 
 
