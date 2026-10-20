@@ -1,5 +1,13 @@
 name: Generar predicciones NFL
 on:
+  # Sin horario el modelo dejo de publicar despues de la semana 2: solo corria
+  # cuando alguien lo lanzaba a mano. Miercoles es la emision semanal (ya con
+  # el lunes calificado y antes del jueves) y es la que cuenta en el record,
+  # que toma la PRIMERA emision de cada partido. Sabado solo refresca QB y
+  # lesiones para el domingo. Horas en UTC: 14:51 = 8:51 en CDMX.
+  schedule:
+    - cron: "51 14 * 9-12,1-2 3"
+    - cron: "51 14 * 9-12,1-2 6"
   workflow_dispatch:
     inputs:
       publish:
@@ -28,17 +36,18 @@ jobs:
           name: nfl-predictions
           path: |
             data/edgebook-latest.json
+            data/edgebook-metrics.json
             data/history/
             data/context/
             data/advanced-sources.json
             data/raw/source.json
       # Publicar es explícito: sin esta opción la ejecución solo deja el artefacto.
       - name: Publicar emisión en la rama
-        if: ${{ inputs.publish }}
+        if: ${{ github.event_name == 'schedule' || inputs.publish }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/edgebook-latest.json data/history data/context data/advanced-sources.json
+          git add data/edgebook-latest.json data/edgebook-metrics.json data/history data/context data/advanced-sources.json
           git diff --cached --quiet && echo 'Sin cambios que publicar' && exit 0
           git commit -m "Publicar emisión NFL $(date -u +%Y-%m-%dT%H:%MZ)"
           git push origin HEAD:${GITHUB_REF_NAME}
