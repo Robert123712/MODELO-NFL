@@ -1,9 +1,177 @@
 {
   "schema_version": "1.0",
   "sport": "NFL",
-  "generated_at": "2026-09-16T01:48:50.301523+00:00",
+  "generated_at": "2026-10-20T16:41:37.322202+00:00",
   "minimum_meaningful": 100,
   "versions": [
+    {
+      "model_version": "0.3.0-da34e463489a",
+      "unlabeled": false,
+      "from": "2026-09-17",
+      "to": "2026-09-21",
+      "graded": 16,
+      "pending": 0,
+      "significant": false,
+      "markets": {
+        "moneyline": {
+          "n": 16,
+          "base_rate": 0.4375,
+          "brier": 0.2434,
+          "log_loss": 0.6759,
+          "hit_rate": 0.5625,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.0,
+              "to": 0.35,
+              "n": 2,
+              "predicted": 0.2112,
+              "observed": 0.0
+            },
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 2,
+              "predicted": 0.3703,
+              "observed": 0.5
+            },
+            {
+              "from": 0.5,
+              "to": 0.55,
+              "n": 1,
+              "predicted": 0.5485,
+              "observed": 0.0
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 5,
+              "predicted": 0.6036,
+              "observed": 0.6
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 6,
+              "predicted": 0.6881,
+              "observed": 0.5
+            }
+          ]
+        },
+        "closing_moneyline": {
+          "n": 16,
+          "base_rate": 0.4375,
+          "brier": 0.2306,
+          "log_loss": 0.6577,
+          "hit_rate": 0.6875,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.0,
+              "to": 0.35,
+              "n": 2,
+              "predicted": 0.3045,
+              "observed": 0.0
+            },
+            {
+              "from": 0.35,
+              "to": 0.45,
+              "n": 2,
+              "predicted": 0.3973,
+              "observed": 0.0
+            },
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 2,
+              "predicted": 0.5721,
+              "observed": 0.5
+            },
+            {
+              "from": 0.65,
+              "to": 1.01,
+              "n": 10,
+              "predicted": 0.7198,
+              "observed": 0.6
+            }
+          ]
+        }
+      },
+      "projected_total": {
+        "n": 16,
+        "mae": 11.269,
+        "bias": 4.869,
+        "std_error": 3.4244,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 11.269,
+            "bias": 4.869,
+            "std_error": 3.4244
+          }
+        ]
+      },
+      "projected_margin": {
+        "n": 16,
+        "mae": 12.156,
+        "bias": 2.806,
+        "std_error": 3.5776,
+        "by_month": [
+          {
+            "month": "2026-09",
+            "n": 16,
+            "mae": 12.156,
+            "bias": 2.806,
+            "std_error": 3.5776
+          }
+        ]
+      },
+      "closing_line": {
+        "total": {
+          "n": 16,
+          "mae": 10.688,
+          "bias": 4.688,
+          "std_error": 3.2346,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 10.688,
+              "bias": 4.688,
+              "std_error": 3.2346
+            }
+          ]
+        },
+        "margin": {
+          "n": 16,
+          "mae": 11.844,
+          "bias": 3.906,
+          "std_error": 3.339,
+          "by_month": [
+            {
+              "month": "2026-09",
+              "n": 16,
+              "mae": 11.844,
+              "bias": 3.906,
+              "std_error": 3.339
+            }
+          ]
+        }
+      },
+      "interval_coverage": {
+        "margin": {
+          "n": 16,
+          "covered": 0.8125,
+          "nominal": 0.8
+        },
+        "total": {
+          "n": 16,
+          "covered": 0.6875,
+          "nominal": 0.8
+        }
+      }
+    },
     {
       "model_version": "0.3.0-eeb91d80a452",
       "unlabeled": false,
@@ -702,6 +870,26 @@
           "covered": 0.75,
           "nominal": 0.8
         }
+      }
+    },
+    {
+      "model_version": "0.3.0-e29dcdec463d",
+      "unlabeled": false,
+      "from": null,
+      "to": null,
+      "graded": 0,
+      "pending": 14,
+      "significant": false,
+      "markets": {},
+      "projected_total": null,
+      "projected_margin": null,
+      "closing_line": {
+        "total": null,
+        "margin": null
+      },
+      "interval_coverage": {
+        "margin": null,
+        "total": null
       }
     }
   ]
