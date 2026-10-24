@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "sport": "NFL",
-  "generated_at": "2026-10-21T18:58:55.357383+00:00",
+  "generated_at": "2026-10-24T17:40:01.142391+00:00",
   "minimum_meaningful": 100,
   "versions": [
     {
@@ -10,7 +10,7 @@
       "from": "2026-09-17",
       "to": "2026-09-21",
       "graded": 16,
-      "pending": 0,
+      "pending": 14,
       "significant": false,
       "markets": {
         "moneyline": {
@@ -875,21 +875,120 @@
     {
       "model_version": "0.3.0-e29dcdec463d",
       "unlabeled": false,
-      "from": null,
-      "to": null,
-      "graded": 0,
-      "pending": 14,
+      "from": "2026-10-22",
+      "to": "2026-10-22",
+      "graded": 1,
+      "pending": 13,
       "significant": false,
-      "markets": {},
-      "projected_total": null,
-      "projected_margin": null,
+      "markets": {
+        "moneyline": {
+          "n": 1,
+          "base_rate": 1.0,
+          "brier": 0.2678,
+          "log_loss": 0.7287,
+          "hit_rate": 0.0,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.45,
+              "to": 0.5,
+              "n": 1,
+              "predicted": 0.4825,
+              "observed": 1.0
+            }
+          ]
+        },
+        "closing_moneyline": {
+          "n": 1,
+          "base_rate": 1.0,
+          "brier": 0.1739,
+          "log_loss": 0.5396,
+          "hit_rate": 1.0,
+          "baseline_brier": 0.25,
+          "calibration": [
+            {
+              "from": 0.55,
+              "to": 0.65,
+              "n": 1,
+              "predicted": 0.583,
+              "observed": 1.0
+            }
+          ]
+        }
+      },
+      "projected_total": {
+        "n": 1,
+        "mae": 7.3,
+        "bias": -7.3,
+        "std_error": 0.0,
+        "by_month": [
+          {
+            "month": "2026-10",
+            "n": 1,
+            "mae": 7.3,
+            "bias": -7.3,
+            "std_error": 0.0
+          }
+        ]
+      },
+      "projected_margin": {
+        "n": 1,
+        "mae": 5.7,
+        "bias": -5.7,
+        "std_error": 0.0,
+        "by_month": [
+          {
+            "month": "2026-10",
+            "n": 1,
+            "mae": 5.7,
+            "bias": -5.7,
+            "std_error": 0.0
+          }
+        ]
+      },
       "closing_line": {
-        "total": null,
-        "margin": null
+        "total": {
+          "n": 1,
+          "mae": 3.5,
+          "bias": -3.5,
+          "std_error": 0.0,
+          "by_month": [
+            {
+              "month": "2026-10",
+              "n": 1,
+              "mae": 3.5,
+              "bias": -3.5,
+              "std_error": 0.0
+            }
+          ]
+        },
+        "margin": {
+          "n": 1,
+          "mae": 3.0,
+          "bias": -3.0,
+          "std_error": 0.0,
+          "by_month": [
+            {
+              "month": "2026-10",
+              "n": 1,
+              "mae": 3.0,
+              "bias": -3.0,
+              "std_error": 0.0
+            }
+          ]
+        }
       },
       "interval_coverage": {
-        "margin": null,
-        "total": null
+        "margin": {
+          "n": 1,
+          "covered": 1.0,
+          "nominal": 0.8
+        },
+        "total": {
+          "n": 1,
+          "covered": 1.0,
+          "nominal": 0.8
+        }
       }
     }
   ]
