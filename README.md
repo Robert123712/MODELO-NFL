@@ -42,12 +42,14 @@ El formato sigue siendo **1.1**. La versión del motor incluye una huella para n
 mezclar matemática distinta bajo un mismo sello. Las emisiones v0.1/v0.2 se
 conservan sin modificaciones.
 
-## Simulador con estadísticas por jugador (en construcción)
+## Simulador con estadísticas por jugador (experimental)
 
-Se está armando un simulador por jugador con la estructura del modelo NBA: rol de
-cada jugador, volumen, Monte Carlo de 10,000 partidos y props. La fase 1 (rol:
-snaps, target share y carry share) está en `nfl_model/jugadores/` y todavía no
-entra a la emisión. Detalle y backtest en [docs/JUGADORES.md](docs/JUGADORES.md).
+Simulador por jugador con la estructura del modelo NBA: rol de cada jugador,
+Monte Carlo de 10,000 partidos por series (TD y goles de campo) anclado al
+marcador del Ridge, y props por jugador dentro de cada simulación. Escribe
+`data/latest.json` y `data/video/<espn_game_id>.json`; no toca el contrato 1.1.
+Código en `nfl_model/jugadores/`, detalle y backtest en
+[docs/JUGADORES.md](docs/JUGADORES.md).
 
 ## Pantalla visual
 
