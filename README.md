@@ -42,6 +42,13 @@ El formato sigue siendo **1.1**. La versión del motor incluye una huella para n
 mezclar matemática distinta bajo un mismo sello. Las emisiones v0.1/v0.2 se
 conservan sin modificaciones.
 
+## Simulador con estadísticas por jugador (en construcción)
+
+Se está armando un simulador por jugador con la estructura del modelo NBA: rol de
+cada jugador, volumen, Monte Carlo de 10,000 partidos y props. La fase 1 (rol:
+snaps, target share y carry share) está en `nfl_model/jugadores/` y todavía no
+entra a la emisión. Detalle y backtest en [docs/JUGADORES.md](docs/JUGADORES.md).
+
 ## Pantalla visual
 
 [Abrir pantalla NFL (privada)](https://edgebook-nfl-robert.rsapicks.chatgpt.site)
