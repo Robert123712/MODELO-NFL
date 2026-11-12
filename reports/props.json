@@ -1,0 +1,263 @@
+{
+  "simulador": {
+    "puntos_td": 6.0,
+    "pat": 0.95,
+    "parte_td": 0.78,
+    "no_ofensivo": 0.052,
+    "series": [
+      10,
+      11,
+      12
+    ],
+    "p_series": [
+      0.3,
+      0.4,
+      0.3
+    ],
+    "ot_empate": 0.07,
+    "ot_fg": 0.55
+  },
+  "marcador_2020_2025": {
+    "partidos": 1693,
+    "brier": {
+      "simulador": 0.2219,
+      "ridge_logistica": 0.2215
+    },
+    "cobertura_80_margen": 0.818,
+    "margen_exacto": {
+      "3": {
+        "simulado": 0.092,
+        "real": 0.152
+      },
+      "7": {
+        "simulado": 0.073,
+        "real": 0.077
+      },
+      "empate": {
+        "simulado": 0.003,
+        "real": 0.003
+      }
+    },
+    "una_posesion": {
+      "simulado": 0.437,
+      "real": 0.534
+    }
+  },
+  "props_prueba_ciega_2025": {
+    "pass_yds": {
+      "n": 457,
+      "sim": 61.326,
+      "temp": 65.906,
+      "ult4": 69.016,
+      "calibracion": [
+        {
+          "p_modelo": 0.369,
+          "p_real": 0.286,
+          "n": 35
+        },
+        {
+          "p_modelo": 0.452,
+          "p_real": 0.51,
+          "n": 208
+        },
+        {
+          "p_modelo": 0.542,
+          "p_real": 0.566,
+          "n": 99
+        },
+        {
+          "p_modelo": 0.642,
+          "p_real": 0.545,
+          "n": 33
+        },
+        {
+          "p_modelo": 0.844,
+          "p_real": 0.85,
+          "n": 60
+        }
+      ],
+      "brier": 0.2446
+    },
+    "pass_td": {
+      "n": 474,
+      "sim": 0.928,
+      "temp": 0.985,
+      "ult4": 1.016,
+      "calibracion": [
+        {
+          "p_modelo": 0.147,
+          "p_real": 0.213,
+          "n": 89
+        },
+        {
+          "p_modelo": 0.353,
+          "p_real": 0.358,
+          "n": 95
+        },
+        {
+          "p_modelo": 0.452,
+          "p_real": 0.444,
+          "n": 135
+        },
+        {
+          "p_modelo": 0.541,
+          "p_real": 0.537,
+          "n": 82
+        },
+        {
+          "p_modelo": 0.771,
+          "p_real": 0.66,
+          "n": 47
+        }
+      ],
+      "brier": 0.2295
+    },
+    "rush_yds": {
+      "n": 1869,
+      "sim": 15.734,
+      "temp": 16.082,
+      "ult4": 16.591,
+      "calibracion": [
+        {
+          "p_modelo": 0.148,
+          "p_real": 0.196,
+          "n": 316
+        },
+        {
+          "p_modelo": 0.356,
+          "p_real": 0.319,
+          "n": 389
+        },
+        {
+          "p_modelo": 0.448,
+          "p_real": 0.415,
+          "n": 574
+        },
+        {
+          "p_modelo": 0.542,
+          "p_real": 0.467,
+          "n": 360
+        },
+        {
+          "p_modelo": 0.644,
+          "p_real": 0.589,
+          "n": 112
+        },
+        {
+          "p_modelo": 0.831,
+          "p_real": 0.771,
+          "n": 118
+        }
+      ],
+      "brier": 0.2214
+    },
+    "rec": {
+      "n": 4923,
+      "sim": 1.121,
+      "temp": 1.149,
+      "ult4": 1.163,
+      "calibracion": [
+        {
+          "p_modelo": 0.169,
+          "p_real": 0.197,
+          "n": 1469
+        },
+        {
+          "p_modelo": 0.349,
+          "p_real": 0.352,
+          "n": 1090
+        },
+        {
+          "p_modelo": 0.448,
+          "p_real": 0.442,
+          "n": 1065
+        },
+        {
+          "p_modelo": 0.545,
+          "p_real": 0.528,
+          "n": 729
+        },
+        {
+          "p_modelo": 0.645,
+          "p_real": 0.572,
+          "n": 397
+        },
+        {
+          "p_modelo": 0.763,
+          "p_real": 0.647,
+          "n": 173
+        }
+      ],
+      "brier": 0.215
+    },
+    "rec_yds": {
+      "n": 4923,
+      "sim": 14.591,
+      "temp": 14.863,
+      "ult4": 15.265,
+      "calibracion": [
+        {
+          "p_modelo": 0.171,
+          "p_real": 0.196,
+          "n": 1467
+        },
+        {
+          "p_modelo": 0.352,
+          "p_real": 0.365,
+          "n": 1627
+        },
+        {
+          "p_modelo": 0.442,
+          "p_real": 0.432,
+          "n": 1225
+        },
+        {
+          "p_modelo": 0.538,
+          "p_real": 0.564,
+          "n": 424
+        },
+        {
+          "p_modelo": 0.638,
+          "p_real": 0.658,
+          "n": 117
+        },
+        {
+          "p_modelo": 0.848,
+          "p_real": 0.81,
+          "n": 63
+        }
+      ],
+      "brier": 0.2117
+    },
+    "td": {
+      "n": 4923,
+      "sim": 0.29,
+      "temp": 0.286,
+      "ult4": 0.286,
+      "calibracion": [
+        {
+          "p_modelo": 0.111,
+          "p_real": 0.118,
+          "n": 3974
+        },
+        {
+          "p_modelo": 0.344,
+          "p_real": 0.329,
+          "n": 550
+        },
+        {
+          "p_modelo": 0.443,
+          "p_real": 0.384,
+          "n": 263
+        },
+        {
+          "p_modelo": 0.539,
+          "p_real": 0.496,
+          "n": 119
+        }
+      ],
+      "brier": 0.1231
+    }
+  },
+  "metodo": "Walk-forward. Disponibilidad = jugadores con snaps. Error medio absoluto por jugador-partido con 3+ partidos previos en la temporada; calibración con la línea = promedio de temporada redondeado a .5."
+}
