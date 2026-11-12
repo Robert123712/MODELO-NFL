@@ -27,6 +27,10 @@ STATS = ['player_id', 'player_display_name', 'position', 'season', 'week', 'seas
          'passing_tds', 'passing_interceptions', 'sacks_suffered', 'carries', 'rushing_yards',
          'rushing_tds', 'receptions', 'targets', 'receiving_yards', 'receiving_tds',
          'receiving_air_yards']
+# Para contar TD y goles de campo por equipo (kickers y defensa incluidos).
+EQUIPO = ['season', 'week', 'season_type', 'game_id', 'team', 'passing_tds', 'rushing_tds',
+          'def_tds', 'special_teams_tds', 'fumble_recovery_tds', 'fg_made', 'pat_made',
+          'passing_2pt_conversions', 'rushing_2pt_conversions', 'def_safeties', 'attempts']
 SNAPS = ['game_id', 'season', 'game_type', 'week', 'player', 'pfr_player_id', 'position',
          'team', 'opponent', 'offense_snaps', 'offense_pct']
 CONTEO = ['completions', 'attempts', 'passing_yards', 'passing_tds', 'passing_interceptions',
@@ -66,7 +70,7 @@ def descargar(root: Path, desde: int, hasta: int):
     def uno(item):
         tipo, year = item
         if tipo == 'stats':
-            url, cols = f'{BASE}/stats_player/stats_player_week_{year}.csv', STATS
+            url, cols = f'{BASE}/stats_player/stats_player_week_{year}.csv', list(dict.fromkeys(STATS + EQUIPO))
         else:
             url, cols = f'{BASE}/snap_counts/snap_counts_{year}.csv', SNAPS
         frame, meta = _bajar(url, cache / f'{tipo}-{year}.csv', cols, year == hasta)
@@ -80,6 +84,17 @@ def descargar(root: Path, desde: int, hasta: int):
     snaps = pd.concat([f for t, f, _ in resultados if t == 'snaps' and len(f)], ignore_index=True)
     fuentes = [m for _, _, m in resultados] + [meta_indice]
     return stats, snaps, indice, fuentes
+
+
+def equipo_partido(stats: pd.DataFrame) -> pd.DataFrame:
+    """TD de pase, de carrera y totales por equipo y partido, para la fracción de TD por pase."""
+    stats = stats.copy()
+    stats['team'] = stats.team.replace(ALIASES)
+    for c in ('passing_tds', 'rushing_tds', 'def_tds', 'special_teams_tds', 'fumble_recovery_tds', 'fg_made'):
+        stats[c] = stats[c].fillna(0) if c in stats else 0
+    return (stats.groupby(['game_id', 'team', 'season', 'week'])
+            .agg(td_pase=('passing_tds', 'sum'), td_carrera=('rushing_tds', 'sum'), fg=('fg_made', 'sum'))
+            .reset_index().sort_values(['season', 'week', 'game_id']))
 
 
 def juegos_jugador(stats: pd.DataFrame, snaps: pd.DataFrame, indice: pd.DataFrame) -> pd.DataFrame:
