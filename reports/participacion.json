@@ -1,0 +1,230 @@
+{
+  "parametros": {
+    "vida_media": 3,
+    "peso_temporada_pasada": 0.5,
+    "previo_partidos": 0,
+    "misma_posicion": 0.5,
+    "ventana_ausentes": 3,
+    "vida_media_equipo": 8.0
+  },
+  "tasas_por_snap": {
+    "QB": {
+      "target_share": 0.0004912681630132346,
+      "carry_share": 0.15042373169922255
+    },
+    "RB": {
+      "target_share": 0.17275410743709704,
+      "carry_share": 0.7275590269854354
+    },
+    "TE": {
+      "target_share": 0.16251743929207418,
+      "carry_share": 0.005322614414439688
+    },
+    "WR": {
+      "target_share": 0.23378514522048757,
+      "carry_share": 0.012916141216584746
+    }
+  },
+  "afinacion": {
+    "temporadas": [
+      2023,
+      2024
+    ],
+    "resultado": {
+      "targets": {
+        "n": 9823,
+        "modelo": 1.4993,
+        "temporada": 1.5477,
+        "ult4": 1.5757
+      },
+      "carries": {
+        "n": 3725,
+        "modelo": 2.6774,
+        "temporada": 2.864,
+        "ult4": 2.854
+      },
+      "offense_pct": {
+        "n": 9584,
+        "modelo": 0.121,
+        "temporada": 0.1251,
+        "ult4": 0.1191
+      },
+      "target_share": {
+        "n": 9823,
+        "modelo": 0.0444,
+        "temporada": 0.0459,
+        "ult4": 0.0468
+      },
+      "carry_share": {
+        "n": 3725,
+        "modelo": 0.0841,
+        "temporada": 0.0926,
+        "ult4": 0.0906
+      }
+    },
+    "mejores": [
+      {
+        "puntaje": 4.1767,
+        "vida_media": 3,
+        "peso_temporada_pasada": 0.5,
+        "previo_partidos": 0,
+        "misma_posicion": 0.5,
+        "ventana_ausentes": 3,
+        "vida_media_equipo": 8.0
+      },
+      {
+        "puntaje": 4.1781,
+        "vida_media": 3,
+        "peso_temporada_pasada": 0.25,
+        "previo_partidos": 0,
+        "misma_posicion": 0.5,
+        "ventana_ausentes": 3,
+        "vida_media_equipo": 8.0
+      },
+      {
+        "puntaje": 4.1822,
+        "vida_media": 2,
+        "peso_temporada_pasada": 1.0,
+        "previo_partidos": 0,
+        "misma_posicion": 0.5,
+        "ventana_ausentes": 3,
+        "vida_media_equipo": 8.0
+      },
+      {
+        "puntaje": 4.1825,
+        "vida_media": 4,
+        "peso_temporada_pasada": 0.25,
+        "previo_partidos": 0,
+        "misma_posicion": 0.5,
+        "ventana_ausentes": 3,
+        "vida_media_equipo": 8.0
+      },
+      {
+        "puntaje": 4.1839,
+        "vida_media": 2,
+        "peso_temporada_pasada": 0.5,
+        "previo_partidos": 0,
+        "misma_posicion": 0.5,
+        "ventana_ausentes": 3,
+        "vida_media_equipo": 8.0
+      }
+    ]
+  },
+  "prueba_ciega": {
+    "temporadas": [
+      2025
+    ],
+    "resultado": {
+      "targets": {
+        "n": 4923,
+        "modelo": 1.4541,
+        "temporada": 1.505,
+        "ult4": 1.5038
+      },
+      "carries": {
+        "n": 1869,
+        "modelo": 2.6018,
+        "temporada": 2.7333,
+        "ult4": 2.7436
+      },
+      "offense_pct": {
+        "n": 4692,
+        "modelo": 0.1247,
+        "temporada": 0.1278,
+        "ult4": 0.1234
+      },
+      "target_share": {
+        "n": 4923,
+        "modelo": 0.0447,
+        "temporada": 0.0461,
+        "ult4": 0.0464
+      },
+      "carry_share": {
+        "n": 1869,
+        "modelo": 0.0797,
+        "temporada": 0.0866,
+        "ult4": 0.0847
+      }
+    }
+  },
+  "metodo": "Walk-forward; disponibilidad = jugadores con snaps (inactivos conocidos). Error medio absoluto por jugador-partido; RB/WR/TE (acarreos: RB/QB) con 3+ partidos previos en la temporada. Modelo de conteo = share proyectado por volumen esperado del equipo.",
+  "fuentes": [
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2021.csv",
+      "source_sha256": "41915fb49238902ad1f129ebf0405b11a1e710454ae0fe8f7b3e4f9145875f48",
+      "cache_sha256": "a8a8452bbded497a54645c470e5e4203ef826b69855346d771a0bce41eccc605",
+      "fetched_at": "2026-11-12T20:39:38.815676+00:00",
+      "rows": 18969
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2022.csv",
+      "source_sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+      "cache_sha256": "4c45f4849ec718803d60f3caced13a3ada22ceea0532e2e18040d644ccdfd75c",
+      "fetched_at": "2026-11-12T20:39:38.597034+00:00",
+      "rows": 18831
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2023.csv",
+      "source_sha256": "f19cb71a5de0dce7fd09376026237c9ee9d5a93fe13815a2ea3ec2d37204cb17",
+      "cache_sha256": "6a587091c9154a3529bce166d6224f82b8e31dc62d26a3d3110c2f43c38731b4",
+      "fetched_at": "2026-11-12T20:39:38.957325+00:00",
+      "rows": 18643
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2024.csv",
+      "source_sha256": "3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759",
+      "cache_sha256": "32a47e770ae383c44441afe64c3c925fcd947704657013fabf34af56a0a5beaa",
+      "fetched_at": "2026-11-12T20:39:39.208749+00:00",
+      "rows": 18983
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2025.csv",
+      "source_sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+      "cache_sha256": "e49e627dab64ac654ef4bb85b0e53c4b3054acd2826dcc96603aa0d2caf12a6c",
+      "fetched_at": "2026-11-12T20:39:39.694775+00:00",
+      "rows": 19422
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2021.csv",
+      "source_sha256": "8e4dae054a4749cf2d4919508d9161a6068fd67509979aefa385bfb3803d0ee5",
+      "cache_sha256": "c8bd127ea36994f1a29a15f7f546a853c8595aad90ab160bbdd11c14681f3040",
+      "fetched_at": "2026-11-12T20:39:39.565938+00:00",
+      "rows": 26468
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2022.csv",
+      "source_sha256": "0018a4833fbf0f825286c1c27450c6254391b548d6c55bcde728e93e4816815a",
+      "cache_sha256": "3037fa88104c23f36df8637a57b782ad5fea8389b9e2125cf3bd5147d8020fa1",
+      "fetched_at": "2026-11-12T20:39:39.454588+00:00",
+      "rows": 26381
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2023.csv",
+      "source_sha256": "303b61aa5c33ffda863f93a750fc14483f397f9187ad502b1ce71e9b516a64c0",
+      "cache_sha256": "65ac56f3e8e38adfc81eb10614a5a556dd711066c63e2dc8033d849cfe9ef4da",
+      "fetched_at": "2026-11-12T20:39:39.836881+00:00",
+      "rows": 26540
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2024.csv",
+      "source_sha256": "a2aa58efe093f8aa0ad5aadf09f81d8ec690a1183bd2dde68d20e7f109a9c335",
+      "cache_sha256": "1b121049eb746f710db765f00914d8466cbcede414f51da1df2820e99c4dea8f",
+      "fetched_at": "2026-11-12T20:39:40.161204+00:00",
+      "rows": 26615
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2025.csv",
+      "source_sha256": "3fc2deb0e9ad86d34d4578cb80bb21c95253e088ee22ca028adf46f7485eff1f",
+      "cache_sha256": "e6db659e273299c6433682811b197ba8a26ce21b024c653b6bdc7806774243e5",
+      "fetched_at": "2026-11-12T20:39:40.020534+00:00",
+      "rows": 26613
+    },
+    {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/players/players.csv",
+      "source_sha256": "f90a9d0009b8e5d50353b0013971b466534b25cc2f98b7ad14d39361356975d7",
+      "cache_sha256": "5846263c04992ee49fe1226146c124231bd43ff2182f5721b7d7816b53fe7fd3",
+      "fetched_at": "2026-11-12T20:39:41.219895+00:00",
+      "rows": 24869
+    }
+  ]
+}

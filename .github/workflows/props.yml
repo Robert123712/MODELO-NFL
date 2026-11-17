@@ -1,0 +1,36 @@
+name: Props NFL por jugador
+on:
+  # Las props necesitan las bajas del día, que cambian hasta ~90 min antes del
+  # kickoff. No re-emite el marcador (eso es predict.yml): toma la emisión
+  # publicada, consulta lesiones y QB probable en ESPN y vuelve a simular.
+  # Horas en UTC: domingo 16:00 y 19:30 (juegos de 12:00 y 15:05 ET),
+  # lunes y jueves 23:00 (juego de la noche).
+  schedule:
+    - cron: "0 16 * 9-12,1-2 0"
+    - cron: "30 19 * 9-12,1-2 0"
+    - cron: "0 23 * 9-12,1-2 1,4"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: nfl-publicar
+  cancel-in-progress: false
+jobs:
+  props:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -e '.[test]'
+      - run: python scripts/props_partidos.py
+      - name: Publicar props en la rama
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/latest.json data/video data/context
+          git diff --cached --quiet && echo 'Sin cambios que publicar' && exit 0
+          git commit -m "Props NFL $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin ${GITHUB_REF_NAME}
+          git push origin HEAD:${GITHUB_REF_NAME}

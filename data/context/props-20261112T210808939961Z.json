@@ -1,0 +1,2570 @@
+{
+  "observed_at": "2026-11-12T21:08:08.939961+00:00",
+  "status": "collected",
+  "games": {
+    "2026_10_WAS_NYG": {
+      "status": "available",
+      "observed_at": "2026-11-12T21:08:08.939488+00:00",
+      "source": {
+        "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873052",
+        "observed_at": "2026-11-12T21:08:06.280821+00:00",
+        "sha256": "03878969d9a0aa52a7971235e661c789a40b374e859ca2bd85480d5073088efe"
+      },
+      "teams": {
+        "home": {
+          "espn_team_id": "19",
+          "injuries": {
+            "status": "reported",
+            "players": [
+              {
+                "espn_player_id": "4040761",
+                "name": "Devin Singletary",
+                "position": "RB",
+                "status": "Active",
+                "reported_at": "2026-11-12T18:45Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4371961",
+                "name": "Micah McFadden",
+                "position": "LB",
+                "status": "Active",
+                "reported_at": "2026-11-12T02:10Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4950400",
+                "name": "Arvell Reese",
+                "position": "LB",
+                "status": "Active",
+                "reported_at": "2026-11-12T02:07Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4725996",
+                "name": "Abdul Carter",
+                "position": "LB",
+                "status": "Active",
+                "reported_at": "2026-11-11T23:30Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4691889",
+                "name": "Greg Desrosiers Jr.",
+                "position": "RB",
+                "status": "Active",
+                "reported_at": "2026-11-11T02:56Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4921249",
+                "name": "Colton Hood",
+                "position": "CB",
+                "status": "Out",
+                "reported_at": "2026-11-11T01:35Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4429148",
+                "name": "Theo Johnson",
+                "position": "TE",
+                "status": "Active",
+                "reported_at": "2026-11-11T00:23Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4040655",
+                "name": "Darnell Mooney",
+                "position": "WR",
+                "status": "Active",
+                "reported_at": "2026-11-10T23:27Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4257188",
+                "name": "Charlie Jones",
+                "position": "WR",
+                "status": "Active",
+                "reported_at": "2026-11-10T23:03Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4433970",
+                "name": "J.J. McCarthy",
+                "position": "QB",
+                "status": "Questionable",
+                "reported_at": "2026-11-10T21:39Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4696981",
+                "name": "Cam Skattebo",
+                "position": "RB",
+                "status": "Out",
+                "reported_at": "2026-11-10T21:38Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4682648",
+                "name": "Malachi Fields",
+                "position": "WR",
+                "status": "Active",
+                "reported_at": "2026-11-10T04:13Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4040615",
+                "name": "Malik Harrison",
+                "position": "LB",
+                "status": "Questionable",
+                "reported_at": "2026-11-10T00:09Z",
+                "injury_type": "Groin"
+              },
+              {
+                "espn_player_id": "4691043",
+                "name": "Nikko Reed",
+                "position": "CB",
+                "status": "Active",
+                "reported_at": "2026-11-09T21:30Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4039243",
+                "name": "Josh Sills",
+                "position": "G",
+                "status": "Active",
+                "reported_at": "2026-11-09T21:30Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4590292",
+                "name": "Thomas Fidone II",
+                "position": "TE",
+                "status": "Active",
+                "reported_at": "2026-11-09T21:30Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "5144942",
+                "name": "CJ Okoye",
+                "position": "DT",
+                "status": "Active",
+                "reported_at": "2026-11-09T21:30Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4686362",
+                "name": "Marcus Mbow",
+                "position": "OT",
+                "status": "Active",
+                "reported_at": "2026-11-09T21:30Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "5082424",
+                "name": "Dominic Zvada",
+                "position": "PK",
+                "status": "Active",
+                "reported_at": "2026-11-09T04:01Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4361050",
+                "name": "Isaiah Likely",
+                "position": "TE",
+                "status": "Active",
+                "reported_at": "2026-11-09T02:32Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4595348",
+                "name": "Malik Nabers",
+                "position": "WR",
+                "status": "Active",
+                "reported_at": "2026-11-08T21:54Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4692590",
+                "name": "Jalin Hyatt",
+                "position": "WR",
+                "status": "Active",
+                "reported_at": "2026-11-08T00:59Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4259566",
+                "name": "Andrew Thomas",
+                "position": "OT",
+                "status": "Active",
+                "reported_at": "2026-11-07T03:56Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4426542",
+                "name": "Darius Alexander",
+                "position": "DT",
+                "status": "Active",
+                "reported_at": "2026-11-06T22:53Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "3115303",
+                "name": "Jermaine Eluemunor",
+                "position": "OT",
+                "status": "Active",
+                "reported_at": "2026-11-06T22:53Z",
+                "injury_type": null
+              }
+            ],
+            "coverage": "provider_list_not_guaranteed_complete",
+            "meaning": "Reporte del proveedor; lista vacía no garantiza plantilla sana."
+          },
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries?limit=1000",
+              "observed_at": "2026-11-12T21:08:05.871198+00:00",
+              "sha256": "d09706801b067f28c6c4ae484e6c7eac18c21a3c5bf0a28d2eed2dfb3f7ddc51"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/roster",
+              "observed_at": "2026-11-12T21:08:06.684043+00:00",
+              "sha256": "1dd1577564de3b99d043f0826ae6c55a89113594e484ac8fb30ea5fffa0b57fa"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/roster?season=2025",
+              "observed_at": "2026-11-12T21:08:07.068960+00:00",
+              "sha256": "1646379b520b68e279bf037b8755b98edd78d1c08a6187e0acd77f2b5fa076cf"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+              "observed_at": "2026-11-12T21:08:07.528192+00:00",
+              "sha256": "805c26a0e569084da7dd655d9d71709d749fef7ad2fe536eec5e653f2e32f811"
+            }
+          ],
+          "roster": {
+            "players": [
+              {
+                "espn_player_id": "4570296",
+                "name": "Dalen Cambre",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5082353",
+                "name": "J.C. Davis",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4691889",
+                "name": "Greg Desrosiers Jr.",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3115303",
+                "name": "Jermaine Eluemunor",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4590292",
+                "name": "Thomas Fidone II",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4682648",
+                "name": "Malachi Fields",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426489",
+                "name": "Bryan Hudson",
+                "position": "C",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4692590",
+                "name": "Jalin Hyatt",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4429148",
+                "name": "Theo Johnson",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4257188",
+                "name": "Charlie Jones",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361050",
+                "name": "Isaiah Likely",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4431562",
+                "name": "Phil Mafah",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2531358",
+                "name": "Chris Manhertz",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4686362",
+                "name": "Marcus Mbow",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4433970",
+                "name": "J.J. McCarthy",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4040655",
+                "name": "Darnell Mooney",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4595348",
+                "name": "Malik Nabers",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2975417",
+                "name": "Patrick Ricard",
+                "position": "FB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3929936",
+                "name": "Jon Runyan",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4240771",
+                "name": "John Michael Schmitz Jr.",
+                "position": "C",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4039243",
+                "name": "Josh Sills",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4040761",
+                "name": "Devin Singletary",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4696981",
+                "name": "Cam Skattebo",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3049339",
+                "name": "Aaron Stinnie",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4259566",
+                "name": "Andrew Thomas",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4360516",
+                "name": "Tyrone Tracy Jr.",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2969939",
+                "name": "Jameis Winston",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426542",
+                "name": "Darius Alexander",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4428328",
+                "name": "Deonte Banks",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4362234",
+                "name": "Zaire Barnes",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3932901",
+                "name": "Elijah Campbell",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4725996",
+                "name": "Abdul Carter",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4427207",
+                "name": "Trace Ford",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "16837",
+                "name": "Shelby Harris",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4040615",
+                "name": "Malik Harrison",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4373809",
+                "name": "Jevon Holland",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4921249",
+                "name": "Colton Hood",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5159928",
+                "name": "Bobby Jamison-Travis",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4427636",
+                "name": "Nic Jones",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4876380",
+                "name": "Jack Kelly",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4258237",
+                "name": "Raheem Layne",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4371961",
+                "name": "Micah McFadden",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361266",
+                "name": "Greg Newsome II",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4430261",
+                "name": "Tyler Nubin",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5144942",
+                "name": "CJ Okoye",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4431321",
+                "name": "Dru Phillips",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4240706",
+                "name": "Jason Pinnock",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2977670",
+                "name": "DJ Reader",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4691043",
+                "name": "Nikko Reed",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4950400",
+                "name": "Arvell Reese",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3042476",
+                "name": "Dawuane Smoot",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426326",
+                "name": "Kayvon Thibodeaux",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4362492",
+                "name": "Ar'Darius Washington",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4883114",
+                "name": "Ben Mann",
+                "position": "LS",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4260224",
+                "name": "Jordan Stout",
+                "position": "P",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5082424",
+                "name": "Dominic Zvada",
+                "position": "PK",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4242547",
+                "name": "Paulson Adebo",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4243389",
+                "name": "Calvin Austin III",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4361834",
+                "name": "Jarrick Bernard-Converse",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3123075",
+                "name": "Braxton Berrios",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4429281",
+                "name": "Korie Black",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4035631",
+                "name": "Brian Burns",
+                "position": "LB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4689114",
+                "name": "Jaxson Dart",
+                "position": "QB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "5151880",
+                "name": "Thaddeus Dixon",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3929950",
+                "name": "Tremaine Edmunds",
+                "position": "LB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4036132",
+                "name": "Chauncey Golston",
+                "position": "DE",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4429891",
+                "name": "DJ James",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4870914",
+                "name": "Francis Mauigoa",
+                "position": "OT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4424106",
+                "name": "Gunner Olszewski",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4368350",
+                "name": "Rico Payton",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "2574891",
+                "name": "Roy Robertson-Harris",
+                "position": "DT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4689988",
+                "name": "Jason Brownlee",
+                "position": "WR",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "5393270",
+                "name": "Grant Finley",
+                "position": "FB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4565297",
+                "name": "Dontae Fleming",
+                "position": "WR",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4687706",
+                "name": "Josh Gesky",
+                "position": "G",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4570561",
+                "name": "Eric Gray",
+                "position": "RB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "5360470",
+                "name": "Jarrod Gray",
+                "position": "OT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4240548",
+                "name": "Kendrick Green",
+                "position": "C",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4243322",
+                "name": "Jake Haener",
+                "position": "QB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4695086",
+                "name": "Chandler Martin",
+                "position": "LB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4700676",
+                "name": "C.J. Ravenell",
+                "position": "DE",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4374032",
+                "name": "Jaden Robinson",
+                "position": "CB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "5344428",
+                "name": "Ryan Schernecke",
+                "position": "OT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4875981",
+                "name": "Geno VanDeMark",
+                "position": "OL",
+                "status": "Practice Squad"
+              }
+            ],
+            "coaches": [
+              {
+                "name": "John Harbaugh",
+                "espn_coach_id": "17587"
+              }
+            ],
+            "status": "available"
+          },
+          "offseason_roster_changes": {
+            "status": "compared_to_previous_capture",
+            "added": [
+              {
+                "espn_player_id": "16837",
+                "name": "Shelby Harris",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2531358",
+                "name": "Chris Manhertz",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2574891",
+                "name": "Roy Robertson-Harris",
+                "position": "DT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "2969939",
+                "name": "Jameis Winston",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2975417",
+                "name": "Patrick Ricard",
+                "position": "FB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2977670",
+                "name": "DJ Reader",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3042476",
+                "name": "Dawuane Smoot",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3049339",
+                "name": "Aaron Stinnie",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3115303",
+                "name": "Jermaine Eluemunor",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3123075",
+                "name": "Braxton Berrios",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3929936",
+                "name": "Jon Runyan",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3929950",
+                "name": "Tremaine Edmunds",
+                "position": "LB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3932901",
+                "name": "Elijah Campbell",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4035631",
+                "name": "Brian Burns",
+                "position": "LB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4036132",
+                "name": "Chauncey Golston",
+                "position": "DE",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4039243",
+                "name": "Josh Sills",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4040615",
+                "name": "Malik Harrison",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4040655",
+                "name": "Darnell Mooney",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4040761",
+                "name": "Devin Singletary",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4240548",
+                "name": "Kendrick Green",
+                "position": "C",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4240706",
+                "name": "Jason Pinnock",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4240771",
+                "name": "John Michael Schmitz Jr.",
+                "position": "C",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4242547",
+                "name": "Paulson Adebo",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4243322",
+                "name": "Jake Haener",
+                "position": "QB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4243389",
+                "name": "Calvin Austin III",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4257188",
+                "name": "Charlie Jones",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4258237",
+                "name": "Raheem Layne",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4259566",
+                "name": "Andrew Thomas",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4260224",
+                "name": "Jordan Stout",
+                "position": "P",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4360516",
+                "name": "Tyrone Tracy Jr.",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361050",
+                "name": "Isaiah Likely",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361266",
+                "name": "Greg Newsome II",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361834",
+                "name": "Jarrick Bernard-Converse",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4362234",
+                "name": "Zaire Barnes",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4362492",
+                "name": "Ar'Darius Washington",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4368350",
+                "name": "Rico Payton",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4371961",
+                "name": "Micah McFadden",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4373809",
+                "name": "Jevon Holland",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4374032",
+                "name": "Jaden Robinson",
+                "position": "CB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4424106",
+                "name": "Gunner Olszewski",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4426326",
+                "name": "Kayvon Thibodeaux",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426489",
+                "name": "Bryan Hudson",
+                "position": "C",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426542",
+                "name": "Darius Alexander",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4427207",
+                "name": "Trace Ford",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4427636",
+                "name": "Nic Jones",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4428328",
+                "name": "Deonte Banks",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4429148",
+                "name": "Theo Johnson",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4429281",
+                "name": "Korie Black",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4429891",
+                "name": "DJ James",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4430261",
+                "name": "Tyler Nubin",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4431321",
+                "name": "Dru Phillips",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4431562",
+                "name": "Phil Mafah",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4433970",
+                "name": "J.J. McCarthy",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4565297",
+                "name": "Dontae Fleming",
+                "position": "WR",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4570296",
+                "name": "Dalen Cambre",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4570561",
+                "name": "Eric Gray",
+                "position": "RB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4590292",
+                "name": "Thomas Fidone II",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4595348",
+                "name": "Malik Nabers",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4682648",
+                "name": "Malachi Fields",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4686362",
+                "name": "Marcus Mbow",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4687706",
+                "name": "Josh Gesky",
+                "position": "G",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4689114",
+                "name": "Jaxson Dart",
+                "position": "QB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4689988",
+                "name": "Jason Brownlee",
+                "position": "WR",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4691043",
+                "name": "Nikko Reed",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4691889",
+                "name": "Greg Desrosiers Jr.",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4692590",
+                "name": "Jalin Hyatt",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4695086",
+                "name": "Chandler Martin",
+                "position": "LB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4696981",
+                "name": "Cam Skattebo",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4700676",
+                "name": "C.J. Ravenell",
+                "position": "DE",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4725996",
+                "name": "Abdul Carter",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4870914",
+                "name": "Francis Mauigoa",
+                "position": "OT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4875981",
+                "name": "Geno VanDeMark",
+                "position": "OL",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4876380",
+                "name": "Jack Kelly",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4883114",
+                "name": "Ben Mann",
+                "position": "LS",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4921249",
+                "name": "Colton Hood",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4950400",
+                "name": "Arvell Reese",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5082353",
+                "name": "J.C. Davis",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5082424",
+                "name": "Dominic Zvada",
+                "position": "PK",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5144942",
+                "name": "CJ Okoye",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5151880",
+                "name": "Thaddeus Dixon",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "5159928",
+                "name": "Bobby Jamison-Travis",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5344428",
+                "name": "Ryan Schernecke",
+                "position": "OT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "5360470",
+                "name": "Jarrod Gray",
+                "position": "OT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "5393270",
+                "name": "Grant Finley",
+                "position": "FB",
+                "status": "Practice Squad"
+              }
+            ],
+            "removed": [],
+            "coach_changed": false,
+            "comparison_basis": "previous_season_roster_retrieved_today"
+          },
+          "roster_changes": {
+            "status": "compared_to_previous_capture",
+            "added": [],
+            "removed": [],
+            "coach_changed": false,
+            "comparison_basis": "previous_capture"
+          },
+          "quarterback": {
+            "status": "projected_not_confirmed",
+            "projected": {
+              "espn_player_id": "4433970",
+              "name": "J.J. McCarthy",
+              "reported_unavailable": false,
+              "on_current_roster": true
+            },
+            "depth_order": [
+              {
+                "espn_player_id": "4433970",
+                "name": "J.J. McCarthy",
+                "reported_unavailable": false,
+                "on_current_roster": true
+              },
+              {
+                "espn_player_id": "2969939",
+                "name": "Jameis Winston",
+                "reported_unavailable": false,
+                "on_current_roster": true
+              },
+              {
+                "espn_player_id": "4689114",
+                "name": "Jaxson Dart",
+                "reported_unavailable": false,
+                "on_current_roster": true
+              }
+            ],
+            "confirmed": false,
+            "basis": "Orden de depth chart y reporte de bajas; no anuncio oficial de titular.",
+            "differs_from_model_reference": false
+          }
+        },
+        "away": {
+          "espn_team_id": "28",
+          "injuries": {
+            "status": "reported",
+            "players": [
+              {
+                "espn_player_id": "5081807",
+                "name": "Sonny Styles",
+                "position": "LB",
+                "status": "Active",
+                "reported_at": "2026-11-12T02:19Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4426403",
+                "name": "Nick Cross",
+                "position": "S",
+                "status": "Active",
+                "reported_at": "2026-11-12T02:14Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "3127273",
+                "name": "Frankie Luvu",
+                "position": "LB",
+                "status": "Active",
+                "reported_at": "2026-11-12T02:07Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "2576736",
+                "name": "Lucas Patrick",
+                "position": "G",
+                "status": "Out",
+                "reported_at": "2026-11-12T02:02Z",
+                "injury_type": "Concussion"
+              },
+              {
+                "espn_player_id": "4567156",
+                "name": "Treylon Burks",
+                "position": "WR",
+                "status": "Out",
+                "reported_at": "2026-11-11T22:06Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4361088",
+                "name": "Colson Yankoff",
+                "position": "TE",
+                "status": "Out",
+                "reported_at": "2026-11-11T20:21Z",
+                "injury_type": "Knee"
+              },
+              {
+                "espn_player_id": "4360635",
+                "name": "Chig Okonkwo",
+                "position": "TE",
+                "status": "Active",
+                "reported_at": "2026-11-10T23:56Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "3886601",
+                "name": "Shy Tuttle",
+                "position": "DT",
+                "status": "Active",
+                "reported_at": "2026-11-10T23:18Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "5081432",
+                "name": "Antonio Williams",
+                "position": "WR",
+                "status": "Active",
+                "reported_at": "2026-11-10T04:32Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "5081335",
+                "name": "Drew Stevens",
+                "position": "PK",
+                "status": "Active",
+                "reported_at": "2026-11-10T02:51Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "3068267",
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "status": "Active",
+                "reported_at": "2026-11-10T02:02Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "3122797",
+                "name": "Isaac Yiadom",
+                "position": "CB",
+                "status": "Active",
+                "reported_at": "2026-11-09T21:36Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4605488",
+                "name": "Tanoa Togiai",
+                "position": "G",
+                "status": "Active",
+                "reported_at": "2026-11-09T21:36Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "2971586",
+                "name": "Fabian Moreau",
+                "position": "CB",
+                "status": "Active",
+                "reported_at": "2026-11-09T21:36Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4432722",
+                "name": "Athan Kaliakmanis",
+                "position": "QB",
+                "status": "Active",
+                "reported_at": "2026-11-09T21:36Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "3930066",
+                "name": "Van Jefferson",
+                "position": "WR",
+                "status": "Active",
+                "reported_at": "2026-11-09T01:39Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "2976212",
+                "name": "Stefon Diggs",
+                "position": "WR",
+                "status": "Active",
+                "reported_at": "2026-11-08T23:20Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4697815",
+                "name": "Rachaad White",
+                "position": "RB",
+                "status": "Active",
+                "reported_at": "2026-11-08T23:17Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4426348",
+                "name": "Jayden Daniels",
+                "position": "QB",
+                "status": "Active",
+                "reported_at": "2026-11-08T23:12Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4430560",
+                "name": "Jer'Zhan Newton",
+                "position": "DT",
+                "status": "Active",
+                "reported_at": "2026-11-08T17:15Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4361577",
+                "name": "Dyami Brown",
+                "position": "WR",
+                "status": "Injured Reserve",
+                "reported_at": "2026-11-07T23:15Z",
+                "injury_type": "Calf"
+              },
+              {
+                "espn_player_id": "4262199",
+                "name": "Sam Cosmi",
+                "position": "G",
+                "status": "Active",
+                "reported_at": "2026-11-06T22:42Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "4048228",
+                "name": "John Bates",
+                "position": "TE",
+                "status": "Active",
+                "reported_at": "2026-11-06T22:41Z",
+                "injury_type": null
+              },
+              {
+                "espn_player_id": "3925354",
+                "name": "Daron Payne",
+                "position": "DT",
+                "status": "Injured Reserve",
+                "reported_at": "2026-11-04T19:13Z",
+                "injury_type": "Foot"
+              },
+              {
+                "espn_player_id": "3127586",
+                "name": "Jeremy McNichols",
+                "position": "RB",
+                "status": "Injured Reserve",
+                "reported_at": "2026-11-04T17:09Z",
+                "injury_type": "Foot"
+              }
+            ],
+            "coverage": "provider_list_not_guaranteed_complete",
+            "meaning": "Reporte del proveedor; lista vacía no garantiza plantilla sana."
+          },
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries?limit=1000",
+              "observed_at": "2026-11-12T21:08:05.871198+00:00",
+              "sha256": "d09706801b067f28c6c4ae484e6c7eac18c21a3c5bf0a28d2eed2dfb3f7ddc51"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/roster",
+              "observed_at": "2026-11-12T21:08:07.932981+00:00",
+              "sha256": "5806a910d8f1819b42ff7368970a3ada46a67b38cbbffec48dfbdfe44a869672"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/roster?season=2025",
+              "observed_at": "2026-11-12T21:08:08.338823+00:00",
+              "sha256": "f13c1ba7382f0b1505191e12f6b13959379845d984a10b87ca907cb62bec06ac"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/depthcharts",
+              "observed_at": "2026-11-12T21:08:08.713656+00:00",
+              "sha256": "c7e9b6de92f1252ded1cd277088b193b06cd0330f96b678e63dfe72c510a57a3"
+            }
+          ],
+          "roster": {
+            "players": [
+              {
+                "espn_player_id": "3115922",
+                "name": "Nick Allegretti",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4048228",
+                "name": "John Bates",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4683111",
+                "name": "Jaden Bradley",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4567156",
+                "name": "Treylon Burks",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4685030",
+                "name": "Brandon Coleman",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4685326",
+                "name": "Josh Conerly Jr.",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4262199",
+                "name": "Sam Cosmi",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4575131",
+                "name": "Jacory Croskey-Merritt",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426348",
+                "name": "Jayden Daniels",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2976212",
+                "name": "Stefon Diggs",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3068267",
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3917949",
+                "name": "Julian Good-Jones",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4683463",
+                "name": "Matt Gulbin",
+                "position": "C",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5151317",
+                "name": "Robert Henry Jr.",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3930066",
+                "name": "Van Jefferson",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4432722",
+                "name": "Athan Kaliakmanis",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4602667",
+                "name": "Jaylin Lane",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2576980",
+                "name": "Marcus Mariota",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426948",
+                "name": "Luke McCaffrey",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4360635",
+                "name": "Chig Okonkwo",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2576736",
+                "name": "Lucas Patrick",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4244615",
+                "name": "Chris Paul",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4421446",
+                "name": "Craig Reynolds",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4690923",
+                "name": "Ben Sinnott",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4605488",
+                "name": "Tanoa Togiai",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4697815",
+                "name": "Rachaad White",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5081432",
+                "name": "Antonio Williams",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3042702",
+                "name": "Andrew Wylie",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361088",
+                "name": "Colson Yankoff",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3928979",
+                "name": "Dorance Armstrong",
+                "position": "DE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4428343",
+                "name": "Ricky Barber",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4363097",
+                "name": "Percy Butler",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4242205",
+                "name": "K'Lavon Chaisson",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426403",
+                "name": "Nick Cross",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3943270",
+                "name": "Rasul Douglas",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4261606",
+                "name": "Darren Hall",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361357",
+                "name": "Javontae Jean-Baptiste",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5081392",
+                "name": "Joshua Josephs",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361090",
+                "name": "Ale Kaho",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3127273",
+                "name": "Frankie Luvu",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4568617",
+                "name": "Jordan Magee",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4360378",
+                "name": "Quan Martin",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4427984",
+                "name": "Kain Medrano",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2971586",
+                "name": "Fabian Moreau",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4430560",
+                "name": "Jer'Zhan Newton",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3929865",
+                "name": "Charles Omenihu",
+                "position": "DE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361422",
+                "name": "Odafe Oweh",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4572460",
+                "name": "Tyler Owens",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3125248",
+                "name": "Jeremy Reaves",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4239694",
+                "name": "Amik Robertson",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4428414",
+                "name": "Mike Sainristil",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3929956",
+                "name": "Tim Settle",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5081807",
+                "name": "Sonny Styles",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3886601",
+                "name": "Shy Tuttle",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2980080",
+                "name": "Deatrich Wise Jr.",
+                "position": "DE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3122797",
+                "name": "Isaac Yiadom",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "17378",
+                "name": "Tyler Ott",
+                "position": "LS",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5081335",
+                "name": "Drew Stevens",
+                "position": "PK",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "16166",
+                "name": "Tress Way",
+                "position": "P",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4574689",
+                "name": "Trey Amos",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4361577",
+                "name": "Dyami Brown",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4426901",
+                "name": "Leo Chenal",
+                "position": "LB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4259491",
+                "name": "Javon Kinlaw",
+                "position": "DT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3121422",
+                "name": "Terry McLaurin",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3127586",
+                "name": "Jeremy McNichols",
+                "position": "RB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3925354",
+                "name": "Daron Payne",
+                "position": "DT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3051890",
+                "name": "Laremy Tunsil",
+                "position": "OT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3916922",
+                "name": "Byron Cowart",
+                "position": "DT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4686092",
+                "name": "Fred Davis II",
+                "position": "CB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4692796",
+                "name": "Nick DeGennaro",
+                "position": "WR",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "3052059",
+                "name": "Daniel Ekuale",
+                "position": "DT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4361994",
+                "name": "Sam Hartman",
+                "position": "QB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4432333",
+                "name": "Kyle Kennard",
+                "position": "LB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4429185",
+                "name": "Austin Keys",
+                "position": "LB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "5278092",
+                "name": "T.J. Maguranyanga",
+                "position": "DE",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4875350",
+                "name": "Quentin Moore",
+                "position": "TE",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4682652",
+                "name": "Devin Neal",
+                "position": "RB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "5153070",
+                "name": "Esa Pole",
+                "position": "OT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "3123303",
+                "name": "Trent Scott",
+                "position": "OT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4361100",
+                "name": "Jack Westover",
+                "position": "TE",
+                "status": "Practice Squad"
+              }
+            ],
+            "coaches": [
+              {
+                "name": "Dan Quinn",
+                "espn_coach_id": "2485644"
+              }
+            ],
+            "status": "available"
+          },
+          "offseason_roster_changes": {
+            "status": "compared_to_previous_capture",
+            "added": [
+              {
+                "espn_player_id": "16166",
+                "name": "Tress Way",
+                "position": "P",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "17378",
+                "name": "Tyler Ott",
+                "position": "LS",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2576736",
+                "name": "Lucas Patrick",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2576980",
+                "name": "Marcus Mariota",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2971586",
+                "name": "Fabian Moreau",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2976212",
+                "name": "Stefon Diggs",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "2980080",
+                "name": "Deatrich Wise Jr.",
+                "position": "DE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3042702",
+                "name": "Andrew Wylie",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3051890",
+                "name": "Laremy Tunsil",
+                "position": "OT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3052059",
+                "name": "Daniel Ekuale",
+                "position": "DT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "3068267",
+                "name": "Austin Ekeler",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3115922",
+                "name": "Nick Allegretti",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3121422",
+                "name": "Terry McLaurin",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3122797",
+                "name": "Isaac Yiadom",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3123303",
+                "name": "Trent Scott",
+                "position": "OT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "3125248",
+                "name": "Jeremy Reaves",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3127273",
+                "name": "Frankie Luvu",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3127586",
+                "name": "Jeremy McNichols",
+                "position": "RB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3886601",
+                "name": "Shy Tuttle",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3916922",
+                "name": "Byron Cowart",
+                "position": "DT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "3917949",
+                "name": "Julian Good-Jones",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3925354",
+                "name": "Daron Payne",
+                "position": "DT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "3928979",
+                "name": "Dorance Armstrong",
+                "position": "DE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3929865",
+                "name": "Charles Omenihu",
+                "position": "DE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3929956",
+                "name": "Tim Settle",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3930066",
+                "name": "Van Jefferson",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "3943270",
+                "name": "Rasul Douglas",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4048228",
+                "name": "John Bates",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4239694",
+                "name": "Amik Robertson",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4242205",
+                "name": "K'Lavon Chaisson",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4244615",
+                "name": "Chris Paul",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4259491",
+                "name": "Javon Kinlaw",
+                "position": "DT",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4261606",
+                "name": "Darren Hall",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4262199",
+                "name": "Sam Cosmi",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4360378",
+                "name": "Quan Martin",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4360635",
+                "name": "Chig Okonkwo",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361088",
+                "name": "Colson Yankoff",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361090",
+                "name": "Ale Kaho",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361100",
+                "name": "Jack Westover",
+                "position": "TE",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4361357",
+                "name": "Javontae Jean-Baptiste",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361422",
+                "name": "Odafe Oweh",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4361577",
+                "name": "Dyami Brown",
+                "position": "WR",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4361994",
+                "name": "Sam Hartman",
+                "position": "QB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4363097",
+                "name": "Percy Butler",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4421446",
+                "name": "Craig Reynolds",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426348",
+                "name": "Jayden Daniels",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426403",
+                "name": "Nick Cross",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4426901",
+                "name": "Leo Chenal",
+                "position": "LB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4426948",
+                "name": "Luke McCaffrey",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4427984",
+                "name": "Kain Medrano",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4428343",
+                "name": "Ricky Barber",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4428414",
+                "name": "Mike Sainristil",
+                "position": "CB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4429185",
+                "name": "Austin Keys",
+                "position": "LB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4430560",
+                "name": "Jer'Zhan Newton",
+                "position": "DT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4432333",
+                "name": "Kyle Kennard",
+                "position": "LB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4432722",
+                "name": "Athan Kaliakmanis",
+                "position": "QB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4567156",
+                "name": "Treylon Burks",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4568617",
+                "name": "Jordan Magee",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4572460",
+                "name": "Tyler Owens",
+                "position": "S",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4574689",
+                "name": "Trey Amos",
+                "position": "CB",
+                "status": "Day-To-Day"
+              },
+              {
+                "espn_player_id": "4575131",
+                "name": "Jacory Croskey-Merritt",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4602667",
+                "name": "Jaylin Lane",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4605488",
+                "name": "Tanoa Togiai",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4682652",
+                "name": "Devin Neal",
+                "position": "RB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4683111",
+                "name": "Jaden Bradley",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4683463",
+                "name": "Matt Gulbin",
+                "position": "C",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4685030",
+                "name": "Brandon Coleman",
+                "position": "G",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4685326",
+                "name": "Josh Conerly Jr.",
+                "position": "OT",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4686092",
+                "name": "Fred Davis II",
+                "position": "CB",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4690923",
+                "name": "Ben Sinnott",
+                "position": "TE",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4692796",
+                "name": "Nick DeGennaro",
+                "position": "WR",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "4697815",
+                "name": "Rachaad White",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "4875350",
+                "name": "Quentin Moore",
+                "position": "TE",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "5081335",
+                "name": "Drew Stevens",
+                "position": "PK",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5081392",
+                "name": "Joshua Josephs",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5081432",
+                "name": "Antonio Williams",
+                "position": "WR",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5081807",
+                "name": "Sonny Styles",
+                "position": "LB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5151317",
+                "name": "Robert Henry Jr.",
+                "position": "RB",
+                "status": "Active"
+              },
+              {
+                "espn_player_id": "5153070",
+                "name": "Esa Pole",
+                "position": "OT",
+                "status": "Practice Squad"
+              },
+              {
+                "espn_player_id": "5278092",
+                "name": "T.J. Maguranyanga",
+                "position": "DE",
+                "status": "Practice Squad"
+              }
+            ],
+            "removed": [],
+            "coach_changed": false,
+            "comparison_basis": "previous_season_roster_retrieved_today"
+          },
+          "roster_changes": {
+            "status": "compared_to_previous_capture",
+            "added": [],
+            "removed": [],
+            "coach_changed": false,
+            "comparison_basis": "previous_capture"
+          },
+          "quarterback": {
+            "status": "projected_not_confirmed",
+            "projected": {
+              "espn_player_id": "4426348",
+              "name": "Jayden Daniels",
+              "reported_unavailable": false,
+              "on_current_roster": true
+            },
+            "depth_order": [
+              {
+                "espn_player_id": "4426348",
+                "name": "Jayden Daniels",
+                "reported_unavailable": false,
+                "on_current_roster": true
+              },
+              {
+                "espn_player_id": "2576980",
+                "name": "Marcus Mariota",
+                "reported_unavailable": false,
+                "on_current_roster": true
+              },
+              {
+                "espn_player_id": "4432722",
+                "name": "Athan Kaliakmanis",
+                "reported_unavailable": false,
+                "on_current_roster": true
+              }
+            ],
+            "confirmed": false,
+            "basis": "Orden de depth chart y reporte de bajas; no anuncio oficial de titular.",
+            "differs_from_model_reference": false
+          }
+        }
+      },
+      "quantitative_adjustment_applied": false,
+      "weather": {
+        "status": "unavailable",
+        "reason": "HTTPSConnectionPool(host='geocoding-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/search?name=East+Rutherford&count=10&countryCode=US&language=en (Caused by Pr"
+      }
+    }
+  }
+}
