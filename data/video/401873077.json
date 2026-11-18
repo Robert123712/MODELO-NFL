@@ -1,0 +1,1850 @@
+{
+  "liga": "nfl",
+  "game_id": 401873077,
+  "league_game_id": "2026_11_MIN_SF",
+  "starts_at": "2026-11-23T01:20:00+00:00",
+  "simulaciones": 10000,
+  "equipos": {
+    "home": {
+      "abbr": "SF",
+      "nombre": "San Francisco 49ers"
+    },
+    "away": {
+      "abbr": "MIN",
+      "nombre": "Minnesota Vikings"
+    }
+  },
+  "victorias": {
+    "home": 6190,
+    "away": 3778,
+    "empates": 32
+  },
+  "marcador_medio": {
+    "home": 24.1,
+    "away": 20.2
+  },
+  "margen": {
+    "desde": -31.5,
+    "ancho": 3.0,
+    "cuentas": [
+      80,
+      55,
+      109,
+      161,
+      244,
+      364,
+      416,
+      503,
+      728,
+      847,
+      541,
+      1113,
+      969,
+      773,
+      651,
+      660,
+      536,
+      430,
+      312,
+      214,
+      294
+    ],
+    "una_posesion": 0.4584,
+    "cerrados_7": 0.4198,
+    "palizas_20": 0.1655,
+    "tiempo_extra": 0.0446
+  },
+  "cinta": [
+    {
+      "gana": "MIN",
+      "por": 7
+    },
+    {
+      "gana": "MIN",
+      "por": 7
+    },
+    {
+      "gana": "SF",
+      "por": 9
+    },
+    {
+      "gana": "SF",
+      "por": 10
+    },
+    {
+      "gana": "MIN",
+      "por": 15
+    },
+    {
+      "gana": "SF",
+      "por": 6
+    },
+    {
+      "gana": "MIN",
+      "por": 4
+    },
+    {
+      "gana": "MIN",
+      "por": 17
+    },
+    {
+      "gana": "SF",
+      "por": 11
+    },
+    {
+      "gana": "SF",
+      "por": 13
+    },
+    {
+      "gana": "MIN",
+      "por": 6
+    },
+    {
+      "gana": "SF",
+      "por": 3
+    },
+    {
+      "gana": "SF",
+      "por": 3
+    },
+    {
+      "gana": "MIN",
+      "por": 1
+    },
+    {
+      "gana": "SF",
+      "por": 3
+    },
+    {
+      "gana": "SF",
+      "por": 8
+    },
+    {
+      "gana": "SF",
+      "por": 24
+    },
+    {
+      "gana": "SF",
+      "por": 8
+    },
+    {
+      "gana": "SF",
+      "por": 7
+    },
+    {
+      "gana": "SF",
+      "por": 11
+    },
+    {
+      "gana": "MIN",
+      "por": 2
+    },
+    {
+      "gana": "MIN",
+      "por": 11
+    },
+    {
+      "gana": "SF",
+      "por": 29
+    },
+    {
+      "gana": "MIN",
+      "por": 7
+    },
+    {
+      "gana": "SF",
+      "por": 12
+    },
+    {
+      "gana": "SF",
+      "por": 10
+    },
+    {
+      "gana": "SF",
+      "por": 2
+    },
+    {
+      "gana": "MIN",
+      "por": 3
+    },
+    {
+      "gana": "SF",
+      "por": 20
+    },
+    {
+      "gana": "SF",
+      "por": 14
+    },
+    {
+      "gana": "SF",
+      "por": 37
+    },
+    {
+      "gana": "SF",
+      "por": 10
+    },
+    {
+      "gana": "SF",
+      "por": 3
+    },
+    {
+      "gana": "MIN",
+      "por": 2
+    },
+    {
+      "gana": "SF",
+      "por": 12
+    },
+    {
+      "gana": "SF",
+      "por": 21
+    },
+    {
+      "gana": "SF",
+      "por": 9
+    },
+    {
+      "gana": "SF",
+      "por": 14
+    },
+    {
+      "gana": "SF",
+      "por": 7
+    },
+    {
+      "gana": "SF",
+      "por": 32
+    },
+    {
+      "gana": "MIN",
+      "por": 11
+    },
+    {
+      "gana": "MIN",
+      "por": 3
+    },
+    {
+      "gana": "SF",
+      "por": 10
+    },
+    {
+      "gana": "SF",
+      "por": 24
+    },
+    {
+      "gana": "MIN",
+      "por": 3
+    },
+    {
+      "gana": "MIN",
+      "por": 11
+    },
+    {
+      "gana": "SF",
+      "por": 6
+    },
+    {
+      "gana": "SF",
+      "por": 6
+    },
+    {
+      "gana": "SF",
+      "por": 17
+    },
+    {
+      "gana": "SF",
+      "por": 11
+    },
+    {
+      "gana": "MIN",
+      "por": 12
+    },
+    {
+      "gana": "SF",
+      "por": 3
+    },
+    {
+      "gana": "SF",
+      "por": 27
+    },
+    {
+      "gana": "MIN",
+      "por": 27
+    },
+    {
+      "gana": "SF",
+      "por": 17
+    },
+    {
+      "gana": "SF",
+      "por": 13
+    },
+    {
+      "gana": "SF",
+      "por": 18
+    },
+    {
+      "gana": "SF",
+      "por": 6
+    },
+    {
+      "gana": "MIN",
+      "por": 11
+    },
+    {
+      "gana": "SF",
+      "por": 6
+    },
+    {
+      "gana": "SF",
+      "por": 8
+    },
+    {
+      "gana": "SF",
+      "por": 6
+    },
+    {
+      "gana": "SF",
+      "por": 7
+    },
+    {
+      "gana": "SF",
+      "por": 24
+    },
+    {
+      "gana": "SF",
+      "por": 13
+    },
+    {
+      "gana": "SF",
+      "por": 7
+    },
+    {
+      "gana": "MIN",
+      "por": 3
+    },
+    {
+      "gana": "MIN",
+      "por": 13
+    },
+    {
+      "gana": "SF",
+      "por": 7
+    },
+    {
+      "gana": "MIN",
+      "por": 9
+    },
+    {
+      "gana": "MIN",
+      "por": 17
+    },
+    {
+      "gana": "SF",
+      "por": 9
+    },
+    {
+      "gana": "MIN",
+      "por": 6
+    },
+    {
+      "gana": "MIN",
+      "por": 13
+    },
+    {
+      "gana": "SF",
+      "por": 28
+    },
+    {
+      "gana": "SF",
+      "por": 10
+    },
+    {
+      "gana": "SF",
+      "por": 11
+    },
+    {
+      "gana": "MIN",
+      "por": 1
+    },
+    {
+      "gana": "SF",
+      "por": 3
+    },
+    {
+      "gana": "SF",
+      "por": 15
+    },
+    {
+      "gana": "SF",
+      "por": 32
+    },
+    {
+      "gana": "SF",
+      "por": 2
+    },
+    {
+      "gana": "MIN",
+      "por": 5
+    },
+    {
+      "gana": "MIN",
+      "por": 8
+    },
+    {
+      "gana": "SF",
+      "por": 15
+    },
+    {
+      "gana": "SF",
+      "por": 18
+    },
+    {
+      "gana": "MIN",
+      "por": 27
+    },
+    {
+      "gana": "SF",
+      "por": 17
+    },
+    {
+      "gana": "MIN",
+      "por": 5
+    },
+    {
+      "gana": "SF",
+      "por": 24
+    },
+    {
+      "gana": "SF",
+      "por": 4
+    },
+    {
+      "gana": "MIN",
+      "por": 13
+    },
+    {
+      "gana": "MIN",
+      "por": 11
+    },
+    {
+      "gana": "SF",
+      "por": 4
+    },
+    {
+      "gana": "SF",
+      "por": 17
+    },
+    {
+      "gana": "SF",
+      "por": 3
+    },
+    {
+      "gana": "MIN",
+      "por": 5
+    },
+    {
+      "gana": "SF",
+      "por": 6
+    },
+    {
+      "gana": "SF",
+      "por": 24
+    },
+    {
+      "gana": "SF",
+      "por": 6
+    },
+    {
+      "gana": "MIN",
+      "por": 4
+    },
+    {
+      "gana": "SF",
+      "por": 7
+    },
+    {
+      "gana": "MIN",
+      "por": 7
+    },
+    {
+      "gana": "SF",
+      "por": 21
+    },
+    {
+      "gana": "SF",
+      "por": 13
+    },
+    {
+      "gana": "SF",
+      "por": 3
+    },
+    {
+      "gana": "MIN",
+      "por": 10
+    },
+    {
+      "gana": "SF",
+      "por": 8
+    },
+    {
+      "gana": "MIN",
+      "por": 15
+    },
+    {
+      "gana": "SF",
+      "por": 12
+    },
+    {
+      "gana": "MIN",
+      "por": 4
+    },
+    {
+      "gana": "SF",
+      "por": 11
+    },
+    {
+      "gana": "SF",
+      "por": 4
+    },
+    {
+      "gana": "SF",
+      "por": 16
+    },
+    {
+      "gana": "SF",
+      "por": 4
+    },
+    {
+      "gana": "SF",
+      "por": 21
+    },
+    {
+      "gana": "SF",
+      "por": 20
+    },
+    {
+      "gana": "SF",
+      "por": 13
+    },
+    {
+      "gana": "MIN",
+      "por": 1
+    },
+    {
+      "gana": "SF",
+      "por": 10
+    }
+  ],
+  "muestra": "aahhahaahhahhahhhhhhaahahhhahhhhhahhhhhhaahhaahhhhahhahhhhahhhhhhhaahaahaahhhahhhhaahhahahhaahhhahhhahahhhahahahhhhhhhahhahahhhhahhahahhhhaaaaahahhahaaahhhhahhhhhhhahhhhhahhhahhhaahhhhhhahhaahhhhhhhhhhaahhaahhhhahahhhhaahhahahahhahhhhhhahaahhaahhahahhhhhahahhhhaaaahhhhhaaahahaahhhhahaahhahhaahhaaaahaahahhhhhhhahhhhhhhhahhhhhhhhahahhahhhhhhhhhaahahhahhhahehhhhhhahhaahaaaaahhaaahhhhhaahahaahhhaahhaahahhhhhahhhahaaaahhhhhhaahaaaaahhaahhaahahhhaahahhahhahhhhaahhhhhhhaahahhaahaahahhhahhahhahhhhaahhhhaaahhaaaahaahahhaahaaahhhhhhahaaahahhhhhahahaahahhahhhahhaahaahaaaaahhahhahhaahaahhhahahhhhahhhahhaahaaahhhahhahhhahhhaahhhahhhhhhahhhhhhahahhahaahaaahhaahhhhhhhaahahhhhhahahhahahahhahhhhehahaaaahahhhahhaaaahhaaahhhhhhahhaaaahahahaahaahhaaahhhhhhhahahaahhhhhahhhhhhhhhhaaahahhhhhhahahahaahhahahhaahhahhahahhahahhhaahhhhaahhhaahahhhhhhahhaaaaahhhhhahaahhhhhaahahhahahhaahhahahahahahhhhhahahahhahahhahhhhahaahaehahhahaaahhahhhhahahhhhhaahaahhhaaahaahhhhhhahhhhhhhhhhhhhaahhaaaaaahhhhhhhhahaaahhahahahaa",
+  "jugadores": {
+    "home": [
+      {
+        "athlete_id": 4361741,
+        "espn_id": 4361741,
+        "jugador": "Brock Purdy",
+        "posicion": "QB",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 247.0,
+          "pass_td": 1.5,
+          "rush_yds": 20.3,
+          "rec_yds": 0.0,
+          "rec": 0.0,
+          "td": 0.2
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.6729,
+            "250": 0.4473,
+            "300": 0.2575,
+            "350": 0.1369
+          },
+          "pass_td": {
+            "1": 0.798,
+            "2": 0.4545,
+            "3": 0.1838,
+            "4": 0.0522
+          },
+          "rush_yds": {
+            "50": 0.0705,
+            "75": 0.0112,
+            "100": 0.0019,
+            "125": 0.0004
+          },
+          "rec_yds": {
+            "50": 0.0,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec": {
+            "4": 0.0,
+            "6": 0.0,
+            "8": 0.0,
+            "10": 0.0
+          },
+          "td": {
+            "1": 0.149,
+            "2": 0.0098
+          }
+        },
+        "anytime_td": 0.149,
+        "mejor": {
+          "stat": "pass_yds",
+          "valor": 501,
+          "td": 3,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "pass_td",
+            "umbral": 3,
+            "texto": "3+ pases de touchdown",
+            "p_evento": 0.1838,
+            "p_gana": 0.877,
+            "p_gana_si_no": 0.5609,
+            "empuje": 0.258
+          },
+          {
+            "stat": "pass_td",
+            "umbral": 2,
+            "texto": "2+ pases de touchdown",
+            "p_evento": 0.4545,
+            "p_gana": 0.7839,
+            "p_gana_si_no": 0.4816,
+            "empuje": 0.1649
+          },
+          {
+            "stat": "pass_yds",
+            "umbral": 350,
+            "texto": "350+ yardas por pase",
+            "p_evento": 0.1369,
+            "p_gana": 0.7042,
+            "p_gana_si_no": 0.6055,
+            "empuje": 0.0852
+          },
+          {
+            "stat": "pass_yds",
+            "umbral": 300,
+            "texto": "300+ yardas por pase",
+            "p_evento": 0.2575,
+            "p_gana": 0.6816,
+            "p_gana_si_no": 0.5973,
+            "empuje": 0.0626
+          },
+          {
+            "stat": "pass_yds",
+            "umbral": 250,
+            "texto": "250+ yardas por pase",
+            "p_evento": 0.4473,
+            "p_gana": 0.6501,
+            "p_gana_si_no": 0.5938,
+            "empuje": 0.0311
+          }
+        ]
+      },
+      {
+        "athlete_id": 3117251,
+        "espn_id": 3117251,
+        "jugador": "Christian McCaffrey",
+        "posicion": "RB",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 54.4,
+          "rec_yds": 35.6,
+          "rec": 3.6,
+          "td": 0.8
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.4967,
+            "75": 0.2362,
+            "100": 0.0885,
+            "125": 0.0301
+          },
+          "rec_yds": {
+            "50": 0.2562,
+            "75": 0.1068,
+            "100": 0.0435,
+            "125": 0.0169
+          },
+          "rec": {
+            "4": 0.3894,
+            "6": 0.1395,
+            "8": 0.038,
+            "10": 0.0204
+          },
+          "td": {
+            "1": 0.5815,
+            "2": 0.1989
+          }
+        },
+        "anytime_td": 0.5815,
+        "mejor": {
+          "stat": "rush_yds",
+          "valor": 148,
+          "td": 1,
+          "gano": false,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "td",
+            "umbral": 2,
+            "texto": "2+ touchdowns",
+            "p_evento": 0.1989,
+            "p_gana": 0.8084,
+            "p_gana_si_no": 0.572,
+            "empuje": 0.1894
+          },
+          {
+            "stat": "rush_yds",
+            "umbral": 75,
+            "texto": "75+ yardas por tierra",
+            "p_evento": 0.2362,
+            "p_gana": 0.8002,
+            "p_gana_si_no": 0.563,
+            "empuje": 0.1812
+          },
+          {
+            "stat": "rush_yds",
+            "umbral": 50,
+            "texto": "50+ yardas por tierra",
+            "p_evento": 0.4967,
+            "p_gana": 0.7304,
+            "p_gana_si_no": 0.509,
+            "empuje": 0.1114
+          },
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.5815,
+            "p_gana": 0.7085,
+            "p_gana_si_no": 0.4946,
+            "empuje": 0.0895
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 50,
+            "texto": "50+ yardas por recepción",
+            "p_evento": 0.2562,
+            "p_gana": 0.6366,
+            "p_gana_si_no": 0.6129,
+            "empuje": 0.0176
+          }
+        ]
+      },
+      {
+        "athlete_id": 4696044,
+        "espn_id": 4696044,
+        "jugador": "Kaelon Black",
+        "posicion": "RB",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 42.7,
+          "rec_yds": 3.6,
+          "rec": 0.6,
+          "td": 0.2
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.344,
+            "75": 0.1289,
+            "100": 0.04,
+            "125": 0.0107
+          },
+          "rec_yds": {
+            "50": 0.0009,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec": {
+            "4": 0.0068,
+            "6": 0.0002,
+            "8": 0.0,
+            "10": 0.0
+          },
+          "td": {
+            "1": 0.2036,
+            "2": 0.0196
+          }
+        },
+        "anytime_td": 0.2036,
+        "mejor": {
+          "stat": "rush_yds",
+          "valor": 126,
+          "td": 0,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "rush_yds",
+            "umbral": 75,
+            "texto": "75+ yardas por tierra",
+            "p_evento": 0.1289,
+            "p_gana": 0.8309,
+            "p_gana_si_no": 0.5876,
+            "empuje": 0.2119
+          },
+          {
+            "stat": "rush_yds",
+            "umbral": 50,
+            "texto": "50+ yardas por tierra",
+            "p_evento": 0.344,
+            "p_gana": 0.7488,
+            "p_gana_si_no": 0.5509,
+            "empuje": 0.1298
+          },
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.2036,
+            "p_gana": 0.7382,
+            "p_gana_si_no": 0.5885,
+            "empuje": 0.1192
+          }
+        ]
+      },
+      {
+        "athlete_id": 3040151,
+        "espn_id": 3040151,
+        "jugador": "George Kittle",
+        "posicion": "TE",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 0.0,
+          "rec_yds": 52.1,
+          "rec": 4.4,
+          "td": 0.3
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.0,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec_yds": {
+            "50": 0.4348,
+            "75": 0.2347,
+            "100": 0.1198,
+            "125": 0.0571
+          },
+          "rec": {
+            "4": 0.5604,
+            "6": 0.2666,
+            "8": 0.0982,
+            "10": 0.0306
+          },
+          "td": {
+            "1": 0.2441,
+            "2": 0.0298
+          }
+        },
+        "anytime_td": 0.2441,
+        "mejor": {
+          "stat": "rec_yds",
+          "valor": 181,
+          "td": 0,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.2441,
+            "p_gana": 0.7435,
+            "p_gana_si_no": 0.5788,
+            "empuje": 0.1245
+          },
+          {
+            "stat": "rec",
+            "umbral": 6,
+            "texto": "6+ recepciones",
+            "p_evento": 0.2666,
+            "p_gana": 0.5611,
+            "p_gana_si_no": 0.64,
+            "empuje": -0.0579
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 75,
+            "texto": "75+ yardas por recepción",
+            "p_evento": 0.2347,
+            "p_gana": 0.6553,
+            "p_gana_si_no": 0.6079,
+            "empuje": 0.0363
+          },
+          {
+            "stat": "rec",
+            "umbral": 4,
+            "texto": "4+ recepciones",
+            "p_evento": 0.5604,
+            "p_gana": 0.5928,
+            "p_gana_si_no": 0.6524,
+            "empuje": -0.0262
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 50,
+            "texto": "50+ yardas por recepción",
+            "p_evento": 0.4348,
+            "p_gana": 0.6355,
+            "p_gana_si_no": 0.6063,
+            "empuje": 0.0165
+          }
+        ]
+      },
+      {
+        "athlete_id": 3126486,
+        "espn_id": 3126486,
+        "jugador": "Deebo Samuel Sr.",
+        "posicion": "WR",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 19.3,
+          "rec_yds": 30.5,
+          "rec": 2.5,
+          "td": 0.4
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.0725,
+            "75": 0.0144,
+            "100": 0.0019,
+            "125": 0.0003
+          },
+          "rec_yds": {
+            "50": 0.2064,
+            "75": 0.0889,
+            "100": 0.0354,
+            "125": 0.0136
+          },
+          "rec": {
+            "4": 0.2096,
+            "6": 0.0465,
+            "8": 0.0067,
+            "10": 0.0009
+          },
+          "td": {
+            "1": 0.3045,
+            "2": 0.0465
+          }
+        },
+        "anytime_td": 0.3045,
+        "mejor": {
+          "stat": "rec_yds",
+          "valor": 134,
+          "td": 0,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.3045,
+            "p_gana": 0.7268,
+            "p_gana_si_no": 0.5718,
+            "empuje": 0.1078
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 50,
+            "texto": "50+ yardas por recepción",
+            "p_evento": 0.2064,
+            "p_gana": 0.6526,
+            "p_gana_si_no": 0.6103,
+            "empuje": 0.0336
+          },
+          {
+            "stat": "rec",
+            "umbral": 4,
+            "texto": "4+ recepciones",
+            "p_evento": 0.2096,
+            "p_gana": 0.5906,
+            "p_gana_si_no": 0.6265,
+            "empuje": -0.0284
+          }
+        ]
+      },
+      {
+        "athlete_id": 15818,
+        "espn_id": 15818,
+        "jugador": "Keenan Allen",
+        "posicion": "WR",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 0.0,
+          "rec_yds": 37.8,
+          "rec": 3.8,
+          "td": 0.2
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.0,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec_yds": {
+            "50": 0.2808,
+            "75": 0.122,
+            "100": 0.047,
+            "125": 0.018
+          },
+          "rec": {
+            "4": 0.426,
+            "6": 0.1569,
+            "8": 0.0458,
+            "10": 0.0218
+          },
+          "td": {
+            "1": 0.1447,
+            "2": 0.0098
+          }
+        },
+        "anytime_td": 0.1447,
+        "mejor": {
+          "stat": "rec_yds",
+          "valor": 144,
+          "td": 0,
+          "gano": false,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.1447,
+            "p_gana": 0.7277,
+            "p_gana_si_no": 0.6006,
+            "empuje": 0.1087
+          },
+          {
+            "stat": "rec",
+            "umbral": 6,
+            "texto": "6+ recepciones",
+            "p_evento": 0.1569,
+            "p_gana": 0.5704,
+            "p_gana_si_no": 0.628,
+            "empuje": -0.0486
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 75,
+            "texto": "75+ yardas por recepción",
+            "p_evento": 0.122,
+            "p_gana": 0.6631,
+            "p_gana_si_no": 0.6129,
+            "empuje": 0.0441
+          },
+          {
+            "stat": "rec",
+            "umbral": 4,
+            "texto": "4+ recepciones",
+            "p_evento": 0.426,
+            "p_gana": 0.5883,
+            "p_gana_si_no": 0.6418,
+            "empuje": -0.0307
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 50,
+            "texto": "50+ yardas por recepción",
+            "p_evento": 0.2808,
+            "p_gana": 0.6449,
+            "p_gana_si_no": 0.6089,
+            "empuje": 0.0259
+          }
+        ]
+      },
+      {
+        "athlete_id": 3895856,
+        "espn_id": 3895856,
+        "jugador": "Christian Kirk",
+        "posicion": "WR",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 0.0,
+          "rec_yds": 11.8,
+          "rec": 0.9,
+          "td": 0.1
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.0,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec_yds": {
+            "50": 0.0319,
+            "75": 0.0055,
+            "100": 0.0012,
+            "125": 0.0004
+          },
+          "rec": {
+            "4": 0.0043,
+            "6": 0.0,
+            "8": 0.0,
+            "10": 0.0
+          },
+          "td": {
+            "1": 0.1373,
+            "2": 0.0094
+          }
+        },
+        "anytime_td": 0.1373,
+        "mejor": {
+          "stat": "rec_yds",
+          "valor": 64,
+          "td": 0,
+          "gano": false,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.1373,
+            "p_gana": 0.7749,
+            "p_gana_si_no": 0.5942,
+            "empuje": 0.1559
+          }
+        ]
+      }
+    ],
+    "away": [
+      {
+        "athlete_id": 14880,
+        "espn_id": 14880,
+        "jugador": "Kirk Cousins",
+        "posicion": "QB",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 223.4,
+          "pass_td": 1.4,
+          "rush_yds": 8.1,
+          "rec_yds": 0.0,
+          "rec": 0.0,
+          "td": 0.1
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.5701,
+            "250": 0.3411,
+            "300": 0.1721,
+            "350": 0.0781
+          },
+          "pass_td": {
+            "1": 0.7715,
+            "2": 0.4088,
+            "3": 0.1489,
+            "4": 0.0407
+          },
+          "rush_yds": {
+            "50": 0.0021,
+            "75": 0.0002,
+            "100": 0.0001,
+            "125": 0.0
+          },
+          "rec_yds": {
+            "50": 0.0,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec": {
+            "4": 0.0,
+            "6": 0.0,
+            "8": 0.0,
+            "10": 0.0
+          },
+          "td": {
+            "1": 0.1385,
+            "2": 0.0088
+          }
+        },
+        "anytime_td": 0.1385,
+        "mejor": {
+          "stat": "pass_yds",
+          "valor": 463,
+          "td": 5,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "pass_td",
+            "umbral": 3,
+            "texto": "3+ pases de touchdown",
+            "p_evento": 0.1489,
+            "p_gana": 0.7576,
+            "p_gana_si_no": 0.3114,
+            "empuje": 0.3798
+          },
+          {
+            "stat": "pass_td",
+            "umbral": 2,
+            "texto": "2+ pases de touchdown",
+            "p_evento": 0.4088,
+            "p_gana": 0.5839,
+            "p_gana_si_no": 0.2353,
+            "empuje": 0.2061
+          },
+          {
+            "stat": "pass_yds",
+            "umbral": 300,
+            "texto": "300+ yardas por pase",
+            "p_evento": 0.1721,
+            "p_gana": 0.4538,
+            "p_gana_si_no": 0.362,
+            "empuje": 0.076
+          },
+          {
+            "stat": "pass_yds",
+            "umbral": 250,
+            "texto": "250+ yardas por pase",
+            "p_evento": 0.3411,
+            "p_gana": 0.4172,
+            "p_gana_si_no": 0.3574,
+            "empuje": 0.0394
+          },
+          {
+            "stat": "pass_yds",
+            "umbral": 200,
+            "texto": "200+ yardas por pase",
+            "p_evento": 0.5701,
+            "p_gana": 0.3954,
+            "p_gana_si_no": 0.3545,
+            "empuje": 0.0176
+          }
+        ]
+      },
+      {
+        "athlete_id": 3042519,
+        "espn_id": 3042519,
+        "jugador": "Aaron Jones",
+        "posicion": "RB",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 43.4,
+          "rec_yds": 11.3,
+          "rec": 1.7,
+          "td": 0.4
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.3522,
+            "75": 0.1303,
+            "100": 0.0444,
+            "125": 0.0123
+          },
+          "rec_yds": {
+            "50": 0.0191,
+            "75": 0.0028,
+            "100": 0.0002,
+            "125": 0.0
+          },
+          "rec": {
+            "4": 0.109,
+            "6": 0.017,
+            "8": 0.0016,
+            "10": 0.0
+          },
+          "td": {
+            "1": 0.3259,
+            "2": 0.0578
+          }
+        },
+        "anytime_td": 0.3259,
+        "mejor": {
+          "stat": "rush_yds",
+          "valor": 128,
+          "td": 2,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "rush_yds",
+            "umbral": 75,
+            "texto": "75+ yardas por tierra",
+            "p_evento": 0.1303,
+            "p_gana": 0.647,
+            "p_gana_si_no": 0.3375,
+            "empuje": 0.2692
+          },
+          {
+            "stat": "rush_yds",
+            "umbral": 50,
+            "texto": "50+ yardas por tierra",
+            "p_evento": 0.3522,
+            "p_gana": 0.5355,
+            "p_gana_si_no": 0.2921,
+            "empuje": 0.1577
+          },
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.3259,
+            "p_gana": 0.5081,
+            "p_gana_si_no": 0.3148,
+            "empuje": 0.1303
+          }
+        ]
+      },
+      {
+        "athlete_id": 4360569,
+        "espn_id": 4360569,
+        "jugador": "Jordan Mason",
+        "posicion": "RB",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 48.3,
+          "rec_yds": 4.5,
+          "rec": 0.7,
+          "td": 0.3
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.4221,
+            "75": 0.1834,
+            "100": 0.0652,
+            "125": 0.0194
+          },
+          "rec_yds": {
+            "50": 0.0009,
+            "75": 0.0001,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec": {
+            "4": 0.005,
+            "6": 0.0002,
+            "8": 0.0,
+            "10": 0.0
+          },
+          "td": {
+            "1": 0.251,
+            "2": 0.0304
+          }
+        },
+        "anytime_td": 0.251,
+        "mejor": {
+          "stat": "rush_yds",
+          "valor": 140,
+          "td": 0,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "rush_yds",
+            "umbral": 75,
+            "texto": "75+ yardas por tierra",
+            "p_evento": 0.1834,
+            "p_gana": 0.6429,
+            "p_gana_si_no": 0.3183,
+            "empuje": 0.2651
+          },
+          {
+            "stat": "rush_yds",
+            "umbral": 50,
+            "texto": "50+ yardas por tierra",
+            "p_evento": 0.4221,
+            "p_gana": 0.5312,
+            "p_gana_si_no": 0.2658,
+            "empuje": 0.1534
+          },
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.251,
+            "p_gana": 0.5084,
+            "p_gana_si_no": 0.334,
+            "empuje": 0.1306
+          }
+        ]
+      },
+      {
+        "athlete_id": 4262921,
+        "espn_id": 4262921,
+        "jugador": "Justin Jefferson",
+        "posicion": "WR",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 0.4,
+          "rec_yds": 69.6,
+          "rec": 5.9,
+          "td": 0.4
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.0,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec_yds": {
+            "50": 0.6084,
+            "75": 0.378,
+            "100": 0.2178,
+            "125": 0.1197
+          },
+          "rec": {
+            "4": 0.6744,
+            "6": 0.4133,
+            "8": 0.214,
+            "10": 0.0903
+          },
+          "td": {
+            "1": 0.3501,
+            "2": 0.0667
+          }
+        },
+        "anytime_td": 0.3501,
+        "mejor": {
+          "stat": "rec_yds",
+          "valor": 212,
+          "td": 2,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.3501,
+            "p_gana": 0.507,
+            "p_gana_si_no": 0.3082,
+            "empuje": 0.1292
+          },
+          {
+            "stat": "rec",
+            "umbral": 8,
+            "texto": "8+ recepciones",
+            "p_evento": 0.214,
+            "p_gana": 0.3136,
+            "p_gana_si_no": 0.3953,
+            "empuje": -0.0642
+          },
+          {
+            "stat": "rec",
+            "umbral": 6,
+            "texto": "6+ recepciones",
+            "p_evento": 0.4133,
+            "p_gana": 0.3308,
+            "p_gana_si_no": 0.4109,
+            "empuje": -0.047
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 100,
+            "texto": "100+ yardas por recepción",
+            "p_evento": 0.2178,
+            "p_gana": 0.416,
+            "p_gana_si_no": 0.3672,
+            "empuje": 0.0382
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 75,
+            "texto": "75+ yardas por recepción",
+            "p_evento": 0.378,
+            "p_gana": 0.3939,
+            "p_gana_si_no": 0.368,
+            "empuje": 0.0161
+          }
+        ]
+      },
+      {
+        "athlete_id": 4036133,
+        "espn_id": 4036133,
+        "jugador": "T.J. Hockenson",
+        "posicion": "TE",
+        "en_duda": true,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 0.0,
+          "rec_yds": 39.6,
+          "rec": 4.1,
+          "td": 0.3
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.0,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec_yds": {
+            "50": 0.3021,
+            "75": 0.124,
+            "100": 0.0513,
+            "125": 0.0203
+          },
+          "rec": {
+            "4": 0.5313,
+            "6": 0.2463,
+            "8": 0.0878,
+            "10": 0.026
+          },
+          "td": {
+            "1": 0.2895,
+            "2": 0.0458
+          }
+        },
+        "anytime_td": 0.2895,
+        "mejor": {
+          "stat": "rec_yds",
+          "valor": 143,
+          "td": 0,
+          "gano": false,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.2895,
+            "p_gana": 0.513,
+            "p_gana_si_no": 0.3227,
+            "empuje": 0.1352
+          },
+          {
+            "stat": "rec",
+            "umbral": 6,
+            "texto": "6+ recepciones",
+            "p_evento": 0.2463,
+            "p_gana": 0.3151,
+            "p_gana_si_no": 0.3983,
+            "empuje": -0.0627
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 75,
+            "texto": "75+ yardas por recepción",
+            "p_evento": 0.124,
+            "p_gana": 0.4113,
+            "p_gana_si_no": 0.3731,
+            "empuje": 0.0335
+          },
+          {
+            "stat": "rec",
+            "umbral": 4,
+            "texto": "4+ recepciones",
+            "p_evento": 0.5313,
+            "p_gana": 0.3452,
+            "p_gana_si_no": 0.4148,
+            "empuje": -0.0326
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 50,
+            "texto": "50+ yardas por recepción",
+            "p_evento": 0.3021,
+            "p_gana": 0.3899,
+            "p_gana_si_no": 0.3725,
+            "empuje": 0.0121
+          }
+        ]
+      },
+      {
+        "athlete_id": 3886598,
+        "espn_id": 3886598,
+        "jugador": "Jauan Jennings",
+        "posicion": "WR",
+        "en_duda": true,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 0.0,
+          "rec_yds": 17.3,
+          "rec": 1.5,
+          "td": 0.2
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.0,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec_yds": {
+            "50": 0.0731,
+            "75": 0.0215,
+            "100": 0.0059,
+            "125": 0.0014
+          },
+          "rec": {
+            "4": 0.0444,
+            "6": 0.006,
+            "8": 0.0005,
+            "10": 0.0
+          },
+          "td": {
+            "1": 0.1486,
+            "2": 0.0116
+          }
+        },
+        "anytime_td": 0.1486,
+        "mejor": {
+          "stat": "rec_yds",
+          "valor": 87,
+          "td": 0,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.1486,
+            "p_gana": 0.5155,
+            "p_gana_si_no": 0.3538,
+            "empuje": 0.1377
+          }
+        ]
+      },
+      {
+        "athlete_id": 4430656,
+        "espn_id": 4430656,
+        "jugador": "Myles Price",
+        "posicion": "WR",
+        "en_duda": false,
+        "media": {
+          "pass_yds": 0.0,
+          "pass_td": 0.0,
+          "rush_yds": 2.1,
+          "rec_yds": 14.8,
+          "rec": 1.4,
+          "td": 0.1
+        },
+        "sobre": {
+          "pass_yds": {
+            "200": 0.0,
+            "250": 0.0,
+            "300": 0.0,
+            "350": 0.0
+          },
+          "pass_td": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0
+          },
+          "rush_yds": {
+            "50": 0.0,
+            "75": 0.0,
+            "100": 0.0,
+            "125": 0.0
+          },
+          "rec_yds": {
+            "50": 0.0531,
+            "75": 0.012,
+            "100": 0.0033,
+            "125": 0.0009
+          },
+          "rec": {
+            "4": 0.0286,
+            "6": 0.0031,
+            "8": 0.0002,
+            "10": 0.0
+          },
+          "td": {
+            "1": 0.1251,
+            "2": 0.0073
+          }
+        },
+        "anytime_td": 0.1251,
+        "mejor": {
+          "stat": "rec_yds",
+          "valor": 78,
+          "td": 0,
+          "gano": true,
+          "una_de_cada": 100
+        },
+        "eventos": [
+          {
+            "stat": "td",
+            "umbral": 1,
+            "texto": "1+ touchdowns",
+            "p_evento": 0.1251,
+            "p_gana": 0.542,
+            "p_gana_si_no": 0.3543,
+            "empuje": 0.1642
+          }
+        ]
+      }
+    ]
+  }
+}
