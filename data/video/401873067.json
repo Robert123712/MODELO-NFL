@@ -1207,7 +1207,7 @@
         "espn_id": 4430841,
         "jugador": "Carson Beck",
         "posicion": "QB",
-        "en_duda": false,
+        "en_duda": true,
         "media": {
           "pass_yds": 203.1,
           "pass_td": 1.2,
