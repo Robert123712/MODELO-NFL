@@ -1099,7 +1099,7 @@
         "espn_id": 4567156,
         "jugador": "Treylon Burks",
         "posicion": "WR",
-        "en_duda": true,
+        "en_duda": false,
         "media": {
           "pass_yds": 0.0,
           "pass_td": 0.0,
