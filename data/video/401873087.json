@@ -556,15 +556,15 @@
         "sobre": {
           "pass_yds": {
             "200": 0.8065,
-            "250": 0.611,
+            "250": 0.6109,
             "300": 0.4016,
             "350": 0.2321
           },
           "pass_td": {
             "1": 0.9421,
             "2": 0.7431,
-            "3": 0.4675,
-            "4": 0.2176
+            "3": 0.4671,
+            "4": 0.2174
           },
           "rush_yds": {
             "50": 0.0105,
@@ -585,11 +585,11 @@
             "10": 0.0
           },
           "td": {
-            "1": 0.1761,
-            "2": 0.0161
+            "1": 0.1704,
+            "2": 0.0125
           }
         },
-        "anytime_td": 0.1761,
+        "anytime_td": 0.1704,
         "mejor": {
           "stat": "pass_yds",
           "valor": 543,
@@ -602,18 +602,18 @@
             "stat": "pass_td",
             "umbral": 4,
             "texto": "4+ pases de touchdown",
-            "p_evento": 0.2176,
+            "p_evento": 0.2174,
             "p_gana": 0.9577,
-            "p_gana_si_no": 0.7003,
+            "p_gana_si_no": 0.7004,
             "empuje": 0.2014
           },
           {
             "stat": "pass_td",
             "umbral": 3,
             "texto": "3+ pases de touchdown",
-            "p_evento": 0.4675,
+            "p_evento": 0.4671,
             "p_gana": 0.9084,
-            "p_gana_si_no": 0.6227,
+            "p_gana_si_no": 0.623,
             "empuje": 0.1521
           },
           {
@@ -645,7 +645,7 @@
         "media": {
           "pass_yds": 0.0,
           "pass_td": 0.0,
-          "rush_yds": 53.9,
+          "rush_yds": 54.0,
           "rec_yds": 28.8,
           "rec": 4.9,
           "td": 0.6
@@ -664,15 +664,15 @@
             "4": 0.0
           },
           "rush_yds": {
-            "50": 0.5016,
-            "75": 0.2308,
+            "50": 0.5018,
+            "75": 0.2309,
             "100": 0.0774,
             "125": 0.0235
           },
           "rec_yds": {
-            "50": 0.1516,
+            "50": 0.1517,
             "75": 0.0374,
-            "100": 0.0082,
+            "100": 0.0083,
             "125": 0.002
           },
           "rec": {
@@ -682,11 +682,11 @@
             "10": 0.0574
           },
           "td": {
-            "1": 0.4468,
-            "2": 0.1108
+            "1": 0.4457,
+            "2": 0.113
           }
         },
-        "anytime_td": 0.4468,
+        "anytime_td": 0.4457,
         "mejor": {
           "stat": "rush_yds",
           "valor": 141,
@@ -699,37 +699,37 @@
             "stat": "rush_yds",
             "umbral": 75,
             "texto": "75+ yardas por tierra",
-            "p_evento": 0.2308,
+            "p_evento": 0.2309,
             "p_gana": 0.9047,
-            "p_gana_si_no": 0.7118,
+            "p_gana_si_no": 0.7117,
             "empuje": 0.1484
           },
           {
             "stat": "rush_yds",
             "umbral": 50,
             "texto": "50+ yardas por tierra",
-            "p_evento": 0.5016,
+            "p_evento": 0.5018,
             "p_gana": 0.8517,
-            "p_gana_si_no": 0.6603,
+            "p_gana_si_no": 0.6602,
             "empuje": 0.0954
           },
           {
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.4468,
-            "p_gana": 0.8306,
-            "p_gana_si_no": 0.6963,
-            "empuje": 0.0743
+            "p_evento": 0.4457,
+            "p_gana": 0.8311,
+            "p_gana_si_no": 0.6962,
+            "empuje": 0.0748
           },
           {
             "stat": "rec_yds",
             "umbral": 50,
             "texto": "50+ yardas por recepción",
-            "p_evento": 0.1516,
-            "p_gana": 0.7606,
+            "p_evento": 0.1517,
+            "p_gana": 0.7607,
             "p_gana_si_no": 0.7555,
-            "empuje": 0.0043
+            "empuje": 0.0044
           }
         ]
       },
@@ -761,13 +761,13 @@
             "4": 0.0
           },
           "rush_yds": {
-            "50": 0.209,
-            "75": 0.054,
+            "50": 0.2092,
+            "75": 0.0542,
             "100": 0.0111,
             "125": 0.0016
           },
           "rec_yds": {
-            "50": 0.0414,
+            "50": 0.0415,
             "75": 0.0075,
             "100": 0.0012,
             "125": 0.0005
@@ -780,7 +780,7 @@
           },
           "td": {
             "1": 0.2837,
-            "2": 0.0424
+            "2": 0.0434
           }
         },
         "anytime_td": 0.2837,
@@ -796,19 +796,19 @@
             "stat": "rush_yds",
             "umbral": 50,
             "texto": "50+ yardas por tierra",
-            "p_evento": 0.209,
-            "p_gana": 0.8785,
+            "p_evento": 0.2092,
+            "p_gana": 0.8786,
             "p_gana_si_no": 0.724,
-            "empuje": 0.1222
+            "empuje": 0.1223
           },
           {
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
             "p_evento": 0.2837,
-            "p_gana": 0.8396,
-            "p_gana_si_no": 0.7233,
-            "empuje": 0.0833
+            "p_gana": 0.8382,
+            "p_gana_si_no": 0.7239,
+            "empuje": 0.0819
           }
         ]
       },
@@ -846,8 +846,8 @@
             "125": 0.0
           },
           "rec_yds": {
-            "50": 0.7268,
-            "75": 0.5243,
+            "50": 0.727,
+            "75": 0.5244,
             "100": 0.3531,
             "125": 0.2178
           },
@@ -858,15 +858,15 @@
             "10": 0.1923
           },
           "td": {
-            "1": 0.4493,
-            "2": 0.1033
+            "1": 0.4476,
+            "2": 0.1048
           }
         },
-        "anytime_td": 0.4493,
+        "anytime_td": 0.4476,
         "mejor": {
           "stat": "rec_yds",
           "valor": 263,
-          "td": 0,
+          "td": 2,
           "gano": true,
           "una_de_cada": 100
         },
@@ -875,10 +875,10 @@
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.4493,
-            "p_gana": 0.8217,
-            "p_gana_si_no": 0.7029,
-            "empuje": 0.0654
+            "p_evento": 0.4476,
+            "p_gana": 0.8215,
+            "p_gana_si_no": 0.7035,
+            "empuje": 0.0652
           },
           {
             "stat": "rec",
@@ -920,10 +920,10 @@
             "stat": "rec_yds",
             "umbral": 75,
             "texto": "75+ yardas por recepción",
-            "p_evento": 0.5243,
-            "p_gana": 0.7648,
-            "p_gana_si_no": 0.7469,
-            "empuje": 0.0085
+            "p_evento": 0.5244,
+            "p_gana": 0.7649,
+            "p_gana_si_no": 0.7468,
+            "empuje": 0.0086
           }
         ]
       },
@@ -962,9 +962,9 @@
           },
           "rec_yds": {
             "50": 0.5571,
-            "75": 0.3557,
+            "75": 0.3558,
             "100": 0.2185,
-            "125": 0.1211
+            "125": 0.1212
           },
           "rec": {
             "4": 0.5544,
@@ -973,11 +973,11 @@
             "10": 0.0299
           },
           "td": {
-            "1": 0.4734,
-            "2": 0.131
+            "1": 0.4754,
+            "2": 0.1307
           }
         },
-        "anytime_td": 0.4734,
+        "anytime_td": 0.4754,
         "mejor": {
           "stat": "rec_yds",
           "valor": 223,
@@ -990,19 +990,19 @@
             "stat": "td",
             "umbral": 2,
             "texto": "2+ touchdowns",
-            "p_evento": 0.131,
-            "p_gana": 0.887,
-            "p_gana_si_no": 0.7366,
-            "empuje": 0.1307
+            "p_evento": 0.1307,
+            "p_gana": 0.8936,
+            "p_gana_si_no": 0.7356,
+            "empuje": 0.1373
           },
           {
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.4734,
-            "p_gana": 0.8234,
-            "p_gana_si_no": 0.696,
-            "empuje": 0.0671
+            "p_evento": 0.4754,
+            "p_gana": 0.8223,
+            "p_gana_si_no": 0.6965,
+            "empuje": 0.066
           },
           {
             "stat": "rec",
@@ -1014,15 +1014,6 @@
             "empuje": -0.0532
           },
           {
-            "stat": "rec_yds",
-            "umbral": 125,
-            "texto": "125+ yardas por recepción",
-            "p_evento": 0.1211,
-            "p_gana": 0.7779,
-            "p_gana_si_no": 0.7533,
-            "empuje": 0.0216
-          },
-          {
             "stat": "rec",
             "umbral": 4,
             "texto": "4+ recepciones",
@@ -1030,6 +1021,15 @@
             "p_gana": 0.7352,
             "p_gana_si_no": 0.7825,
             "empuje": -0.0211
+          },
+          {
+            "stat": "rec_yds",
+            "umbral": 125,
+            "texto": "125+ yardas por recepción",
+            "p_evento": 0.1212,
+            "p_gana": 0.7772,
+            "p_gana_si_no": 0.7534,
+            "empuje": 0.0209
           },
           {
             "stat": "rec_yds",
@@ -1053,10 +1053,10 @@
             "stat": "rec_yds",
             "umbral": 75,
             "texto": "75+ yardas por recepción",
-            "p_evento": 0.3557,
-            "p_gana": 0.7579,
+            "p_evento": 0.3558,
+            "p_gana": 0.758,
             "p_gana_si_no": 0.7554,
-            "empuje": 0.0016
+            "empuje": 0.0017
           }
         ]
       },
@@ -1095,7 +1095,7 @@
           },
           "rec_yds": {
             "50": 0.185,
-            "75": 0.0672,
+            "75": 0.0671,
             "100": 0.0241,
             "125": 0.0086
           },
@@ -1106,11 +1106,11 @@
             "10": 0.0011
           },
           "td": {
-            "1": 0.3128,
-            "2": 0.0494
+            "1": 0.3121,
+            "2": 0.0491
           }
         },
-        "anytime_td": 0.3128,
+        "anytime_td": 0.3121,
         "mejor": {
           "stat": "rec_yds",
           "valor": 122,
@@ -1123,10 +1123,10 @@
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.3128,
-            "p_gana": 0.8306,
-            "p_gana_si_no": 0.7225,
-            "empuje": 0.0743
+            "p_evento": 0.3121,
+            "p_gana": 0.8295,
+            "p_gana_si_no": 0.7231,
+            "empuje": 0.0732
           },
           {
             "stat": "rec",
@@ -1182,7 +1182,7 @@
             "125": 0.0
           },
           "rec_yds": {
-            "50": 0.1149,
+            "50": 0.115,
             "75": 0.0369,
             "100": 0.0126,
             "125": 0.0042
@@ -1194,11 +1194,11 @@
             "10": 0.0
           },
           "td": {
-            "1": 0.1162,
-            "2": 0.0058
+            "1": 0.118,
+            "2": 0.0062
           }
         },
-        "anytime_td": 0.1162,
+        "anytime_td": 0.118,
         "mejor": {
           "stat": "rec_yds",
           "valor": 103,
@@ -1217,31 +1217,31 @@
         "posicion": "QB",
         "en_duda": false,
         "media": {
-          "pass_yds": 241.1,
+          "pass_yds": 240.8,
           "pass_td": 1.4,
-          "rush_yds": 17.3,
+          "rush_yds": 17.2,
           "rec_yds": 0.0,
           "rec": 0.0,
           "td": 0.1
         },
         "sobre": {
           "pass_yds": {
-            "200": 0.6724,
-            "250": 0.4196,
-            "300": 0.2165,
-            "350": 0.0998
+            "200": 0.6695,
+            "250": 0.4176,
+            "300": 0.2178,
+            "350": 0.0953
           },
           "pass_td": {
-            "1": 0.7821,
-            "2": 0.4184,
-            "3": 0.16,
-            "4": 0.0424
+            "1": 0.7812,
+            "2": 0.4224,
+            "3": 0.156,
+            "4": 0.0448
           },
           "rush_yds": {
-            "50": 0.0524,
-            "75": 0.0082,
-            "100": 0.0012,
-            "125": 0.0002
+            "50": 0.053,
+            "75": 0.0081,
+            "100": 0.0011,
+            "125": 0.0005
           },
           "rec_yds": {
             "50": 0.0,
@@ -1256,15 +1256,15 @@
             "10": 0.0
           },
           "td": {
-            "1": 0.1231,
-            "2": 0.0079
+            "1": 0.1233,
+            "2": 0.0076
           }
         },
-        "anytime_td": 0.1231,
+        "anytime_td": 0.1233,
         "mejor": {
           "stat": "pass_yds",
-          "valor": 469,
-          "td": 2,
+          "valor": 468,
+          "td": 3,
           "gano": false,
           "una_de_cada": 100
         },
@@ -1273,37 +1273,37 @@
             "stat": "pass_td",
             "umbral": 3,
             "texto": "3+ pases de touchdown",
-            "p_evento": 0.16,
-            "p_gana": 0.5656,
-            "p_gana_si_no": 0.1799,
-            "empuje": 0.324
+            "p_evento": 0.156,
+            "p_gana": 0.5641,
+            "p_gana_si_no": 0.182,
+            "empuje": 0.3225
           },
           {
             "stat": "pass_td",
             "umbral": 2,
             "texto": "2+ pases de touchdown",
-            "p_evento": 0.4184,
-            "p_gana": 0.4032,
-            "p_gana_si_no": 0.1253,
-            "empuje": 0.1616
+            "p_evento": 0.4224,
+            "p_gana": 0.4008,
+            "p_gana_si_no": 0.1252,
+            "empuje": 0.1592
           },
           {
             "stat": "pass_yds",
             "umbral": 300,
             "texto": "300+ yardas por pase",
-            "p_evento": 0.2165,
-            "p_gana": 0.3178,
-            "p_gana_si_no": 0.2205,
-            "empuje": 0.0762
+            "p_evento": 0.2178,
+            "p_gana": 0.3154,
+            "p_gana_si_no": 0.221,
+            "empuje": 0.0738
           },
           {
             "stat": "pass_yds",
             "umbral": 250,
             "texto": "250+ yardas por pase",
-            "p_evento": 0.4196,
-            "p_gana": 0.2862,
-            "p_gana_si_no": 0.2093,
-            "empuje": 0.0446
+            "p_evento": 0.4176,
+            "p_gana": 0.2852,
+            "p_gana_si_no": 0.2103,
+            "empuje": 0.0436
           }
         ]
       },
@@ -1316,7 +1316,7 @@
         "media": {
           "pass_yds": 0.0,
           "pass_td": 0.0,
-          "rush_yds": 34.5,
+          "rush_yds": 34.4,
           "rec_yds": 14.1,
           "rec": 2.2,
           "td": 0.3
@@ -1335,33 +1335,33 @@
             "4": 0.0
           },
           "rush_yds": {
-            "50": 0.242,
-            "75": 0.0752,
-            "100": 0.0193,
-            "125": 0.0043
+            "50": 0.2344,
+            "75": 0.075,
+            "100": 0.0196,
+            "125": 0.0038
           },
           "rec_yds": {
-            "50": 0.0324,
-            "75": 0.0057,
-            "100": 0.0012,
-            "125": 0.0002
+            "50": 0.0341,
+            "75": 0.0039,
+            "100": 0.0008,
+            "125": 0.0
           },
           "rec": {
-            "4": 0.1635,
-            "6": 0.0306,
-            "8": 0.0039,
+            "4": 0.1641,
+            "6": 0.0288,
+            "8": 0.004,
             "10": 0.0005
           },
           "td": {
-            "1": 0.2562,
-            "2": 0.0323
+            "1": 0.2519,
+            "2": 0.03
           }
         },
-        "anytime_td": 0.2562,
+        "anytime_td": 0.2519,
         "mejor": {
           "stat": "rush_yds",
-          "valor": 109,
-          "td": 1,
+          "valor": 111,
+          "td": 0,
           "gano": true,
           "una_de_cada": 100
         },
@@ -1370,19 +1370,19 @@
             "stat": "rush_yds",
             "umbral": 50,
             "texto": "50+ yardas por tierra",
-            "p_evento": 0.242,
-            "p_gana": 0.4128,
-            "p_gana_si_no": 0.1869,
-            "empuje": 0.1712
+            "p_evento": 0.2344,
+            "p_gana": 0.4108,
+            "p_gana_si_no": 0.1898,
+            "empuje": 0.1692
           },
           {
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.2562,
-            "p_gana": 0.3439,
-            "p_gana_si_no": 0.2064,
-            "empuje": 0.1023
+            "p_evento": 0.2519,
+            "p_gana": 0.3406,
+            "p_gana_si_no": 0.2083,
+            "empuje": 0.099
           }
         ]
       },
@@ -1396,7 +1396,7 @@
           "pass_yds": 0.0,
           "pass_td": 0.0,
           "rush_yds": 25.7,
-          "rec_yds": 5.7,
+          "rec_yds": 5.8,
           "rec": 0.8,
           "td": 0.2
         },
@@ -1414,34 +1414,34 @@
             "4": 0.0
           },
           "rush_yds": {
-            "50": 0.1315,
-            "75": 0.0294,
-            "100": 0.0044,
-            "125": 0.0012
+            "50": 0.1265,
+            "75": 0.0278,
+            "100": 0.0051,
+            "125": 0.0009
           },
           "rec_yds": {
-            "50": 0.003,
-            "75": 0.0001,
+            "50": 0.0026,
+            "75": 0.0002,
             "100": 0.0,
             "125": 0.0
           },
           "rec": {
-            "4": 0.0053,
+            "4": 0.0055,
             "6": 0.0001,
             "8": 0.0,
             "10": 0.0
           },
           "td": {
-            "1": 0.214,
-            "2": 0.0227
+            "1": 0.2158,
+            "2": 0.0225
           }
         },
-        "anytime_td": 0.214,
+        "anytime_td": 0.2158,
         "mejor": {
           "stat": "rush_yds",
-          "valor": 89,
-          "td": 0,
-          "gano": true,
+          "valor": 90,
+          "td": 2,
+          "gano": false,
           "una_de_cada": 100
         },
         "eventos": [
@@ -1449,19 +1449,19 @@
             "stat": "rush_yds",
             "umbral": 50,
             "texto": "50+ yardas por tierra",
-            "p_evento": 0.1315,
-            "p_gana": 0.4449,
-            "p_gana_si_no": 0.2108,
-            "empuje": 0.2033
+            "p_evento": 0.1265,
+            "p_gana": 0.4387,
+            "p_gana_si_no": 0.2131,
+            "empuje": 0.1971
           },
           {
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.214,
-            "p_gana": 0.3383,
-            "p_gana_si_no": 0.2153,
-            "empuje": 0.0967
+            "p_evento": 0.2158,
+            "p_gana": 0.3582,
+            "p_gana_si_no": 0.2095,
+            "empuje": 0.1166
           }
         ]
       },
@@ -1499,27 +1499,27 @@
             "125": 0.0
           },
           "rec_yds": {
-            "50": 0.6105,
-            "75": 0.3973,
-            "100": 0.2355,
-            "125": 0.1344
+            "50": 0.614,
+            "75": 0.3965,
+            "100": 0.2366,
+            "125": 0.1347
           },
           "rec": {
-            "4": 0.7293,
-            "6": 0.4326,
-            "8": 0.206,
-            "10": 0.0852
+            "4": 0.7273,
+            "6": 0.4345,
+            "8": 0.207,
+            "10": 0.0817
           },
           "td": {
-            "1": 0.2247,
-            "2": 0.0249
+            "1": 0.2299,
+            "2": 0.0255
           }
         },
-        "anytime_td": 0.2247,
+        "anytime_td": 0.2299,
         "mejor": {
           "stat": "rec_yds",
-          "valor": 232,
-          "td": 1,
+          "valor": 223,
+          "td": 0,
           "gano": true,
           "una_de_cada": 100
         },
@@ -1528,55 +1528,55 @@
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.2247,
-            "p_gana": 0.3587,
-            "p_gana_si_no": 0.2077,
-            "empuje": 0.1171
+            "p_evento": 0.2299,
+            "p_gana": 0.3602,
+            "p_gana_si_no": 0.2062,
+            "empuje": 0.1186
           },
           {
             "stat": "rec_yds",
             "umbral": 125,
             "texto": "125+ yardas por recepción",
-            "p_evento": 0.1344,
-            "p_gana": 0.2939,
-            "p_gana_si_no": 0.2335,
-            "empuje": 0.0523
+            "p_evento": 0.1347,
+            "p_gana": 0.2992,
+            "p_gana_si_no": 0.2326,
+            "empuje": 0.0576
           },
           {
             "stat": "rec",
             "umbral": 8,
             "texto": "8+ recepciones",
-            "p_evento": 0.206,
-            "p_gana": 0.2,
-            "p_gana_si_no": 0.2524,
-            "empuje": -0.0416
+            "p_evento": 0.207,
+            "p_gana": 0.2048,
+            "p_gana_si_no": 0.2512,
+            "empuje": -0.0368
           },
           {
             "stat": "rec_yds",
             "umbral": 100,
             "texto": "100+ yardas por recepción",
-            "p_evento": 0.2355,
-            "p_gana": 0.2828,
-            "p_gana_si_no": 0.2289,
-            "empuje": 0.0412
+            "p_evento": 0.2366,
+            "p_gana": 0.273,
+            "p_gana_si_no": 0.2319,
+            "empuje": 0.0314
           },
           {
             "stat": "rec",
             "umbral": 6,
             "texto": "6+ recepciones",
-            "p_evento": 0.4326,
-            "p_gana": 0.2055,
-            "p_gana_si_no": 0.2691,
-            "empuje": -0.0361
+            "p_evento": 0.4345,
+            "p_gana": 0.2127,
+            "p_gana_si_no": 0.2638,
+            "empuje": -0.0289
           },
           {
             "stat": "rec_yds",
             "umbral": 75,
             "texto": "75+ yardas por recepción",
-            "p_evento": 0.3973,
-            "p_gana": 0.262,
-            "p_gana_si_no": 0.2281,
-            "empuje": 0.0204
+            "p_evento": 0.3965,
+            "p_gana": 0.2557,
+            "p_gana_si_no": 0.2323,
+            "empuje": 0.0141
           }
         ]
       },
@@ -1589,7 +1589,7 @@
         "media": {
           "pass_yds": 0.0,
           "pass_td": 0.0,
-          "rush_yds": 1.7,
+          "rush_yds": 1.8,
           "rec_yds": 40.3,
           "rec": 4.3,
           "td": 0.1
@@ -1614,28 +1614,28 @@
             "125": 0.0
           },
           "rec_yds": {
-            "50": 0.3094,
-            "75": 0.1333,
-            "100": 0.0536,
-            "125": 0.0201
+            "50": 0.3115,
+            "75": 0.1309,
+            "100": 0.0519,
+            "125": 0.0197
           },
           "rec": {
-            "4": 0.5288,
-            "6": 0.2363,
-            "8": 0.0815,
-            "10": 0.0219
+            "4": 0.5212,
+            "6": 0.2361,
+            "8": 0.0788,
+            "10": 0.0246
           },
           "td": {
-            "1": 0.1357,
-            "2": 0.0083
+            "1": 0.1343,
+            "2": 0.008
           }
         },
-        "anytime_td": 0.1357,
+        "anytime_td": 0.1343,
         "mejor": {
           "stat": "rec_yds",
-          "valor": 141,
+          "valor": 143,
           "td": 0,
-          "gano": false,
+          "gano": true,
           "una_de_cada": 100
         },
         "eventos": [
@@ -1643,46 +1643,46 @@
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.1357,
-            "p_gana": 0.3581,
-            "p_gana_si_no": 0.2233,
-            "empuje": 0.1165
+            "p_evento": 0.1343,
+            "p_gana": 0.376,
+            "p_gana_si_no": 0.2207,
+            "empuje": 0.1344
           },
           {
             "stat": "rec_yds",
             "umbral": 75,
             "texto": "75+ yardas por recepción",
-            "p_evento": 0.1333,
-            "p_gana": 0.2881,
-            "p_gana_si_no": 0.2345,
-            "empuje": 0.0465
+            "p_evento": 0.1309,
+            "p_gana": 0.2956,
+            "p_gana_si_no": 0.2335,
+            "empuje": 0.054
           },
           {
             "stat": "rec",
             "umbral": 6,
             "texto": "6+ recepciones",
-            "p_evento": 0.2363,
-            "p_gana": 0.2006,
-            "p_gana_si_no": 0.2543,
-            "empuje": -0.041
+            "p_evento": 0.2361,
+            "p_gana": 0.2075,
+            "p_gana_si_no": 0.2521,
+            "empuje": -0.0341
           },
           {
             "stat": "rec_yds",
             "umbral": 50,
             "texto": "50+ yardas por recepción",
-            "p_evento": 0.3094,
-            "p_gana": 0.2689,
-            "p_gana_si_no": 0.2294,
-            "empuje": 0.0273
+            "p_evento": 0.3115,
+            "p_gana": 0.2729,
+            "p_gana_si_no": 0.2275,
+            "empuje": 0.0313
           },
           {
             "stat": "rec",
             "umbral": 4,
             "texto": "4+ recepciones",
-            "p_evento": 0.5288,
-            "p_gana": 0.2211,
-            "p_gana_si_no": 0.2646,
-            "empuje": -0.0205
+            "p_evento": 0.5212,
+            "p_gana": 0.2197,
+            "p_gana_si_no": 0.2655,
+            "empuje": -0.0219
           }
         ]
       },
@@ -1720,27 +1720,27 @@
             "125": 0.0
           },
           "rec_yds": {
-            "50": 0.2804,
-            "75": 0.1261,
-            "100": 0.053,
-            "125": 0.0217
+            "50": 0.2861,
+            "75": 0.1265,
+            "100": 0.0517,
+            "125": 0.0218
           },
           "rec": {
-            "4": 0.371,
-            "6": 0.1265,
+            "4": 0.3752,
+            "6": 0.1301,
             "8": 0.0336,
-            "10": 0.0079
+            "10": 0.0063
           },
           "td": {
-            "1": 0.1692,
-            "2": 0.0163
+            "1": 0.1739,
+            "2": 0.0141
           }
         },
-        "anytime_td": 0.1692,
+        "anytime_td": 0.1739,
         "mejor": {
           "stat": "rec_yds",
-          "valor": 149,
-          "td": 0,
+          "valor": 145,
+          "td": 1,
           "gano": true,
           "una_de_cada": 100
         },
@@ -1749,46 +1749,46 @@
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.1692,
-            "p_gana": 0.367,
-            "p_gana_si_no": 0.2161,
-            "empuje": 0.1254
+            "p_evento": 0.1739,
+            "p_gana": 0.3542,
+            "p_gana_si_no": 0.2179,
+            "empuje": 0.1126
           },
           {
             "stat": "rec_yds",
             "umbral": 75,
             "texto": "75+ yardas por recepción",
-            "p_evento": 0.1261,
-            "p_gana": 0.2902,
-            "p_gana_si_no": 0.2346,
-            "empuje": 0.0486
+            "p_evento": 0.1265,
+            "p_gana": 0.2941,
+            "p_gana_si_no": 0.234,
+            "empuje": 0.0525
           },
           {
             "stat": "rec",
             "umbral": 6,
             "texto": "6+ recepciones",
-            "p_evento": 0.1265,
-            "p_gana": 0.204,
-            "p_gana_si_no": 0.2471,
-            "empuje": -0.0376
+            "p_evento": 0.1301,
+            "p_gana": 0.2029,
+            "p_gana_si_no": 0.2474,
+            "empuje": -0.0387
           },
           {
             "stat": "rec",
             "umbral": 4,
             "texto": "4+ recepciones",
-            "p_evento": 0.371,
-            "p_gana": 0.2148,
-            "p_gana_si_no": 0.2574,
-            "empuje": -0.0268
+            "p_evento": 0.3752,
+            "p_gana": 0.2116,
+            "p_gana_si_no": 0.2596,
+            "empuje": -0.03
           },
           {
             "stat": "rec_yds",
             "umbral": 50,
             "texto": "50+ yardas por recepción",
-            "p_evento": 0.2804,
-            "p_gana": 0.2639,
-            "p_gana_si_no": 0.2329,
-            "empuje": 0.0223
+            "p_evento": 0.2861,
+            "p_gana": 0.2695,
+            "p_gana_si_no": 0.2304,
+            "empuje": 0.0279
           }
         ]
       },
@@ -1802,7 +1802,7 @@
           "pass_yds": 0.0,
           "pass_td": 0.0,
           "rush_yds": 0.0,
-          "rec_yds": 24.0,
+          "rec_yds": 23.7,
           "rec": 2.2,
           "td": 0.2
         },
@@ -1826,27 +1826,27 @@
             "125": 0.0
           },
           "rec_yds": {
-            "50": 0.1366,
-            "75": 0.0504,
-            "100": 0.0166,
-            "125": 0.0056
+            "50": 0.1349,
+            "75": 0.0476,
+            "100": 0.0155,
+            "125": 0.0052
           },
           "rec": {
-            "4": 0.1556,
-            "6": 0.0269,
-            "8": 0.0044,
-            "10": 0.0003
+            "4": 0.1559,
+            "6": 0.0294,
+            "8": 0.0039,
+            "10": 0.0005
           },
           "td": {
-            "1": 0.1907,
-            "2": 0.0177
+            "1": 0.1893,
+            "2": 0.0208
           }
         },
-        "anytime_td": 0.1907,
+        "anytime_td": 0.1893,
         "mejor": {
           "stat": "rec_yds",
-          "valor": 113,
-          "td": 1,
+          "valor": 111,
+          "td": 0,
           "gano": false,
           "una_de_cada": 100
         },
@@ -1855,28 +1855,28 @@
             "stat": "td",
             "umbral": 1,
             "texto": "1+ touchdowns",
-            "p_evento": 0.1907,
-            "p_gana": 0.3587,
-            "p_gana_si_no": 0.214,
-            "empuje": 0.1171
+            "p_evento": 0.1893,
+            "p_gana": 0.3434,
+            "p_gana_si_no": 0.2178,
+            "empuje": 0.1018
           },
           {
             "stat": "rec_yds",
             "umbral": 50,
             "texto": "50+ yardas por recepción",
-            "p_evento": 0.1366,
-            "p_gana": 0.2818,
-            "p_gana_si_no": 0.2352,
-            "empuje": 0.0402
+            "p_evento": 0.1349,
+            "p_gana": 0.2847,
+            "p_gana_si_no": 0.2349,
+            "empuje": 0.0431
           },
           {
             "stat": "rec",
             "umbral": 4,
             "texto": "4+ recepciones",
-            "p_evento": 0.1556,
-            "p_gana": 0.2063,
-            "p_gana_si_no": 0.2481,
-            "empuje": -0.0353
+            "p_evento": 0.1559,
+            "p_gana": 0.2046,
+            "p_gana_si_no": 0.2484,
+            "empuje": -0.037
           }
         ]
       }
